@@ -1,0 +1,76 @@
+<div id="testimonial-wrapper" class="dekhstop-non">
+    <div class="container">
+        <div class="testimonial-heading">
+            <div class="testimonialsheading">In The Words Of Our Patients</div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="wrapper">
+                    <input class="dots" name="testi" title="slide1" type="radio" id="a1">
+                    <input checked="checked" class="dots" name="testi" title="slide2" type="radio">
+                    <input class="dots" name="testi" title="slide3" type="radio">
+                    <div class="mainSlider">
+                        <div class="content" *ngFor="let testimonial of testimonials | slice:0:3 ">
+                            <div class="img-area">
+                                {{testimonial?.short_name}}
+                            </div>
+                            <div class="client-name">
+                                <div class="clienth3">{{testimonial?.name}} </div> 
+                            </div>
+                            <p [innerHtml]="testimonial?.description" class="mgspace"></p>
+                            <p class="text-center " style="font-size:12px;">✱ Opinions/Results may vary from person to person.</p>
+                            <div class="reviewname">
+                                <div class="reviewstar"  [ngSwitch]="testimonial?.rating">
+                                    <div *ngSwitchCase="1">
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div *ngSwitchCase="2">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div *ngSwitchCase="3">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div *ngSwitchCase="4">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div *ngSwitchCase="5">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <!-- <div class="client-image" *ngIf="testimonial.source=='google'">
+                                    <img src="assets/images/google.png" alt="Goole">
+                                </div>
+                                <div class="client-image" *ngIf="testimonial.source=='practo'">
+                                    <img src="assets/images/practo.png" alt="Practo">
+                                </div> -->
+                            </div>
+                            <div class="client-image" *ngIf="testimonial?.source=='google'">
+                                <img src="assets/images/google.png" alt="Goole">
+                            </div>
+                            <div class="client-image" *ngIf="testimonial?.source=='practo'">
+                                <img src="assets/images/practo.png" alt="Practo">
+                            </div>
+                            
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

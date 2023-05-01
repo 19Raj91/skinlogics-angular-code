@@ -1,0 +1,114 @@
+<div id="topcommon-banner" class="mobile-none">
+    <div class="image-overlay"></div>
+    <img src="assets/images/written-testimonial-banner.jpg" alt="bg-image" class="w-100">
+    <div class="banner-heading">
+        <h2>Written Testimonials</h2>
+    </div>
+</div>
+<div class="breadcrumb-menu mobile-none">
+    <div class="container-max">
+        <ul>
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/testimonials">Written Testimonials</a></li>
+        </ul>
+    </div>
+</div>
+<div id="innertopcommon-bannermobile" class="dekhstop-non">
+    <div class="stylingcontent">
+        <div class="banner-heading">
+            <h2>Written Testimonials</h2>
+        </div>
+        <div class="breadcrumb-menu">
+            <div class="container-max">
+                <ul>
+                    <li><a routerLink="/">Home</a></li>
+                    <li><a routerLink="/testimonials">Written Testimonials</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <app-requestacallbackform></app-requestacallbackform>
+    <app-requestcallbackform-mobile></app-requestcallbackform-mobile>
+<div id="testimonial-wrapper">
+    <div class="container">
+        <div class="testimonial-heading">
+            <h2>In The Words Of Our Patients</h2>
+        </div>
+        <div class="row">
+<!-- {{testimonials |json}} -->
+            <div class="col-12 col-lg-4"  *ngFor="let testimonial of testimonials | paginate: { itemsPerPage: 15, currentPage: p } ">
+                <div class="contentdesktop">
+                    <div class="client-detail">
+                        <div class="img-area">
+                            <h2>{{testimonial.short_name}}</h2>
+                        </div>
+                        <div class="client-name">
+                            <h3>{{testimonial.name}} </h3>
+                        </div>
+                    </div>
+                    <p [innerHtml]="testimonial.description"></p>
+
+                    <div class="reviewname">
+                        <div class="reviewstar"  [ngSwitch]="testimonial.rating">
+                            <div *ngSwitchCase="1">
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div *ngSwitchCase="2">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div *ngSwitchCase="3">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div *ngSwitchCase="4">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div *ngSwitchCase="5">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="client-image" *ngIf="testimonial.source=='google'">
+                            <img src="assets/images/google.png" alt="Goole">
+                        </div>
+                        <div class="client-image" *ngIf="testimonial.source=='practo'">
+                            <img src="assets/images/practo.png" alt="Practo">
+                        </div>
+                    </div>
+                    <p class="mt-2" style="font-size:12px;">✱ Opinions/Results may vary from person to person.</p>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+</div>
+<div class="an-pagination">
+ <pagination-controls (pageChange)="p=$event"></pagination-controls> 
+</div>
+
+<div class="dst-form">
+    <app-dt-form></app-dt-form>
+</div>
+<div class="mb-form">
+    <app-mobile-form></app-mobile-form>
+</div>
+<!--custom Schema start-->
+<!-- {{listseo?.schemas}} -->
+
+
+<!--custom schema end-->
+
+
+

@@ -1,0 +1,63 @@
+<div id="testimonial-wrapper" class="mobile-none">
+    <div class="container">
+        <div class="testimonial-heading">
+            <div class="testimonialsheading">In The Words Of Our Patients</div> 
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4"  *ngFor="let testimonial of testimonials | slice:0:3 ">
+                <div class="contentdesktop">
+                    <div class="client-detail">
+                        <div class="img-area">
+                            <h2>{{testimonial?.short_name}}</h2>
+                        </div>
+                        <div class="client-name">
+                            <div class="clienth3">{{testimonial?.name}} </div>
+                        </div>
+                    </div>
+                    <p [innerHtml]="testimonial?.description"></p>
+                    <div class="reviewname">
+                        <div class="reviewstar"  [ngSwitch]="testimonial?.rating">
+                            <div *ngSwitchCase="1">
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div *ngSwitchCase="2">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div *ngSwitchCase="3">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div *ngSwitchCase="4">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div *ngSwitchCase="5">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="client-image" *ngIf="testimonial?.source=='google'">
+                            <img src="assets/images/google.png" alt="Goole">
+                        </div>
+                        <div class="client-image" *ngIf="testimonial?.source=='practo'">
+                            <img src="assets/images/practo.png" alt="Practo">
+                        </div>
+                    </div>
+                    <p class="mt-2" style="font-size:12px;">✱ Opinions/Results may vary from person to person.</p>
+                </div>
+            </div>
+        </div>
+        <div class="viewallwithborder">
+           <a routerLink="/testimonials" routerLinkActive="active-link"><button type="button">View All</button></a>
+        </div>
+    </div>
+</div>

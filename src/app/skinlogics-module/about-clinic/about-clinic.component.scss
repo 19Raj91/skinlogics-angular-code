@@ -1,0 +1,1778 @@
+
+
+#skin-id {
+    margin: 20px 0px;
+
+    .skin-heading {
+        text-align: center;
+        margin-bottom: 20px;
+
+        h2 {
+            color: #f197a5;
+            font-family: "oswald";
+            font-size: 40px;
+            line-height: 1;
+
+            span {
+                display: block;
+            }
+        }
+
+        h1, .abthd {
+            color: #f197a5;
+            font-family: "oswald";
+            font-size: 40px;
+            line-height: 1;
+
+            span {
+                display: block;
+            }
+        }
+    }
+
+    .skin-content {
+        p {
+            text-align: center;
+            font-size: 16px;
+
+        }
+    }
+
+
+
+    .skinappointment-button {
+        text-align: center;
+
+        a {
+            display: inline-block;
+            background-color: #ffb6c1;
+            text-transform: capitalize;
+            border: 1px solid #f197a5;
+            padding: 4px 20px;
+            color: #fff;
+        }
+    }
+}
+
+#philosophy-wrap {
+    background-image: url(/assets/images/darkbg-image.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 40px 10px;
+
+    .pholosophy-heading {
+        text-align: center;
+        margin-bottom: 20px;
+
+        .ourphiloshpy {
+            font-family: "oswald";
+            color: #fff;
+            font-size: 40px;
+        }
+
+    }
+
+    .philosophy-text {
+        text-align: center;
+
+        p {
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+}
+
+#moreabout {
+    margin: 30px 0px;
+
+    .moreabout-heading {
+        margin-bottom: 20px;
+
+        .cosmetic-clinic {
+            font-family: "oswald";
+            color: #000;
+            font-size: 40px;
+        }
+    }
+
+    .no-padding {
+        padding: 0px;
+    }
+
+    .more-aboutbuttons {
+        margin-top: 20px;
+
+        .readmorebutton {
+            border: 1px solid #f197a5;
+            display: inline-block;
+            padding: 4px 10px;
+            margin-right: 10px;
+            color: #000;
+        }
+
+        .bookapm {
+            display: inline-block;
+            background-color: #ffb6c1;
+            text-transform: capitalize;
+            border: 1px solid #f197a5;
+            padding: 4px 20px;
+            color: #fff;
+        }
+    }
+    p{
+        font-size: 16px;
+    }
+}
+
+
+#mobile-image-slider {
+    background-color: #fff;
+    padding: 10px 0px;
+
+    .slidermobile-heading {
+        text-align: center;
+        margin-bottom: 20px;
+
+        .whatwe-do {
+            font-size: 40px;
+            font-family: "oswald";
+            color: #ffb6c1;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+
+    .mobslider {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow: auto;
+        cursor: pointer;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        margin: 0px;
+    }
+
+    .manage-widthslider {
+        width: 80%;
+    }
+
+    .mobile-image-box {
+        position: relative;
+
+        .box-image-text {
+            position: absolute;
+            bottom: 0px;
+            padding: 30px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            .mobilesliderheading {
+                color: #fff;
+                font-size: 26px;
+                margin-bottom: 10px;
+                font-family: "oswald";
+                letter-spacing: 1px;
+            }
+
+            p {
+                color: #fff;
+                display: none;
+            }
+
+            i {
+                color: #fff;
+            }
+
+            a {
+                color: #ffb6c1;
+                ;
+                text-transform: uppercase;
+                display: inline-block;
+            }
+
+        }
+
+        .commonvideobutton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+    }
+
+    .videoview-button {
+        text-align: center;
+        margin-top: 20px;
+
+        a {
+            display: inline-block;
+            border: 1px solid #f197a5;
+            padding: 4px 10px;
+            font-weight: bold;
+            color: #000;
+        }
+    }
+
+}
+
+
+
+
+
+#video-testimonial {
+    padding: 10px 0px 20px;
+    background-color: #fff6f7;
+    margin-top: 20px;
+
+    .videotestimonial-heading {
+        text-align: center;
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            font-family: "oswald";
+            color: #f197a5;
+
+        }
+    }
+
+    .videoimage-wrap {
+        position: relative;
+
+        .videoplay-button {
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            top: 0px;
+            left: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                display: inline-block;
+
+                i {
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    color: #000;
+                    background-color: #fff;
+                    text-align: center;
+                    line-height: 50px;
+                }
+            }
+
+        }
+    }
+
+    .video-info {
+        margin-top: 10px;
+
+        p {
+            font-weight: bold;
+        }
+    }
+
+    .viewallvideos {
+        text-align: center;
+
+        a {
+            display: inline-block;
+            border: 1px solid #f197a5;
+            padding: 4px 10px;
+            font-weight: bold;
+            color: #000;
+
+        }
+    }
+}
+
+/*------ client testimonial------*/
+
+/*   testimonialslider */
+// #testimonial-wrapper {
+//     padding: 40px 0px;
+//     background-color: #fff6f7;
+
+//     .testimonial-heading {
+//         text-align: center;
+
+//         h2 {
+//             color: #ffb6c1;
+//             font-family: "oswald";
+//             font-size: 30px;
+//         }
+//     }
+
+// }
+
+
+// .wrapper {
+//     height: 380px;
+//     position: relative;
+//     overflow: hidden;
+//     display: flex;
+//     flex-flow: row nowrap;
+//     align-items: flex-end;
+//     justify-content: center;
+//     margin: 20px 0 0;
+
+//     .mainSlider {
+//         position: absolute;
+//         top: 0px;
+//         left: 0;
+//         width: 300%;
+//         height: auto;
+//         transition: left 0.4s;
+//         display: flex;
+//         flex-flow: row nowrap;
+
+//         .content {
+//             height: 100%;
+//             text-align: center;
+//             display: flex;
+//             -webkit-box-flex: 1;
+//             flex: 1;
+//             flex-flow: column nowrap;
+//             -webkit-box-align: center;
+//             align-items: center;
+//             -webkit-box-pack: center;
+//             justify-content: center;
+//             padding: 0px 10px;
+
+//             .img-area {
+//                 width: 70px;
+//                 height: 70px;
+//                 border-radius: 50%;
+//                 overflow: hidden;
+//                 display: inline-block;
+//                 margin-bottom: 10px;
+//                 background-color: #f197a5;
+//                 line-height: 70px;
+//                 text-align: center;
+
+//                 h2 {
+//                     font-size: 18px;
+//                     color: #fff;
+//                 }
+
+//                 img {
+//                     width: 100%;
+//                 }
+//             }
+
+//             .client-name {
+//                 margin-bottom: 30px;
+
+//                 h3 {
+//                     font-size: 30px;
+//                     font-weight: bold;
+//                 }
+//             }
+
+//             p {
+//                 font-size: 14px;
+//                 line-height: 1.7;
+//                 color: #000;
+//                 margin-top: -20px;
+//                 margin-bottom: 20px;
+//                 max-width: 750px;
+//             }
+
+//             .client-image {
+//                 box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
+//                 border-radius: 20px;
+//                 padding: 5px 20px;
+//                 line-height: 10px;
+//             }
+
+//             .reviewstar {
+//                 margin-bottom: 10px;
+
+//                 i {
+//                     color: #f7ce4a;
+//                 }
+//             }
+//         }
+//     }
+
+//     .dots {
+//         margin: 4px;
+
+//         &:after {
+//             width: 10px;
+//             height: 10px;
+//             border-radius: 50%;
+//             top: -2px;
+//             left: -1px;
+//             position: relative;
+//             background-color: #fff;
+//             content: '';
+//             display: inline-block;
+//             visibility: visible;
+//             border: 2px solid #f197a5;
+//         }
+
+//         &:checked {
+//             &:after {
+//                 width: 10px;
+//                 height: 10px;
+//                 border-radius: 50%;
+//                 top: -2px;
+//                 left: -1px;
+//                 position: relative;
+//                 background-color: #f197a5;
+//                 content: "";
+//                 display: inline-block;
+//                 visibility: visible;
+//                 border: 2px solid #f197a5;
+//             }
+//         }
+//     }
+
+//     $background-color_1: #f197a5;
+
+//     .dots {
+//         &:checked {
+//             &:nth-of-type(1)~.mainSlider {
+//                 left: 0%;
+//             }
+
+//             &:nth-of-type(2)~.mainSlider {
+//                 left: -100%;
+//             }
+
+//             &:nth-of-type(3)~.mainSlider {
+//                 left: -200%;
+//             }
+
+//             &:nth-of-type(4)~.mainSlider {
+//                 left: -300%;
+//             }
+
+//             &:nth-of-type(5)~.mainSlider {
+//                 left: -400%;
+//             }
+//         }
+//     }
+
+//     input[checked="checked"] {
+//         background-color: $background-color_1;
+//     }
+
+// }
+
+// #faqs-wrapper {
+//     margin: 10px;
+
+//     .faqs-heading {
+//         margin-bottom: 10px;
+
+//         h2 {
+//             color: #ffb6c1;
+//             font-family: "oswald";
+//             font-size: 30px;
+//         }
+//     }
+
+//     .accordiantabs {
+//         border-radius: 8px;
+//         overflow: hidden;
+
+//         .accordiantab {
+//             width: 100%;
+//             color: white;
+//             overflow: hidden;
+
+//             .accordian-input {
+//                 display: none;
+//             }
+
+//             .tab-label {
+//                 display: flex;
+//                 justify-content: space-between;
+//                 padding: 1em 0px;
+//                 background: #fff;
+//                 font-weight: bold;
+//                 cursor: pointer;
+//                 color: #000;
+//                 border-bottom: 1px solid #ffb6c1;
+//                 margin-bottom: 20px;
+//                 font-family: "oswald";
+//                 font-size: 20px;
+//                 align-items: center;
+
+//                 &::after {
+//                     content: "\f139";
+//                     font-family: 'FontAwesome';
+//                     color: #ffb6c1;
+//                     text-align: center;
+//                     -webkit-transition: all .35s;
+//                     transition: all .35s;
+//                     font-size: 14px;
+//                 }
+//             }
+
+//             .tab-content {
+//                 height: auto;
+//                 padding: 0px;
+//                 color: #2c3e50;
+//                 background: white;
+//                 -webkit-transition: all .35s;
+//                 transition: all .35s;
+//             }
+
+//             input {
+//                 &:checked {
+//                     + {
+//                         .tab-label {
+//                             // background: #fff;
+
+//                             &::after {
+//                                 content: "\f13a";
+//                             }
+//                         }
+//                     }
+
+//                     ~ {
+//                         .tab-content {
+//                             height: 0;
+//                             padding: 0 1em;
+//                         }
+//                     }
+//                 }
+//             }
+
+//         }
+//     }
+
+//     .viewallfaqs {
+//         text-align: center;
+//         margin: 60px 0px 0px;
+
+//         a {
+//             display: inline-block;
+//             border: 1px solid #f197a5;
+//             padding: 4px 10px;
+//             font-weight: bold;
+//             color: #000;
+//         }
+//     }
+// }
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    #topcommon-banner .banner-heading {
+        position: absolute;
+        bottom: 60px;
+        left: 10px;
+    }
+
+    #philosophy-wrap {
+    
+        .pholosophy-heading {
+    
+            .ourphiloshpy {
+                font-size: 30px;
+            }
+    
+        }
+    }
+
+
+    #mobile-image-slider {
+        background-color: #fff;
+        padding: 10px 0px;
+    
+        .slidermobile-heading {
+            text-align: center;
+            margin-bottom: 20px;
+    
+            .whatwe-do {
+                font-size: 30px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    
+    
+    }
+
+    #skin-id {
+    
+        .skin-heading {
+    
+            h2 {
+                font-size: 30px;
+                line-height: 1;
+            }
+
+            h1, .abthd {
+                font-size: 30px;
+                line-height: 1;
+            }
+        }
+    }
+
+    #moreabout {
+        .moreabout-heading {
+    
+            .cosmetic-clinic {
+                font-size: 30px;
+            }
+        }
+    
+    
+    }
+    
+    
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+
+}
+@media screen and (min-width: 767px) and (max-width: 992px) {
+
+    #aboutclinic-banner {
+        .image-overlay {
+            opacity: .3;
+        }
+
+        .banner-heading {
+            bottom: 40%;
+            left: 60px;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+    }
+
+    #skin-id {
+        padding: 0px;
+        margin: 30px 25px;
+
+        .aboutformmanage {
+            align-items: center;
+
+            .skin-heading {
+                text-align: left;
+
+                h2 {
+                    font-size: 36px;
+
+                    span {
+                        display: inline;
+                    }
+                }
+
+                h1, .abthd {
+                    font-size: 36px;
+
+                    span {
+                        display: inline;
+                    }
+                }
+            }
+
+            .skin-content {
+                p {
+                    text-align: left;
+                    text-align: left;
+                    font-size: 19px;
+                    color: #777;
+
+                }
+            }
+
+            .removepadding {
+                padding-right:auto;
+            }
+        }
+    }
+
+    #philosophy-wrap {
+        padding: 50px 10px;
+
+        .pholosophy-heading {
+            text-align: center;
+            margin-bottom: 20px;
+
+            .ourphiloshpy {
+                font-size: 36px;
+            }
+
+        }
+
+        .philosophy-text {
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+
+            p {
+                color: #fff;
+                font-size: 18px;
+                opacity: .7;
+            }
+        }
+    }
+
+    #moreabout {
+        margin: 60px 0px;
+
+        .managemoreabout {
+            align-items: center;
+
+            .moreabout-heading {
+                margin-bottom: 30px;
+                padding-right: 50px;
+
+                .cosmetic-clinic {
+                    font-size: 36px;
+                    line-height: 1;
+                    color: #171717;
+
+                    span {
+                        display: inline;
+                    }
+                }
+            }
+
+            .more-abouttext {
+                padding-right: 50px;
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    color: #171717;
+                    line-height: initial;
+
+                    &:last-child {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*------------------video-section------------------------*/
+
+  
+    /*----------------------------------*/
+    #video-testimonial {
+        background-color: #fff;
+        margin: 40px 0px 50px;
+        padding: 0px 30px;
+
+        .videotestimonial-heading {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+
+        .addextrapadding {
+            padding: 0px 30px;
+
+            .video-info {
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .viewallvideos {
+            margin-top: 50px;
+        }
+    }
+
+    #testimonial-wrapper {
+        background-color: #fff;
+
+        .testimonial-heading {
+
+            h2 {
+                color: #f197a5;
+                font-family: "oswald";
+                font-size: 60px;
+            }
+        }
+
+
+    }
+
+    /*-----------------------------*/
+    .dekhstop-non {
+        display: block;
+    }
+
+    .mobile-none {
+        display: none;
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1025px) {
+
+    #aboutclinic-banner {
+        .image-overlay {
+            opacity: .3;
+        }
+
+        .banner-heading {
+            bottom: 40%;
+            left: 60px;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+    }
+
+    #skin-id {
+        padding: 0px;
+        margin: 30px 25px;
+
+        .aboutformmanage {
+            align-items: center;
+
+            .skin-heading {
+                text-align: left;
+
+                h2 {
+                    font-size: 36px;
+
+                    span {
+                        display: inline;
+                    }
+                }
+
+                h1, .abthd {
+                    font-size: 36px;
+
+                    span {
+                        display: inline;
+                    }
+                }
+            }
+
+            .skin-content {
+                p {
+                    text-align: left;
+                    text-align: left;
+                    font-size: 19px;
+                    color: #777;
+
+                }
+            }
+
+            .removepadding {
+                padding-right:auto;
+            }
+        }
+    }
+
+    #philosophy-wrap {
+        padding: 50px 10px;
+
+        .pholosophy-heading {
+            text-align: center;
+            margin-bottom: 20px;
+
+            .ourphiloshpy {
+                font-size: 36px;
+            }
+
+        }
+
+        .philosophy-text {
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+
+            p {
+                color: #fff;
+                font-size: 18px;
+                opacity: .7;
+            }
+        }
+    }
+
+    #moreabout {
+        margin: 60px 0px;
+
+        .managemoreabout {
+            align-items: center;
+
+            .moreabout-heading {
+                margin-bottom: 30px;
+                padding-right: 50px;
+
+                .cosmetic-clinic {
+                    font-size: 36px;
+                    line-height: 1;
+                    color: #171717;
+
+                    span {
+                        display: inline;
+                    }
+                }
+            }
+
+            .more-abouttext {
+                padding-right: 50px;
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    color: #171717;
+                    line-height: initial;
+
+                    &:last-child {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*------------------video-section------------------------*/
+
+    #mobile-image-slider {
+        background-color: #fff6f7;
+        padding: 40px 0px 60px;
+
+        .manage-paddingaboutslider {
+            padding: 0px;
+
+            .slidermobile-heading {
+                margin-bottom: 50px;
+
+                .whatwe-do {
+                    font-size: 36px;
+                }
+
+                p {
+                    width: 68%;
+                    margin: 0 auto;
+                    font-size: 18px;
+                }
+
+            }
+
+            .mobslider {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0px;
+            }
+
+            .manage-widthslider {
+                width: 50%;
+            }
+
+            .paddingremover {
+                padding-left: auto;
+                margin-bottom: 15px;
+            }
+
+            .paddingremoverright {
+                padding-right: 0px;
+            }
+
+            .mobile-image-box {
+                overflow: hidden;
+                max-height: 486px;
+                position: relative;
+
+                .box-image-text {
+                    p {
+                        display: none;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                .box-image-text {
+                    transform: translateY(0);
+                    transition: .5s;
+
+                    .mobile-image-boxhover {
+                        ul {
+                            margin-top: 10px;
+
+                            li {
+                                margin-bottom: 15px;
+
+                                &:last-child {
+                                    margin-bottom: 0px;
+                                }
+
+                                a {
+                                    color: #ffb6c1;
+                                    text-transform: capitalize;
+                                    display: flex;
+                                    align-items: center;
+                                    font-size: 16px;
+                                    transition: .5s;
+
+                                    &:hover {
+                                        color: #fff;
+                                        transition: .5s;
+                                    }
+
+                                    i {
+                                        margin-right: 10px;
+                                        font-size: 8px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .mobile-imagebutton {
+                            color: #ffb6c1;
+                            text-transform: uppercase;
+                            margin-top: 20px
+                        }
+                    }
+                }
+
+                .commonvideobutton {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+    /*----------------------------------*/
+    #video-testimonial {
+        background-color: #fff;
+        margin: 40px 0px 50px;
+        padding: 0px 30px;
+
+        .videotestimonial-heading {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+
+        .addextrapadding {
+            padding: 0px 30px;
+
+            .video-info {
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .viewallvideos {
+            margin-top: 50px;
+        }
+    }
+
+    #testimonial-wrapper {
+        background-color: #fff;
+
+        .testimonial-heading {
+
+            h2 {
+                color: #f197a5;
+                font-family: "oswald";
+                font-size: 60px;
+            }
+        }
+
+
+    }
+
+    /*-----------------------------*/
+    .dekhstop-non {
+        display: none;
+    }
+
+    .mobile-none {
+        display: block;
+    }
+}
+@media screen and (min-width: 1026px) and (max-width: 1370px) {
+
+    #aboutclinic-banner {
+        .image-overlay {
+            opacity: .3;
+        }
+
+        .banner-heading {
+            bottom: 40%;
+            left: 60px;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+    }
+
+    #skin-id {
+        padding: 0px 0px 0px 50px;
+        margin: 0px;
+
+        .aboutformmanage {
+            align-items: center;
+
+            .skin-heading {
+                text-align: left;
+                margin-top: 40px;
+
+                h2 {
+                    font-size: 60px;
+
+                    span {
+                        display: inline;
+                    }
+                }
+
+                h1, .abthd {
+                    font-size: 60px;
+
+                    span {
+                        display: inline;
+                    }
+                }
+            }
+
+            .skin-content {
+                p {
+                    text-align: left;
+                    text-align: left;
+                    font-size: 19px;
+                    color: #777;
+
+                }
+            }
+
+            .removepadding {
+                padding-right: 0px;
+            }
+        }
+    }
+
+    #philosophy-wrap {
+        padding: 150px 10px;
+
+        .pholosophy-heading {
+            text-align: center;
+            margin-bottom: 20px;
+
+            .ourphiloshpy {
+                font-size: 60px;
+            }
+
+        }
+
+        .philosophy-text {
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+
+            p {
+                color: #fff;
+                font-size: 18px;
+                opacity: .7;
+            }
+        }
+    }
+
+    #moreabout {
+        margin: 60px 0px;
+
+        .managemoreabout {
+            align-items: center;
+
+            .moreabout-heading {
+                margin-bottom: 30px;
+                padding-right: 50px;
+
+                .cosmetic-clinic {
+                    font-size: 60px;
+                    line-height: 1;
+                    color: #171717;
+
+                    span {
+                        display: block;
+                    }
+                }
+            }
+
+            .more-abouttext {
+                padding-right: 50px;
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 30px;
+                    color: #171717;
+                    line-height: 30px;
+
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*------------------video-section------------------------*/
+
+    #mobile-image-slider {
+        background-color: #fff6f7;
+        padding: 40px 0px 60px;
+
+        .manage-paddingaboutslider {
+            padding: 0px;
+
+            .slidermobile-heading {
+                margin-bottom: 50px;
+
+                .whatwe-do {
+                    font-size: 60px;
+                }
+
+                p {
+                    width: 68%;
+                    margin: 0 auto;
+                    font-size: 18px;
+                }
+
+            }
+
+            .mobslider {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0px;
+            }
+
+            .manage-widthslider {
+                width: 25%;
+            }
+
+            .paddingremover {
+                padding-left: 0px;
+            }
+
+            .paddingremoverright {
+                padding-right: 0px;
+            }
+
+            .mobile-image-box {
+                overflow: hidden;
+                max-height: 486px;
+                position: relative;
+                height: 450px;
+                img{
+                    height: 450px;
+                    object-fit: cover;
+                }
+
+                .box-image-text {
+                    p {
+                        display: block;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                &:hover {
+                    .box-image-text {
+                        transform: translateY(0);
+                        transition: .5s;
+                    }
+                }
+
+                .box-image-text {
+                    transform: translateY(45%);
+                    transition: .5s;
+
+                    .mobile-image-boxhover {
+                        ul {
+                            margin-top: 10px;
+
+                            li {
+                                margin-bottom: 15px;
+
+                                &:last-child {
+                                    margin-bottom: 0px;
+                                }
+
+                                a {
+                                    color: #ffb6c1;
+                                    text-transform: capitalize;
+                                    display: flex;
+                                    align-items: center;
+                                    font-size: 16px;
+                                    transition: .5s;
+
+                                    &:hover {
+                                        color: #fff;
+                                        transition: .5s;
+                                    }
+
+                                    i {
+                                        margin-right: 10px;
+                                        font-size: 8px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .mobile-imagebutton {
+                            color: #ffb6c1;
+                            text-transform: uppercase;
+                            margin-top: 20px
+                        }
+                    }
+                }
+
+                .commonvideobutton {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+    /*----------------------------------*/
+    #video-testimonial {
+        background-color: #fff;
+        margin: 40px 0px 50px;
+        padding: 0px 30px;
+
+        .videotestimonial-heading {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+
+        .addextrapadding {
+            padding: 0px 30px;
+
+            .video-info {
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .viewallvideos {
+            margin-top: 50px;
+        }
+    }
+
+    /*------------------------------------*/
+    // #faqs-wrapper {
+    //     background: #fff8f9;
+    //     padding: 40px 60px 40px;
+
+    //     .faqs-heading {
+    //         text-align: center;
+
+    //         h2 {
+    //             font-size: 60px;
+    //         }
+    //     }
+
+    //     .accordiantabs {
+    //         .accordiantab {
+    //             width: 94%;
+    //             color: white;
+    //             overflow: hidden;
+    //             margin: 0 auto;
+
+    //             .tab-label {
+    //                 background: #fff8f9;
+    //                 font-size: 44px;
+    //                 padding: 20px 0px;
+
+    //                 &::after {
+    //                     font-size: 24px;
+    //                 }
+    //             }
+
+    //             .tab-content {
+    //                 background: #fff8f9;
+    //             }
+    //         }
+    //     }
+    // }
+    /*-------------------------------*/
+
+    #testimonial-wrapper {
+        background-color: #fff;
+
+        .testimonial-heading {
+
+            h2 {
+                color: #f197a5;
+                font-family: "oswald";
+                font-size: 60px;
+            }
+        }
+
+
+    }
+
+    /*-----------------------------*/
+    .dekhstop-non {
+        display: none;
+    }
+
+    .mobile-none {
+        display: block;
+    }
+}
+// Below media query for 546 abobe
+@media (min-width: 1371px) {
+
+    #aboutclinic-banner {
+        .image-overlay {
+            opacity: .3;
+        }
+
+        .banner-heading {
+            bottom: 40%;
+            left: 60px;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+    }
+
+    #skin-id {
+        padding: 0px 0px 0px 50px;
+        margin: 50px 0px 0px;
+
+        .aboutformmanage {
+            align-items: center;
+
+            .skin-heading {
+                text-align: center;
+
+                h2 {
+                    font-size: 60px;
+
+                    span {
+                        display: inline;
+                    }
+                }
+
+                h1, .abthd {
+                    font-size: 60px;
+
+                    span {
+                        display: inline;
+                    }
+                }
+            }
+
+            .skin-content {
+                p {
+                    text-align: center;
+                    font-size: 19px;
+                    color: #777;
+
+                }
+            }
+
+            .removepadding {
+                padding-right: 0px;
+            }
+        }
+    }
+
+    #philosophy-wrap {
+        padding: 100px 10px;
+
+        .pholosophy-heading {
+            text-align: center;
+            margin-bottom: 20px;
+
+            .ourphiloshpy {
+                font-size: 60px;
+            }
+
+        }
+
+        .philosophy-text {
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+
+            p {
+                color: #fff;
+                font-size: 18px;
+                opacity: 1;
+            }
+        }
+    }
+
+    #moreabout {
+        margin: 60px 0px;
+
+        .managemoreabout {
+            align-items: center;
+
+            .moreabout-heading {
+                margin-bottom: 30px;
+                padding-right: 50px;
+
+                .cosmetic-clinic {
+                    font-size: 50px;
+                    line-height: 1;
+                    color: #171717;
+
+                    span {
+                        display: block;
+                    }
+                }
+            }
+
+            .more-abouttext {
+                padding-right: 50px;
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 30px;
+                    color: #171717;
+                    line-height: 30px;
+
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*------------------video-section------------------------*/
+
+    #mobile-image-slider {
+        background-color: #fff6f7;
+        padding: 40px 0px 60px;
+
+        .manage-paddingaboutslider {
+            padding: 0px;
+
+            .slidermobile-heading {
+                margin-bottom: 50px;
+
+                .whatwe-do {
+                    font-size: 60px;
+                }
+
+                p {
+                    width: 68%;
+                    margin: 0 auto;
+                    font-size: 18px;
+                }
+
+            }
+
+            .mobslider {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0px;
+            }
+
+            .manage-widthslider {
+                width: 25%;
+            }
+
+            .paddingremover {
+                padding-left: 0px;
+            }
+
+            .paddingremoverright {
+                padding-right: 0px;
+            }
+
+            .mobile-image-box {
+                overflow: hidden;
+                max-height: 486px;
+                position: relative;
+
+                .box-image-text {
+                    p {
+                        display: block;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                &:hover {
+                    .box-image-text {
+                        transform: translateY(0);
+                        transition: .5s;
+                    }
+                }
+
+                .box-image-text {
+                    transform: translateY(37%);
+                    transition: .5s;
+
+                    .mobile-image-boxhover {
+                        ul {
+                            margin-top: 10px;
+
+                            li {
+                                margin-bottom: 15px;
+
+                                &:last-child {
+                                    margin-bottom: 0px;
+                                }
+
+                                a {
+                                    color: #ffb6c1;
+                                    text-transform: capitalize;
+                                    display: flex;
+                                    align-items: center;
+                                    font-size: 16px;
+                                    transition: .5s;
+
+                                    &:hover {
+                                        color: #fff;
+                                        transition: .5s;
+                                    }
+
+                                    i {
+                                        margin-right: 10px;
+                                        font-size: 8px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .mobile-imagebutton {
+                            color: #ffb6c1;
+                            text-transform: uppercase;
+                            margin-top: 20px
+                        }
+                    }
+                }
+
+                .commonvideobutton {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+    /*----------------------------------*/
+    #video-testimonial {
+        background-color: #fff;
+        margin: 40px 0px 50px;
+        padding: 0px 30px;
+
+        .videotestimonial-heading {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+
+        .addextrapadding {
+            padding: 0px 30px;
+
+            .video-info {
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .viewallvideos {
+            margin-top: 50px;
+        }
+    }
+
+    /*------------------------------------*/
+    // #faqs-wrapper {
+    //     background: #fff8f9;
+    //     padding: 40px 60px 40px;
+
+    //     .faqs-heading {
+    //         text-align: center;
+
+    //         h2 {
+    //             font-size: 60px;
+    //         }
+    //     }
+
+    //     .accordiantabs {
+    //         .accordiantab {
+    //             width: 94%;
+    //             color: white;
+    //             overflow: hidden;
+    //             margin: 0 auto;
+
+    //             .tab-label {
+    //                 background: #fff8f9;
+    //                 font-size: 44px;
+    //                 padding: 20px 0px;
+
+    //                 &::after {
+    //                     font-size: 24px;
+    //                 }
+    //             }
+
+    //             .tab-content {
+    //                 background: #fff8f9;
+    //             }
+    //         }
+    //     }
+    // }
+    /*-------------------------------*/
+
+    #testimonial-wrapper {
+        background-color: #fff;
+
+        .testimonial-heading {
+
+            h2 {
+                color: #f197a5;
+                font-family: "oswald";
+                font-size: 60px;
+            }
+        }
+
+
+    }
+
+    /*-----------------------------*/
+    .dekhstop-non {
+        display: none;
+    }
+
+    .mobile-none {
+        display: block;
+    }
+}

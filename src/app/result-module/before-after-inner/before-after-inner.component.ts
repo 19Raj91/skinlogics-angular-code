@@ -1,0 +1,97 @@
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject,OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { BlogDetailsService } from 'src/app/blog-details.service';
+import { BlogService } from 'src/app/blog.service';
+import { MetaService } from 'src/app/meta.service';
+import { TreatmentService } from 'src/app/service-module/treatment.service';
+import { environment } from 'src/environments/environment';
+
+@Component({
+  selector: 'app-before-after-inner',
+  templateUrl: './before-after-inner.component.html',
+  styleUrls: ['./before-after-inner.component.scss']
+})
+export class BeforeAfterInnerComponent implements OnInit {
+
+  public url:any;
+  public beforeafterinner:any;
+  //category
+  public category:any;
+  public baseUrl = environment.baseUrl;
+  servelUrl = environment.servelUrl;
+public listseo:any;
+  constructor(
+    private metaService: MetaService,
+    private route:ActivatedRoute,
+    private _blogDetailsService:BlogDetailsService,
+    private router: Router,
+    private _serviceInner:TreatmentService,
+    private meta: Meta,private title: Title,
+    @Inject(DOCUMENT) private dom
+    ) { 
+
+      this.router.events.subscribe((ev) => {
+        if (ev instanceof NavigationEnd) {
+           /* Your code goes here on every router change */
+           let url = this.route.snapshot.paramMap.get('url');
+           this.url = url;
+         
+      
+        }
+      });
+    }
+
+  ngOnInit(): void {
+   
+  
+    let url= this.route.snapshot.paramMap.get('url');
+    this.url=url;
+    this._blogDetailsService.getBeforeAfterInner(this.url).subscribe(data=>{
+      this.beforeafterinner=data['before_after_by_category'];
+      this.category=data['category'];
+    });  
+//console.log(this.beforeafterinner);
+   // this._blogService.getBlogs().subscribe(data=>this.blogs=data);
+   this.getseolist('/'+this.url);
+  }
+  updateCanonicalUrl(url:string){
+    const head = this.dom.getElementsByTagName('head')[0];
+    var element: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
+    if (element==null) {
+      element= this.dom.createElement('link') as HTMLLinkElement;
+      head.appendChild(element);
+    }
+    element.setAttribute('rel','canonical')
+    element.setAttribute('href',url)
+  }
+  getseolist(blogUrl:any){
+    this._serviceInner.seo(blogUrl).subscribe(
+    data=>{
+      this.listseo = data;
+      
+      this.title.setTitle(this.listseo.title_tag);
+            this.meta.updateTag({ name: 'description', content: this.listseo.description_tag });
+            this.meta.updateTag({ name: 'keywords', content: this.listseo.keyword_tag });
+            this.meta.updateTag({property: 'og:title', content: this.listseo.title_tag});
+            this.updateCanonicalUrl(this.servelUrl+this.router.url);
+            
+            this.meta.updateTag({property: 'og:image', content: ''});
+            this.meta.updateTag({property: 'og:url', content: this.servelUrl+this.router.url});
+            this.meta.updateTag({property: 'og:site_name', content: 'Skinlogics'});
+            this.meta.updateTag({property: 'og:type', content: 'Website'});
+            this.meta.updateTag({property: 'og:description', content: this.listseo.description_tag});
+    
+            this.meta.updateTag({property: 'twitter:card', content: ''});
+            this.meta.updateTag({property: 'twitter:title', content: this.listseo.title_tag});
+            this.meta.updateTag({property: 'twitter:image', content: ''});
+            this.meta.updateTag({property: 'twitter:site', content: 'Skin Logics'});
+            this.meta.updateTag({property: 'twitter:description', content: this.listseo.description_tag});
+      //console.log(this.listseo);
+    } 
+    );
+    }
+  
+   }
+   

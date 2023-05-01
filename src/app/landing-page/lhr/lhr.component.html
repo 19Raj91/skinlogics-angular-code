@@ -1,0 +1,990 @@
+<section class="landingheader" [class.headerfix]="navFixed">
+    <div class="container-fluid">
+        <div class="row managelhrheader">
+            <div class="col-6 col-lg-4">
+                <div class="landing-logo">
+                    <a routerLink="/lhr"><img src="assets/images/logo.png"></a>
+                </div>
+            </div>
+            <div class="col-6 col-lg-8">
+                <div class="header-cta">
+                    <ul>
+                        <li class="dekhstop-non"><a href="tel:+919999172667">Call Now</a></li>
+                        <li class="mobile-none"><a href="tel:+919999172667"><span class="fa fa-phone"></span>+91
+                                9999172667</a></li>
+                        <li class="mobile-none"><a href="mailto:skinlogicsclinic@gmail.com"><span
+                                    class="fa fa-envelope"></span>skinlogicsclinic@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="background-bannerwrap">
+    <div class="backgroundbanner">
+        <img src="assets/images/LHR-Banner.jpg" class="w-100">
+    </div>
+    <div class="Long-Lastingwrap">
+        <div class="Long-Lastingheading">
+            Long-Lasting Results with Painless Laser Hair Reduction!
+        </div>
+        <div class="pointers">
+            <ul>
+                <li><span class="fa fa-dot-circle-o"></span> No more Ingrown Hair</li>
+                <li><span class="fa fa-dot-circle-o"></span> No more waxing</li>
+                <li> <span class="fa fa-dot-circle-o"></span> No more frequently salon visit</li>
+                <li><span class="fa fa-dot-circle-o"></span> No more cuts or rashes</li>
+            </ul>
+        </div>
+        <!-- <div class="priceimages">
+            <ul>
+                <li><img src="assets/images/offer1.png"></li>
+                <li><img src="assets/images/offer2.png"></li>
+                <li><img src="assets/images/offer3.png"></li>
+            </ul>
+        </div> -->
+    </div>
+
+    <div class="landingrequestform">
+        <form [formGroup]="lpCallbackForm" (ngSubmit)="onSubmitlpCallbackForm()">
+            <div class="form-row manageformrow">
+                <div class="requestheading">
+                    <p>Request a Callback</p>
+                </div>
+                <div class="landingform-group">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="inlineFormInputName" formControlName="name"
+                            placeholder="Name*">
+                        <small class="text-danger"
+                            *ngIf="(lpCallbackForm.get('name').errors?.['required'] && lpCallbackForm.get('name').touched) || ( !lpCallbackForm.get('name').touched && lpCallbackFormSubmitted)">Name
+                            field required</small>
+                        <small class="text-danger" *ngIf="lpCallbackForm.get('name').errors?.['pattern'] "> &nbsp;Only
+                            alphabets allowed</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" id="mobilenumber" formControlName="mobile"
+                            placeholder="Mobile*">
+                        <small class="text-danger"
+                            *ngIf="(lpCallbackForm.get('mobile').errors?.['required'] && lpCallbackForm.get('mobile').touched) || ( !lpCallbackForm.get('mobile').touched && lpCallbackFormSubmitted)">Mobile
+                            field required</small>
+                        <small class="text-danger"
+                            *ngIf="(lpCallbackForm.get('mobile').errors?.['pattern'] && lpCallbackForm.get('mobile').touched)">Enter
+                            a Valid Mobile No</small>
+
+                    </div>
+
+                    <div class="landingform-submit">
+                        <!-- {{lpCallbackForm.value | json}} -->
+                        <button type="submit" class="requestsubmit">Submit</button>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<section class="counter">
+    <div class="container">
+        <div class="row manage-counter">
+            <div class="col-3 col-lg-3 counter-alignment">
+                <div class="counter-wrap">
+                    <div class="counterheading">11 yrs exp.</div>
+                    <div class="counter-discription">Dr. Vandana <span>Malik</span></div>
+                </div>
+            </div>
+            <div class="col-3 col-lg-3 counter-alignment">
+                <div class="counter-wrap">
+                    <div class="counterheading"> 7 yrs exp.</div>
+                    <div class="counter-discription">Dr. Pooja <span>Moliya</span></div>
+                </div>
+            </div>
+            <div class="col-3 col-lg-3 counter-alignment">
+                <div class="counter-wrap">
+                    <div class="counterheading">10,000 +</div>
+                    <div class="counter-discription">Happy <span>Patients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-lg-3 counter-alignment">
+                <div class="counter-wrap">
+                    <div class="counterheading">US FDA</div>
+                    <div class="counter-discription">Approved Technology</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="lhrtypswrap">
+    <div class="types-Of-hairremoval">Types Of Hair Removal</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-3 mb-5 sm-mb-0">
+                <div class="lhrtypecontent">
+                    <div class="imagewrap">
+                        <img src="assets/images/Full-Body-hair-removal.jpg" class="w-100">
+                        <div class="imagename">Full Body Laser Hair Reduction</div>
+                    </div>
+                    <div class="offerprice">
+                        <p class="orignalprice"><i class="fa fa-inr"></i>20,000/-</p>
+                        <p class="discountprice"><i class="fa fa-inr"></i>9,999<sup>*</sup></p>
+
+                    </div>
+                    <!-- <div class="tandc">
+                        <small>*T&C Apply</small>  
+                    </div>        -->
+                    <div class="lhrformwrap">
+                        <button class="lhropen-button" (click)='open(mymodal,"Full Body Laser Hair Reduction")'>Schedule
+                            A Consultation</button>
+                        <ng-template #mymodal let-modal>
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="modal-basic-title">Schedule A Consultation</h4>
+                                <button type="button" class="close" aria-label="Close"
+                                    (click)="modal.dismiss('Cross click')">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- {{selectedService}} -->
+                                <form [formGroup]="lpCallbackWithServiceDropdownForm"
+                                    (ngSubmit)="onSubmitlpCallbackWithServiceDropdownForm()">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="lhrname" formControlName="name"
+                                            placeholder="Name*">
+                                        <small class="text-danger"
+                                            *ngIf="(lpCallbackWithServiceDropdownForm.get('name').errors?.['required'] && lpCallbackWithServiceDropdownForm.get('name').touched) || ( !lpCallbackWithServiceDropdownForm.get('name').touched && lpCallbackWithServiceDropdown)">Name
+                                            field required</small>
+                                        <small class="text-danger"
+                                            *ngIf="lpCallbackWithServiceDropdownForm.get('name').errors?.['pattern'] ">
+                                            &nbsp;Only alphabets allowed</small>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" id="mobilenumber"
+                                            formControlName="mobile" placeholder="Mobile*">
+                                        <small class="text-danger"
+                                            *ngIf="(lpCallbackWithServiceDropdownForm.get('mobile').errors?.['required'] && lpCallbackWithServiceDropdownForm.get('mobile').touched) || ( !lpCallbackWithServiceDropdownForm.get('mobile').touched && lpCallbackWithServiceDropdown)">Mobile
+                                            field required</small>
+                                        <small class="text-danger"
+                                            *ngIf="(lpCallbackWithServiceDropdownForm.get('mobile').errors?.['pattern'] && lpCallbackWithServiceDropdownForm.get('mobile').touched)">Enter
+                                            a Valid Mobile No</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" id="exampleFormControlSelect1"
+                                            formControlName="service">
+                                            <option
+                                                [attr.selected]="this.selectedService == 'Full Body Laser Hair Reduction' ? true : null"
+                                                value="Full Body Laser Hair Reduction">Full Body Laser Hair Reduction
+                                            </option>
+
+                                            <option
+                                                [attr.selected]="this.selectedService == 'Full Arms Laser Hair Reduction' ? true : null"
+                                                value="Full Arms Laser Hair Reduction">Full Arms Laser Hair Reduction
+                                            </option>
+
+                                            <option
+                                                [attr.selected]="this.selectedService == 'Full Legs Laser Hair Reduction' ? true : null"
+                                                value="Full Legs Laser Hair Reduction">Full Legs Laser Hair Reduction
+                                            </option>
+
+                                            <option
+                                                [attr.selected]="this.selectedService == 'Full Back Laser Hair Reduction' ? true : null"
+                                                value="Full Back Laser Hair Reduction">Full Back Laser Hair Reduction
+                                            </option>
+
+                                            <option
+                                                [attr.selected]="this.selectedService == 'Full Body ( 6 sessions) Laser Hair Reduction' ? true : null"
+                                                value="Full Body ( 6 sessions) Laser Hair Reduction">Full Body ( 6
+                                                sessions) Laser Hair Reduction</option>
+
+                                            <option
+                                                [attr.selected]="this.selectedService == 'Underarms + Bikini Laser Hair Reduction' ? true : null"
+                                                value="Underarms + Bikini Laser Hair Reduction">Underarms + Bikini Laser
+                                                Hair Reduction</option>
+
+                                            <option
+                                                [attr.selected]="this.selectedService == 'Chin Laser Hair Reduction' ? true : null"
+                                                value="Chin Laser Hair Reduction">Chin Laser Hair Reduction</option>
+
+                                            <option
+                                                [attr.selected]="this.selectedService == 'Full Face Laser Hair Reduction' ? true : null"
+                                                value="Full Face Laser Hair Reduction">Full Face Laser Hair Reduction
+                                            </option>
+
+                                        </select>
+                                    </div>
+
+                                    <!-- {{lpCallbackWithServiceDropdownForm.value | json}} -->
+                                    <button type="submit" class="lhr-submit">Submit</button>
+                                </form>
+                            </div>
+
+                        </ng-template>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3 mb-5 sm-mb-0">
+                <div class="lhrtypecontent">
+                    <div class="imagewrap">
+                        <img src="assets/images/Facial-Hair-removal.jpg" class="w-100">
+                        <div class="imagename">Full Face Laser Hair Reduction</div>
+                    </div>
+                    <div class="offerprice">
+                        <p class="orignalprice"><i class="fa fa-inr"></i>6,000/-</p>
+                        <p class="discountprice"><i class="fa fa-inr"></i>2,999<sup>*</sup></p>
+
+                    </div>
+                    <!-- <div class="tandc">
+                        <small>*T&C Apply</small>  
+                    </div>        -->
+                    <div class="lhrformwrap">
+                        <button class="lhropen-button" (click)="open(mymodal,'Full Face Laser Hair Reduction')">Schedule
+                            A Consultation</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3 mb-5 sm-mb-0">
+                <div class="lhrtypecontent">
+                    <div class="imagewrap">
+                        <img src="assets/images/leg.jpg" class="w-100">
+                        <div class="imagename">Full Legs Hair Reduction</div>
+                    </div>
+                    <div class="offerprice">
+                        <p class="orignalprice"><i class="fa fa-inr"></i>10,000/-</p>
+                        <p class="discountprice"><i class="fa fa-inr"></i>5,999<sup>*</sup></p>
+
+                    </div>
+                    <!-- <div class="tandc">
+                        <small>*T&C Apply</small>  
+                    </div>        -->
+                    <div class="lhrformwrap">
+                        <button class="lhropen-button" (click)="open(mymodal,'Full Legs Laser Hair Reduction')">Schedule
+                            A Consultation</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="lhrtypecontent">
+                    <div class="imagewrap">
+                        <img src="assets/images/Full-Arms-LHR.jpg" class="w-100">
+                        <div class="imagename">Full Arms Laser Hair Reduction</div>
+                    </div>
+                    <div class="offerprice">
+                        <p class="orignalprice"><i class="fa fa-inr"></i>8,000/-</p>
+                        <p class="discountprice"><i class="fa fa-inr"></i>3,499<sup>*</sup></p>
+
+                    </div>
+                    <!-- <div class="tandc">
+                        <small>*T&C Apply</small>  
+                    </div>        -->
+                    <div class="lhrformwrap">
+                        <button class="lhropen-button" (click)="open(mymodal,'Full Arms Laser Hair Reduction')">Schedule
+                            A Consultation</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row mt-5 mt-sm-4">
+            <div class="col-12 col-lg-3 mb-5 sm-mb-0">
+                <div class="lhrtypecontent">
+                    <div class="imagewrap">
+                        <img src="assets/images/Full-Body-ons-LHR.jpg" class="w-100">
+                        <div class="imagename">Full Body Laser Hair Reduction</div>
+                        <div class="sessions">
+                            <p>(6 Sessions)</p>
+                        </div>
+                    </div>
+                    <div class="offerprice">
+                        <!-- <p class="orignalprice"><i class="fa fa-inr"></i>8,000/-</p> -->
+                        <p class="discountprice">@ <i class="fa fa-inr"></i>49,999<sup>*</sup></p>
+
+                    </div>
+                    <!-- <div class="tandc">
+                        <small>*T&C Apply</small>  
+                    </div>        -->
+                    <div class="lhrformwrap">
+                        <button class="lhropen-button"
+                            (click)="open(mymodal,'Full Body ( 6 sessions) Laser Hair Reduction')">Schedule A
+                            Consultation</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3 mb-5 sm-mb-0">
+                <div class="lhrtypecontent">
+                    <div class="imagewrap">
+                        <img src="assets/images/Underarms-hair-removal.jpg" class="w-100">
+                        <div class="imagename">Underarms + Bikini Laser Hair Reduction</div>
+                    </div>
+                    <div class="offerprice">
+                        <p class="orignalprice"><i class="fa fa-inr"></i>10,000/-</p>
+                        <p class="discountprice"><i class="fa fa-inr"></i>3,999<sup>*</sup></p>
+
+                    </div>
+                    <!-- <div class="tandc">
+                        <small>*T&C Apply</small>  
+                    </div>        -->
+                    <div class="lhrformwrap">
+                        <button class="lhropen-button"
+                            (click)="open(mymodal,'Underarms + Bikini Laser Hair Reduction')">Schedule A
+                            Consultation</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3 mb-5 sm-mb-0">
+                <div class="lhrtypecontent">
+                    <div class="imagewrap">
+                        <img src="assets/images/Chin-LHR.jpeg" class="w-100">
+                        <div class="imagename">Chin Laser Hair Reduction</div>
+                    </div>
+                    <div class="offerprice">
+                        <p class="orignalprice"><i class="fa fa-inr"></i>4,590/-</p>
+                        <p class="discountprice"><i class="fa fa-inr"></i>2,499<sup>*</sup></p>
+
+                    </div>
+                    <!-- <div class="tandc">
+                        <small>*T&C Apply</small>  
+                    </div>        -->
+                    <div class="lhrformwrap">
+                        <button class="lhropen-button" (click)="open(mymodal,'Chin Laser Hair Reduction')">Schedule A
+                            Consultation</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="lhrtypecontent">
+                    <div class="imagewrap">
+                        <img src="assets/images/Full-back-LHR.jpg" class="w-100">
+                        <div class="imagename">Full Back Laser Hair Reduction</div>
+                    </div>
+                    <div class="offerprice">
+                        <p class="orignalprice"><i class="fa fa-inr"></i>10,000/-</p>
+                        <p class="discountprice"><i class="fa fa-inr"></i>5,999<sup>*</sup></p>
+
+                    </div>
+                    <!-- <div class="tandc">
+                        <small>*T&C Apply</small>  
+                    </div>        -->
+                    <div class="lhrformwrap">
+                        <button class="lhropen-button" (click)="open(mymodal,'Full Back Laser Hair Reduction')">Schedule
+                            A Consultation</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<section class="machinewrap">
+    <div class="container">
+        <div class="row manage-machin">
+            <div class="col-12 col-md-3 change-order">
+            </div>
+
+            <div class="col-12 col-md-3 change-order">
+                <div class="machin-image">
+                    <img src="assets/images/Alma-soprano-Ice.png" class="w-100 img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-md-3 change-order">
+                <div class="machine-heading">Our Technology</div>
+                <div class="machine-text">
+                    Alma soprano Ice
+                </div>
+            </div>
+            <div class="col-12 col-md-3 change-order">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="lhrdoctorwrap">
+    <div class="container">
+        <div class="row managelhrdr">
+            <div class="col-12 col-lg-6">
+                <div class="lhrdr-image">
+                    <img src="assets/images/lhr-dr.jpg" class="w-100 img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="lhrdrtextwrap">
+                    <div class="lhrdrheading">Dr. Vandana Malik</div>
+                    <div class="lhrdrtext">
+                        <p>Dr. Vandana malik is a certified Dermatologist and has completed her
+                            MBBS from Muzaffarnagar medical college and MD (Dermatology, Venereology and Leprosy)
+                            from YSMU, Armenia. In her vast experience of 6 years she was associated with
+                            various prestigious organisations like BPS hospital, RML hospital and DERMAWAVE
+                            SKIN CENTRE etc. She is well versed with the various problems related to skin,
+                            hair and nails.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="lhrgallery mobile-none">
+    <div class="lhrgalleryheading">Gallery</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="lhrgallerywrap">
+                    <img src="assets/images/home-crousel-1.jpg" class="w-100">
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="lhrgallerywrap">
+                    <img src="assets/images/home-crousel-2.jpg" class="w-100">
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="lhrgallerywrap">
+                    <img src="assets/images/home-crousel-3.jpg" class="w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery-slider" class="lhrgallery dekhstop-non">
+    <div class="container">
+        <div class="lhrgalleryheading">Gallery</div>
+        <div class="row">
+            <div class="col-12">
+                <div class="gallery-slider-container">
+                    <!-- Start Slides -->
+                    <div id="gallery-slides">
+                        <div class="gallery-slide">
+                            <img src="assets/images/home-crousel-1.jpg" alt="slide one" class="w-100">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="assets/images/home-crousel-2.jpg" alt="slide two" class="w-100">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="assets/images/home-crousel-3.jpg" alt="slide three" class="w-100">
+                        </div>
+                    </div>
+                    <!-- End Slides -->
+
+                    <!-- Start Timeline -->
+                    <span class="gallery-timeline"></span>
+                    <!-- End Timeline -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="lhrresult mobile-none">
+    <div class="container">
+        <div class="lhr-resultheading">Real Results</div>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-5 sm-mb-0">
+                <div class="lhr-resultimage">
+                    <img src="assets/images/chin-result.jpg" class="w-100">
+                    <p class="text-center mt-2" style="font-size: 12px;">✱ Opinions/Results may vary from person to person.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5 sm-mb-0">
+                <div class="lhr-resultimage">
+                    <img src="assets/images/back-result.jpg" class="w-100">
+                    <p class="text-center mt-2" style="font-size: 12px;">✱ Opinions/Results may vary from person to person.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="lhr-resultimage">
+                    <img src="assets/images/underarms-result.jpg" class="w-100">
+                    <p class="text-center mt-2" style="font-size: 12px;">✱ Opinions/Results may vary from person to person.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="slider" class="lhrresult dekhstop-non">
+    <div class="container">
+        <div class="lhr-resultheading">Real Results</div>
+        <div class="row">
+            <div class="col-12">
+                <div class="slider-container">
+                    <!-- Start Slides -->
+                    <div id="slides">
+                        <div class="slide">
+                            <img src="assets/images/chin-result.jpg" alt="slide one" class="w-100">
+                            <p class="text-center mt-2" style="font-size: 12px;">✱ Opinions/Results may vary from person to person.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/back-result.jpg" alt="slide two" class="w-100">
+                            <p class="text-center mt-2" style="font-size: 12px;">✱ Opinions/Results may vary from person to person.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/underarms-result.jpg" alt="slide three" class="w-100">
+                            <p class="text-center mt-2" style="font-size: 12px;">✱ Opinions/Results may vary from person to person.</p>
+                        </div>
+                    </div>
+                    <!-- End Slides -->
+
+                    <!-- Start Timeline -->
+                    <span class="timeline"></span>
+                    <!-- End Timeline -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="lhrtestimonial mobile-none">
+    <div class="lhrtestimonialheading">Patient Testimonials</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 mb-5 sm-mb-0">
+                <div class="lhrtestimonialwrap">
+                    <div class="lhrgoogle">
+                        <img src="assets/images/google.png">
+                    </div>
+                    <div class="lhrtestimonial-content">
+                        <p class="fa fa-quote-left"></p>
+                        <p>
+                            I first took treatment for face pigmentation and darkness here.
+                            I under went skin peel sessions as advised by the doctor.
+                            The end result was very good. I have now taken Laser hair removal treatment and completed 3
+                            sessions.
+                            I can already see my hair growth is now less and hoping for great results again. This clinic
+                            is
+                            affordable charges and doctor is very good. Best skinlogics clinic in noida. Thanks
+                        </p>
+                        <p class="fa fa-quote-right"></p>
+                        <p class="text-center m-0" style="font-size: 12px;">✱ Opinions/Results may vary from person to person.</p>
+                    </div>
+                </div>
+                <div class="patient-name">
+                    <p>Varsha Pandat</p>
+                    <ul>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="lhrtestimonialwrap">
+                    <div class="lhrgoogle">
+                        <img src="assets/images/google.png">
+                    </div>
+                    <div class="lhrtestimonial-content">
+                        <p class="fa fa-quote-left"></p>
+                        <p>
+                            I have been visiting the clinic for laser treatment.
+                            Very good experience, 50-60% results in just 1 session.
+                            Doctor is very kind, she explained the required treatment very well.
+                            Staff is very friendly. Session done by Fully trained team. Treatment room is
+                            very clean and comfortable. Best clinic for skin.
+                        </p>
+                        <p class="fa fa-quote-right"></p>
+                        <p class="text-center m-0" style="font-size: 12px;">✱ Opinions/Results may vary from person to person.</p>
+                    </div>
+                </div>
+                <div class="patient-name">
+                    <p>Rahul Jha</p>
+                    <ul>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="lhrtestimonialwrap">
+                    <div class="lhrgoogle">
+                        <img src="assets/images/google.png">
+                    </div>
+                    <div class="lhrtestimonial-content">
+                        <p class="fa fa-quote-left"></p>
+                        <p>
+                            Best hair removal treatment clinic. I had very hard hair growth due to hormonal
+                            issues my giyno suggested to me to take laser hair removal treatment and it was
+                            really effective and now I m very happy with skinlogics clinic they did very well
+                            my service thanks to their Dr and staff to get rid of my unwanted hair growth
+                        </p>
+                        <p class="fa fa-quote-right"></p>
+                        <p class="text-center m-0" style="font-size: 12px;">✱ Opinions/Results may vary from person to person.</p>
+                    </div>
+                </div>
+                <div class="patient-name">
+                    <p>Avneeshkumar Pal</p>
+                    <ul>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="lhrtestimonial dekhstop-non">
+    <div class="lhrtestimonialheading">Patient Testimonials</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-6 no-padding">
+                <div class="moreabout-image">
+                    <!-- <img src="assets/images/skinlogics-noida.jpg" alt="Skinlogics" class="w-100"> -->
+                    <div id="homepage-slider" class="st-slider">
+                        <input type="radio" class="cs_anchor radio playbuttonradio" name="slider" id="slide1"
+                            checked="" />
+                        <input type="radio" class="cs_anchor radio playbuttonradio" name="slider" id="slide2"
+                            checked="" />
+                        <input type="radio" class="cs_anchor radio playbuttonradio" name="slider" id="slide3"
+                            checked="" />
+                        <input type="radio" class="cs_anchor radio playbuttonradio" name="slider" id="play1"
+                            checked="" />
+
+                        <div class="images">
+                            <div class="images-inner">
+                                <div class="image-slide">
+                                    <div class="image bg-yellow">
+                                        <div class="lhrtestimonialwrap">
+                                            <div class="lhrgoogle">
+                                                <img src="assets/images/google.png" style="width:50px">
+                                            </div>
+                                            <div class="lhrtestimonial-content">
+                                                <p class="fa fa-quote-left"></p>
+                                                <p>
+                                                    I first took treatment for face pigmentation and darkness here.
+                                                    I under went skin peel sessions as advised by the doctor.
+                                                    The end result was very good. I have now taken Laser hair removal
+                                                    treatment and completed 3 sessions.
+                                                    I can already see my hair growth is now less and hoping for great
+                                                    results again. This clinic is
+                                                    affordable charges and doctor is very good. Best skinlogics clinic
+                                                    in noida. Thanks
+                                                </p>
+                                                <p class="fa fa-quote-right"></p>
+                                                <p class="text-center m-0" style="font-size: 12px;">✱ Opinions/Results may vary from person to person.</p>
+                                            </div>
+                                        </div>
+                                        <div class="patient-name">
+                                            <p>Varsha Pandat</p>
+                                            <ul>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-slide">
+                                    <div class="image bg-blue">
+                                        <div class="lhrtestimonialwrap">
+                                            <div class="lhrgoogle">
+                                                <img src="assets/images/google.png" style="width:50px">
+                                            </div>
+                                            <div class="lhrtestimonial-content">
+                                                <p class="fa fa-quote-left"></p>
+                                                <p>
+                                                    I have been visiting the clinic for laser treatment.
+                                                    Very good experience, 50-60% results in just 1 session.
+                                                    Doctor is very kind, she explained the required treatment very well.
+                                                    Staff is very friendly. Session done by Fully trained team.
+                                                    Treatment room is
+                                                    very clean and comfortable. Best clinic for skin.
+                                                </p>
+                                                <p class="fa fa-quote-right"></p>
+                                                <p class="text-center m-0" style="font-size: 12px;">✱ Opinions/Results may vary from person to person.</p>
+                                            </div>
+                                        </div>
+                                        <div class="patient-name">
+                                            <p>Rahul Jha</p>
+                                            <ul>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="image-slide">
+                                    <div class="image bg-red">
+                                        <div class="lhrtestimonialwrap">
+                                            <div class="lhrgoogle">
+                                                <img src="assets/images/google.png" style="width:50px">
+                                            </div>
+                                            <div class="lhrtestimonial-content">
+                                                <p class="fa fa-quote-left"></p>
+                                                <p>
+                                                    Best hair removal treatment clinic. I had very hard hair growth due
+                                                    to hormonal
+                                                    issues my giyno suggested to me to take laser hair removal treatment
+                                                    and it was
+                                                    really effective and now I m very happy with skinlogics clinic they
+                                                    did very well
+                                                    my service thanks to their Dr and staff to get rid of my unwanted
+                                                    hair growth
+                                                </p>
+                                                <p class="fa fa-quote-right"></p>
+                                                <p class="text-center m-0" style="font-size: 12px;">✱ Opinions/Results may vary from person to person.</p>
+                                            </div>
+                                        </div>
+                                        <div class="patient-name">
+                                            <p>Avneeshkumar Pal</p>
+                                            <ul>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="labels">
+                            <!-- <label for="slide1" class="label">text slide 1</label>
+                        <label for="slide2" class="label">text slide 2</label>
+                        <label for="slide3" class="label">text slide 3</label> -->
+                            <div class="fake-radio">
+                                <label for="slide1" class="radio-btn"></label>
+                                <label for="slide2" class="radio-btn"></label>
+                                <label for="slide3" class="radio-btn"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="lhrformappointment">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="consultation-form">
+                    <div class="consulationform-heading">
+                        Schedule Your Consultation
+                    </div>
+                    <form [formGroup]="lpConsultationForm" (ngSubmit)="onSubmitlpConsultationForm()">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-2">
+                                        <input type="text" class="form-control" id="nameTwo" placeholder="Name*"
+                                            formControlName="name">
+                                        <small class="text-danger"
+                                            *ngIf="(lpConsultationForm.get('name').errors?.['required'] && lpConsultationForm.get('name').touched) || ( !lpConsultationForm.get('name').touched && lpConsultationFormSubmitted)">Name
+                                            field required</small>
+                                        <small class="text-danger"
+                                            *ngIf="lpConsultationForm.get('name').errors?.['pattern'] "> &nbsp;Only
+                                            alphabets allowed</small>
+                                    </div>
+                                </div>
+                                <div class="col-12 ">
+                                    <div class="form-2">
+                                        <input type="email" class="form-control" id="emailTwo" placeholder="Email*"
+                                            formControlName="email">
+                                        <small class="text-danger"
+                                            *ngIf="(lpConsultationForm.get('email').errors?.['required'] && lpConsultationForm.get('email').touched) || ( !lpConsultationForm.get('email').touched && lpConsultationFormSubmitted)">Email
+                                            field required</small>
+                                        <small class="text-danger"
+                                            *ngIf="!lpConsultationForm.get('email').valid && lpConsultationForm.get('email').touched">Please
+                                            Enter Valid email</small>
+
+                                    </div>
+                                </div>
+                                <div class="col-12">
+
+                                    <div class="form-2">
+                                        <input type="text" class="form-control" id="mobileTwo" placeholder="Phone*"
+                                            formControlName="mobile">
+                                        <small class="text-danger"
+                                            *ngIf="(lpConsultationForm.get('mobile').errors?.['required'] && lpConsultationForm.get('mobile').touched) || ( !lpConsultationForm.get('mobile').touched && lpConsultationFormSubmitted)">Mobile
+                                            field required</small>
+                                        <small class="text-danger"
+                                            *ngIf="(lpConsultationForm.get('mobile').errors?.['pattern'] && lpConsultationForm.get('mobile').touched)">Enter
+                                            a Valid Mobile No</small>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-2">
+
+                                        <ngx-datepicker [(ngModel)]="date" [options]="options" name="appointment-date"
+                                            autocomplete="off" readonly autoclose="true" type="text"
+                                            formControlName="date" class="form-control"></ngx-datepicker>
+                                        <small class="text-danger"
+                                            *ngIf="(lpConsultationForm.get('date').errors?.['required'] && lpConsultationFormSubmitted)">Date
+                                            Required</small>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-2">
+                                <textarea rows="6" cols="" placeholder="Message" formControlName="message"
+                                    class="form-control"></textarea>
+                            </div>
+                            <div class="landingsubmit-now">
+                                <button type="submit" class="lhrlandingsubmit-button">submit</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="lhrfooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="lhrfooter-heading">Location</div>
+                <div class="map-wraper mb-4 sm-mb-0">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no"
+                                marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?&amp;hl=en&amp;q=skinlogics&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="lhrfooter-heading">Address</div>
+                <div class="lhraddress-wraper">
+                    <ul>
+                        <li><span class="fa fa-map-marker"></span>Skinlogics Clinic , D-82A, D-Block, Sector 26, Noida,
+                            Uttar Pradesh 201301</li>
+                        <li><a href="tel:+919999172667"><span class="fa fa-phone"></span>+91 9999172667</a></li>
+                        <li><a href="mailto:skinlogicsclinic@gmail.com"><span
+                                    class="fa fa-envelope"></span>skinlogicsclinic@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="lhrfooter-heading">Follow Us</div>
+                <div class="lhrsocial-wraper">
+                    <ul>
+                        <li><a href="https://www.facebook.com/skinlogicsnoida" target="_blank" rel="nofollow"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://mobile.twitter.com/logicsskin" target="_blank"><i class="fa fa-twitter"
+                                    rel="nofollow"></i></a></li>
+                        <li><a href="https://www.instagram.com/skinlogics_derma/?igshid=171l2jda11ymj" target="_blank"
+                                rel="nofollow"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href=" https://www.youtube.com/channel/UCkP79Zx95xFREbwidwuVJhA" target="_blank"
+                                rel="nofollow"><i class="fa  fa-youtube-play"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="lhrdisclamirwrap">
+                <p>
+                    <strong>Disclaimer:</strong> The content on this website (www.skinlogics.in) is solely for the
+                    purpose of educating and creating awareness about the domain i.e.
+                    Dermatology. This shall not be treated as a substitute to a professional
+                    dermatologist's advice or prescription. There is no guarantee of specific
+                    results and the results for any treatment mentioned on the website
+                    may vary, as every individual and their skin conditions are different.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="bottomfooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="footerwer">© Copyright 2022, Skinlogics Clinic. All Rights Reserved.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="whatsupchatbutton">
+    <div class="whatsupbutton">
+        <a href="https://api.whatsapp.com/send?phone=919999172667&text=Skinlogics"><i class="fa fa-whatsapp"></i></a>
+    </div>
+</section>
+
+<section id="clicktoaction" class="dekhstop-non">
+    <div class="container">
+        <div class="row">
+            <div class="ftrFixMenu">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="ctabutton">
+                            <a href="tel:+919999172667"> <i class="fa fa-phone" aria-hidden="true"></i>
+                                <p>Call Us</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="ctabutton">
+                            <a routerLink="/book-an-appointment"> <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <p>Appointment</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="ctabutton">
+                            <a href="mailto:skinlogicsclinic@gmail.com"> <i class="fa fa-envelope-o"
+                                    aria-hidden="true"></i>
+                                <p>Email Us</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<button class="gototop" *ngIf="isShow" (click)="gotoTop()"><i class="fa fa-arrow-up"></i></button>

@@ -1,0 +1,51 @@
+<div id="commonrequestform" class="mobile-none">
+    <div class="container-fluid">
+        <div class="container-max">
+            <div class="row">
+                <div class="col-12">
+                    <form [formGroup]="requestCallBackForm" (ngSubmit)="onSubmit()" >
+                        <div class="form-row manageformrow">
+                                <div class="requestheading">
+                                    <p>Request a Callback</p>
+                                </div>
+                            <div class="commonform-group">
+                                <div class="form-group">
+                                    <input type="text"  class="form-control" id="inlineFormInputName" formControlName="name" placeholder="Name*" >
+                                    <small class="text-danger"  *ngIf="(requestCallBackForm.get('name').errors?.['required'] && requestCallBackForm.get('name').touched) || ( !requestCallBackForm.get('name').touched && isSubmitted)" >Name field required</small>
+                                    <small class="text-danger" *ngIf="requestCallBackForm.get('name').errors?.['pattern'] " >Only alphabets allowed</small>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel"  class="form-control" id="mobilenumber"  formControlName="mobile"  placeholder="Mobile*">
+                                    <small class="text-danger"  *ngIf="(requestCallBackForm.get('mobile').errors?.['required'] && requestCallBackForm.get('mobile').touched) || ( !requestCallBackForm.get('mobile').touched && isSubmitted)" >Mobile  field required</small>
+                                    <small class="text-danger"  *ngIf="(requestCallBackForm.get('mobile').errors?.['pattern'] && requestCallBackForm.get('mobile').touched)" >Enter a Valid Mobile No</small>
+                                  
+                                </div>
+                                <div class="requeatcaptcha">
+                                   <div class="form-alignment d-flex">
+                                        <img src="{{captcha?.img}}" alt="Captcha" />
+                                        <p (click)="reloadcaptcha()" class="btn btn-primery text-white"><span class="fa fa-refresh"></span></p>
+                                        <input type="text" class="form-control"  formControlName="captcha" style="width:70px;">
+                                        <small class="text-danger"  *ngIf="(requestCallBackForm.get('captcha').errors?.['required'] && requestCallBackForm.get('captcha').touched) || ( !requestCallBackForm.get('captcha').touched && isSubmitted)" >Captcha required</small>
+                                        <input type="hidden" class="form-control"  formControlName="key" id="key">
+                                        <small class="text-danger"  *ngIf="captchastatus=='invalid'" >Captcha Required</small>
+                  
+                                   
+                                
+                                   
+                                    </div>
+                                </div>
+                              <div class="form-submit">
+                                    <button type="submit" [class.valid]="requestCallBackForm.valid" class="requestsubmit">{{this.submitButtonText}}</button>
+                               
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,64 @@
+<div id="topcommon-banner">
+    <div class="image-overlay"></div>
+    <img src="{{baseUrl}}/backend/service/banner/{{ firstcategory.service_banner_image}}" alt="bg-image" class="w-100">
+    <div class="banner-heading">
+        <h2>Treatments</h2>
+        <!-- {{serviceCategories | json}} -->
+    </div>
+</div>
+<div class="breadcrumb-menu">
+    <div class="container-max">
+        <ul>
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/treatments">Treatments</a></li>
+            <!-- <li><a routerLink="/">Treatment Categories</a></li> -->
+        </ul>
+    </div>
+</div>
+<div id="innertopcommon-bannermobile" class="d-none">
+    <div class="stylingcontent">
+        <div class="banner-heading">
+            <h2>Treatment Categories</h2>
+        </div>
+        <div class="breadcrumb-menu">
+            <div class="container-max">
+                <ul>
+                    <li><a routerLink="/">Home</a></li>
+                    <li><a routerLink="/treatments">Treatments</a></li>
+                    <li><a routerLink="/">Treatment Categories</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <app-requestacallbackform></app-requestacallbackform>
+    <app-requestcallbackform-mobile></app-requestcallbackform-mobile>
+
+<section id="TreatmentCategories">
+  
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4 makesomecoustem" *ngFor="let service of serviceCategories ">
+                <div class="maincatwrap">
+                    <a routerLink="/{{service.url}}" class="maincatlink">
+                        <!-- <div class="skinimgwrap"> <img src="{{baseUrl}}/backend/service/image/{{service.service_image}}" class="img-fluid"> -->
+                            <div class="skinimgwrap"> <img [src]="service?.service_image!=null ? baseUrl+'/backend/service/image/'+service?.service_image : 'https://www.skinlogics.in/assets/images/bg-image.jpg'" class="img-fluid">
+                            <a routerLink="/{{service.url}}"><p>{{service.service_name}}</p></a>
+                        
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+<div class="mb-form">
+    <app-mobile-form></app-mobile-form>
+</div>
+
+<div class="dst-form">
+    <app-dt-form></app-dt-form>
+</div>
+

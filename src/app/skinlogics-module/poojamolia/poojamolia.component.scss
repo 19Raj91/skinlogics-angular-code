@@ -1,0 +1,891 @@
+#topcommon-banner {
+    position: relative;
+
+    .image-overlay {
+        position: absolute;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(1deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-heading {
+        position: absolute;
+        left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    bottom: auto;
+
+        h2 {
+            font-family: "oswald";
+            font-size: 40px;
+            color: #000;
+        }
+    }
+}
+
+/*---------------------------------------*/
+#aboutdoctorwrap {
+    margin: 20px 0px 50px;
+
+    .aboutdrimage {
+        height: 430px;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            height: 470px;
+
+        }
+        .aboutdrheading{
+            margin: 0px 0px 20px;
+            .drnameheading{
+                color: #f197a5;
+                font-family: "oswald";
+                font-size: 36px;
+                line-height: 1;
+                text-align: center;
+            }
+        }
+    }
+
+    .aboutdrcontent-wrap {
+        .aboutdrheading {
+            margin: 20px 0px;
+
+            .drnameheading {
+                color: #f197a5;
+                font-family: "oswald";
+                font-size: 36px;
+                line-height: 1;
+            }
+
+            p {
+                margin: 10px 0px 10px;
+                font-size: 15px;
+                text-transform: uppercase;
+            }
+        }
+
+        .drtextdetails {
+            margin-top: 20px;
+            text-align: left;
+            p{
+                font-size: 16px;
+            }
+        }
+
+        .aboutdrbutton {
+            text-align: center;
+            button {
+                display: inline-block;
+                background-color: #ffb6c1;
+                text-transform: capitalize;
+                border: 1px solid #f197a5;
+                padding: 8px 20px;
+                color: #fff;
+                cursor: pointer;
+                transition: .5s;
+                &:hover{
+                  color: #000;
+                  transition: .5s;
+                  background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/*-----------------------------------*/
+#educationexp {
+    background-color: #fff6f7;
+    padding: 30px 0px;
+
+    .educationheading {
+        text-align: center;
+        margin-bottom: 20px;
+
+        h2 {
+            color: #f197a5;
+            font-family: "oswald";
+            font-size: 36px;
+            line-height: 1;
+        }
+    }
+
+    .educationdetailwrap {
+        h2 {
+            font-family: "oswald";
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            line-height: 1;
+            margin-bottom: 10px;
+
+            i {
+                color: #f197a5;
+                font-size: 14px;
+                margin-right: 2px;
+            }
+        }
+
+        p {
+            font-size: 12px;
+            padding-left: 16px;
+        }
+    }
+}
+
+/*--------------------------*/
+#faqs-wrapper {
+    margin: 30px 0px;
+}
+#testimonial-wrapper {
+    background-color: #fff6f7;
+}
+// /*--------------------------*/
+// #whychoose {
+//     margin: 30px 0px;
+
+//     .whychooseheading {
+//         h2 {
+//             font-family: "oswald";
+//             color: #000;
+//             font-size: 40px;
+//             line-height: 1;
+//             margin-bottom: 30px;
+//         }
+
+//         p {
+//             font-size: 14px;
+//         }
+//     }
+
+//     .whychoosecontent {
+//         p {
+//             display: flex;
+//             font-size: 14px;
+//             align-items: baseline;
+
+//             i {
+//                 margin-right: 4px;
+//                 color: #f197a5;
+//             }
+//         }
+
+//         button {
+//             display: inline-block;
+//             background-color: #ffb6c1;
+//             text-transform: capitalize;
+//             border: 1px solid #f197a5;
+//             padding: 8px 20px;
+//             color: #fff;
+//             cursor: pointer;
+//         }
+//     }
+
+// }
+
+// /*-----------------------------------*/
+
+@media screen and (min-width: 320px) and (max-width: 545px){
+    #topcommon-banner{
+        display: none;
+    }
+
+    .breadcrumb-menu{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 546px) and (max-width: 767px){
+
+    #topcommon-banner {
+        display: none;
+        .image-overlay {
+            opacity: .3;
+        }
+
+        .banner-heading {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            bottom: auto;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+    }
+    .breadcrumb-menu{
+        display: none;
+    }
+    /*-----------------------*/
+    #aboutdoctorwrap {
+        padding: 0px 50px;
+
+        .aboutdoctorwrapmanage {
+            align-items: center;
+
+            .aboutdrimage {
+                height: auto;
+                padding-right: 40px;
+
+                img {
+                    height: auto;
+                }
+            }
+
+            .aboutdrcontent-wrap {
+                .aboutdrheading {
+                    margin: 0px 0px 20px;
+
+                    .drnameheading {
+                        font-size: 60px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        margin: 20px 0px 30px;
+
+                        span {
+                            display: block;
+                        }
+                    }
+                }
+
+                .drtextdetails {
+                    p {
+                        font-size: 18px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*-------------------------------------------*/
+    #educationexp {
+        padding: 30px 100px;
+
+        .educationheading {
+            margin-bottom: 50px;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+
+        .educationdetailwrap {
+            h2 {
+                font-size: 36px;
+
+                i {
+                    font-size: 24px;
+                    margin-right: 6px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                padding-left: 30px;
+
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    #whychoose {
+        .managewhychoose {
+            align-items: center;
+
+            .whychooseheading {
+                margin-bottom: 30px;
+
+                h2 {
+                    font-size: 60px;
+
+                    span {
+                        display: block;
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            .whychoosecontent {
+                p {
+                    font-size: 18px;
+                }
+
+                button {
+                    margin-top: 30px;
+                }
+            }
+
+            .whychooseimagewrap {
+                padding-left: 50px;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+        #topcommon-banner {
+            .image-overlay {
+                opacity: .3;
+            }
+    
+            .banner-heading {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                bottom: auto;
+                h2 {
+                    font-size: 60px;
+                }
+            }
+        }
+    
+        /*-----------------------*/
+        #aboutdoctorwrap {
+            padding: 0px 20px;
+    
+            .aboutdoctorwrapmanage {
+                align-items: center;
+    
+                .aboutdrimage {
+                    height: auto;
+                    padding-right: 0px;
+    
+                    img {
+                        height: auto;
+                    }
+                }
+    
+                .aboutdrcontent-wrap {
+                    .aboutdrheading {
+                        margin: 0px 0px 20px;
+    
+                        .drnameheading {
+                            font-size: 60px;
+                        }
+    
+                        p {
+                            font-size: 18px;
+                            margin: 20px 0px 30px;
+    
+                            span {
+                                display: block;
+                            }
+                        }
+                    }
+    
+                    .drtextdetails {
+                        p {
+                            font-size: 18px;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        /*-------------------------------------------*/
+        #educationexp {
+            padding: 30px 30px;
+    
+            .educationheading {
+                margin-bottom: 50px;
+    
+                h2 {
+                    font-size: 60px;
+                }
+            }
+    
+            .educationdetailwrap {
+                h2 {
+                    font-size: 36px;
+    
+                    i {
+                        font-size: 24px;
+                        margin-right: 6px;
+                    }
+                }
+    
+                p {
+                    font-size: 16px;
+                    padding-left: 30px;
+    
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+    
+        #whychoose {
+            .managewhychoose {
+                align-items: center;
+    
+                .whychooseheading {
+                    margin-bottom: 30px;
+    
+                    h2 {
+                        font-size: 60px;
+    
+                        span {
+                            display: block;
+                        }
+                    }
+    
+                    p {
+                        font-size: 18px;
+                    }
+                }
+    
+                .whychoosecontent {
+                    p {
+                        font-size: 18px;
+                    }
+    
+                    button {
+                        margin-top: 30px;
+                    }
+                }
+    
+                .whychooseimagewrap {
+                    padding-left: 50px;
+                }
+            }
+        }
+    
+   
+}
+@media screen and (min-width: 993px) and (max-width: 1025px) {
+
+    #topcommon-banner {
+        .image-overlay {
+            opacity: .3;
+        }
+
+        .banner-heading {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            bottom: auto;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+    }
+
+    /*-----------------------*/
+    #aboutdoctorwrap {
+        padding: 0px 50px;
+
+        .aboutdoctorwrapmanage {
+            align-items: center;
+
+            .aboutdrimage {
+                height: auto;
+                padding-right: 40px;
+
+                img {
+                    height: auto;
+                }
+            }
+
+            .aboutdrcontent-wrap {
+                .aboutdrheading {
+                    margin: 0px 0px 20px;
+
+                    .drnameheading {
+                        font-size: 60px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        margin: 20px 0px 30px;
+
+                        span {
+                            display: block;
+                        }
+                    }
+                }
+
+                .drtextdetails {
+                    p {
+                        font-size: 18px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*-------------------------------------------*/
+    #educationexp {
+        padding: 30px 100px;
+
+        .educationheading {
+            margin-bottom: 50px;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+
+        .educationdetailwrap {
+            h2 {
+                font-size: 36px;
+
+                i {
+                    font-size: 24px;
+                    margin-right: 6px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                padding-left: 30px;
+
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    #whychoose {
+        .managewhychoose {
+            align-items: center;
+
+            .whychooseheading {
+                margin-bottom: 30px;
+
+                h2 {
+                    font-size: 60px;
+
+                    span {
+                        display: block;
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            .whychoosecontent {
+                p {
+                    font-size: 18px;
+                }
+
+                button {
+                    margin-top: 30px;
+                }
+            }
+
+            .whychooseimagewrap {
+                padding-left: 50px;
+            }
+        }
+    }
+
+}
+@media screen and (min-width: 1026px) and (max-width: 1370px) {
+
+    #topcommon-banner {
+        .image-overlay {
+            opacity: .3;
+        }
+
+        .banner-heading {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            bottom: auto;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+    }
+
+    /*-----------------------*/
+    #aboutdoctorwrap {
+        padding: 0px 50px;
+        margin: 50px 0px;
+
+        .aboutdoctorwrapmanage {
+            align-items: center;
+
+            .aboutdrimage {
+                height: auto;
+                padding-right: 40px;
+
+                img {
+                    height: 700px;
+                }
+            }
+
+            .aboutdrcontent-wrap {
+                .aboutdrheading {
+                    margin: 0px 0px 20px;
+
+                    .drnameheading {
+                        font-size: 60px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        margin: 10px 0px 10px;
+
+                        span {
+                            display: block;
+                        }
+                    }
+                }
+
+                .drtextdetails {
+                    p {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*-------------------------------------------*/
+    #educationexp {
+        padding: 30px 100px;
+
+        .educationheading {
+            margin-bottom: 50px;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+
+        .educationdetailwrap {
+            h2 {
+                font-size: 36px;
+
+                i {
+                    font-size: 24px;
+                    margin-right: 6px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                padding-left: 30px;
+
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    #whychoose {
+        .managewhychoose {
+            align-items: center;
+
+            .whychooseheading {
+                margin-bottom: 30px;
+
+                h2 {
+                    font-size: 60px;
+
+                    span {
+                        display: block;
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            .whychoosecontent {
+                p {
+                    font-size: 18px;
+                }
+
+                button {
+                    margin-top: 30px;
+                }
+            }
+
+            .whychooseimagewrap {
+                padding-left: 50px;
+            }
+        }
+    }
+    #aboutdoctorwrap {    
+        .aboutdrcontent-wrap {    
+            .aboutdrbutton {
+                text-align: left;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1371px) {
+
+    #topcommon-banner {
+        .image-overlay {
+            opacity: .3;
+        }
+
+        .banner-heading {
+            left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    bottom: auto;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+    }
+
+    /*-----------------------*/
+    #aboutdoctorwrap {
+        padding: 0px 50px;
+        margin: 50px 0px;
+
+        .aboutdoctorwrapmanage {
+            align-items: center;
+
+            .aboutdrimage {
+                height: auto;
+                padding-right: 40px;
+
+                img {
+                    height: auto;
+                }
+            }
+
+            .aboutdrcontent-wrap {
+                .aboutdrheading {
+                    margin: 0px 0px 20px;
+
+                    .drnameheading {
+                        font-size: 60px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        margin: 20px 0px 30px;
+
+                        span {
+                            display: block;
+                        }
+                    }
+                }
+
+                .drtextdetails {
+                    p {
+                        font-size: 18px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*-------------------------------------------*/
+    #educationexp {
+        padding: 30px 100px;
+
+        .educationheading {
+            margin-bottom: 50px;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+
+        .educationdetailwrap {
+            h2 {
+                font-size: 36px;
+
+                i {
+                    font-size: 24px;
+                    margin-right: 6px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                padding-left: 30px;
+
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    #whychoose {
+        .managewhychoose {
+            align-items: center;
+
+            .whychooseheading {
+                margin-bottom: 30px;
+
+                h2 {
+                    font-size: 60px;
+
+                    span {
+                        display: block;
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            .whychoosecontent {
+                p {
+                    font-size: 18px;
+                }
+
+                button {
+                    margin-top: 30px;
+                }
+            }
+
+            .whychooseimagewrap {
+                padding-left: 50px;
+            }
+        }
+    }
+
+    #aboutdoctorwrap {    
+        .aboutdrcontent-wrap {    
+            .aboutdrbutton {
+                text-align: left;
+            }
+        }
+    }
+
+}

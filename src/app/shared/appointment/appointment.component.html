@@ -1,0 +1,151 @@
+<div id="topcommon-banner" class="mobile-none">
+    <div class="image-overlay"></div>
+    <img src="assets/images/book-an-appoitment.jpg" alt="bg-image" class="w-100">
+    <div class="banner-heading">
+        <h2>Schedule A Consultation</h2>
+    </div>
+</div>
+<div class="breadcrumb-menu mobile-none">
+    <div class="container-max">
+        <ul>
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/book-an-appointment">Schedule A Consultation</a></li>
+        </ul>
+    </div>
+</div>
+<div id="innertopcommon-bannermobile" class="dekhstop-non">
+    <div class="stylingcontent">
+        <div class="banner-heading">
+            <h2>Schedule A Consultation</h2>
+        </div>
+        <div class="breadcrumb-menu">
+            <div class="container-max">
+                <ul>
+                    <li><a routerLink="/">Home</a></li>
+                    <li><a routerLink="/book-an-appointment">Schedule A Consultation</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="appointment-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-md-12">
+                <div class="appointment-form">
+                    <div class="opningdetails">
+                        <p><span>Clinic Timings:</span> Monday - Sunday: 11 AM – 7 PM </p>
+                    </div>
+                    <!-- <form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()" > -->
+                        <form [formGroup]="appointmentForm"  (ngSubmit)="onSubmit()" autocomplete="off">
+                      <div class="text-white"></div>  
+                      
+                
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 col-lg-12">
+                                    <div class="form-2">
+                                        <input type="text"  class="form-control" id="nameTwo" placeholder="Name*" 
+                                        formControlName="name">
+                                        <small class="text-danger"  *ngIf="(appointmentForm.get('name').errors?.['required'] && appointmentForm.get('name').touched) || ( !appointmentForm.get('name').touched && isSubmitted)" >Name field required</small>
+                                        <small class="text-danger" *ngIf="appointmentForm.get('name').errors?.['pattern'] " >Only alphabets allowed</small>
+
+                                    </div>
+                                 
+                                </div>
+                                <div class="col-12 col-lg-12">
+                                    <div class="form-2">
+                                        <input type="email" class="form-control" id="emailTwo" placeholder="Email*"    
+                                         formControlName="email"       >
+                                         <small class="text-danger"  *ngIf="(appointmentForm.get('email').errors?.['required'] && appointmentForm.get('email').touched) || ( !appointmentForm.get('email').touched && isSubmitted)" >Email field required</small>
+                                         <!-- <small class="text-danger" *ngIf="appointmentForm.get('email').errors?.['email'] && !appointmentForm.get('email').errors?.['required']" >Please Enter Valid email</small> -->
+                                         <small class="text-danger" *ngIf="!appointmentForm.get('email').valid && appointmentForm.get('email').touched" >Please Enter Valid email</small>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-12">
+
+                                    <div class="form-2">
+                                        <input type="text" class="form-control" id="mobileTwo" placeholder="Phone*"
+                                        formControlName="mobile" >
+                                        
+                                        <small class="text-danger"  *ngIf="(appointmentForm.get('mobile').errors?.['required'] && appointmentForm.get('mobile').touched) || ( !appointmentForm.get('mobile').touched && isSubmitted)" >Mobile  field required</small>
+                                        <small class="text-danger"  *ngIf="(appointmentForm.get('mobile').errors?.['pattern'] && appointmentForm.get('mobile').touched)" >Enter a 10 digit  Mobile No</small>
+                                       
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-12">
+                                    <div class="form-2">
+                                        <ngx-datepicker [(ngModel)]="date" type="text" [options]="options" formControlName="date" placeholder="Select Date*"></ngx-datepicker>
+                                     
+                                    </div>
+                                    <small class="text-danger"  *ngIf="(appointmentForm.get('date').errors?.['required'] && isSubmitted)" >Date Required</small>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-12">
+                                <div class="form-2">
+                                    <textarea rows="6" cols="" placeholder="Message" class="form-control"    formControlName="message" ></textarea>
+                                </div>
+                            </div>
+                            
+                              
+                            <div class="row appointmentmanage">
+                                <div class="col-lg-12  col-12 apointmentcaptacha">
+                                    <div class="form-alignment d-flex">
+                                        <img src="{{captcha.img}}" alt="captchat" />
+                                        <p (click)="reloadcaptcha()" class="btn btn-primery" style="background: #fff; color: #000;margin: 0px 10px;display: flex;align-items: center;"><span class="fa fa-refresh"></span></p>
+                                        <input type="text" class="form-control"  formControlName="captcha" >
+                                        <small class="text-danger"  *ngIf="(appointmentForm.get('captcha').errors?.['required'] && appointmentForm.get('captcha').touched) || ( !appointmentForm.get('captcha').touched && isSubmitted)" >Captcha required</small>
+
+                                        <input type="hidden" class="form-control"  formControlName="key" id="key">
+                                      
+                                    <!-- {{appointmentForm.value | json}} -->
+                                    </div>
+                                </div>
+                                
+                                <input type="hidden" class="form-control"  formControlName="key" >
+                                <div class="col-lg-12  col-12 apointmentsubmit-now">
+                                    <button type="submit" class="submit-button" [class.disabled]="!appointmentForm.valid" >{{this.submitButtonText}}</button>
+                               <!-- {{captchastatus}} -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-12 col-lg-6">
+
+                <div id="appointment-address">
+                    <div class="contactaddress-wrapper">
+                        <div class="contactIcon-wrap"> <span class="fa fa-phone"> </span>
+                            <div class="apheading">Phone</div>
+                        </div>
+                        <div class="contact-detailpage">
+                            <p>+91 9999172667</p>
+                        </div>
+                    </div>
+                    <div class="contactaddress-wrapper">
+                        <div class="contactIcon-wrap"> <span class="fa fa-map-marker"> </span>
+                            <div class="apheading">Address</div>
+                        </div>
+                        <div class="contact-detailpage">
+                            <div class="skinnameheading">Skinlogics Clinic</div>
+                            <p>D-82A, D-Block, Sector 26,</p>
+                            <p>Noida, Uttar Pradesh 201301</p>
+                        </div>
+                    </div>
+                    <div class="contactaddress-wrapper">
+                        <div class="contactIcon-wrap"> <span class="fa fa-envelope"> </span>
+                            <div class="apheading">Email</div>
+                        </div>
+                        <div class="contact-detailpage">
+                            <p>skinlogicsclinic@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

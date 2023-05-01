@@ -1,0 +1,134 @@
+::ng-deep .form-alignment {
+    position: relative;
+    small {
+        position: static;
+    display: block;
+    margin-left: 10px;
+    width: 100%;
+    margin-top: 10px;
+    }
+}
+
+#appointment-wrapper {
+    margin: 30px auto;
+    width: 100%;
+    padding: 0px;
+
+    .appointment-heading {
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 60px;
+            text-align: center;
+            font-family: "oswald";
+            color: #f197a5;
+        }
+    }
+
+    .appointment-form {
+        background-color: #2e2e2e;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        .opningdetails {
+            text-align: center;
+
+            p {
+                color: #fff;
+
+                span {
+                    color: #ffb6c1;
+                }
+            }
+        }
+
+        .appointmentmanage {
+            align-items: center;
+
+            .apointmentsubmit-now {
+                text-align: right;
+
+                button {
+                    background-color: #f197a5;
+                    font-family: "oswald";
+                    color: #000;
+                    cursor: pointer;
+                    padding: 12px 40px;
+                    font-size: 22px;
+                    text-transform: capitalize;
+                    font-weight: bold;
+                    margin-top: 10px;
+
+                }
+            }
+        }
+    }
+
+
+}
+
+#quickappointment-wrapper {
+    padding:10px 10px;
+    background-color: #2e2e2e;
+    margin-top: 30px;
+
+    form {
+        .form-group{
+            .form-control{
+                border-radius:0px;
+                margin-bottom:10px;
+                padding: 10px;
+            }
+
+        }
+        .newreqestsubmit{
+            width: 100%;
+            background-color:#f197a5;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .opningdetails {
+        text-align: center;
+
+        p {
+            color: #fff;
+
+            span {
+                color: #ffb6c1;
+            }
+        }
+    }
+
+    .contactaddress-wrapper {
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+
+        .contactIcon-wrap {
+            display: flex;
+            align-items: center;
+
+            span {
+                font-size: 30px;
+            }
+
+            .apheading {
+                font-size: 20px;
+                margin-left: 20px;
+            }
+        }
+
+        .contact-detailpage {
+            margin-left: 37px;
+
+            p {
+                font-size: 12px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+

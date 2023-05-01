@@ -1,0 +1,40 @@
+#beforeAfter {
+    margin: 20px 0px;
+
+    .galeryimage {
+        margin-bottom: 30px;
+        a {
+            display: block;
+            background-color: #f197a5;
+            padding: 10px;
+            transition: .5s;
+
+            .categoryname {
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                background-color: #171717;
+                margin-top: 10px;
+                transition: .5s;
+            }
+
+            &:hover {
+                .categoryname {
+                    background-color: #fff;
+                    color: #171717;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:992px) {
+    #beforeAfter {
+        margin: 80px 0px;
+
+        // .galeryimage {
+        //     margin: 0px;
+        // }
+    }
+
+}

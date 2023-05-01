@@ -1,0 +1,162 @@
+
+<div id="topcommon-banner" class="mobile-none">
+    <div class="image-overlay"></div>
+    <img src="assets/images/contact-us.jpg" alt="bg-image" class="w-100">
+    <div class="banner-heading">
+        <h2>Contact Us</h2>
+    </div>
+</div>
+<div class="breadcrumb-menu mobile-none">
+    <div class="container-max">
+        <ul>
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/contact-us">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+<div id="innertopcommon-bannermobile" class="dekhstop-non">
+    <div class="stylingcontent">
+        <div class="banner-heading">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="breadcrumb-menu">
+            <div class="container-max">
+                <ul>
+                    <li><a routerLink="/">Home</a></li>
+                    <li><a routerLink="/contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="locationform">
+    <div class="container-fluid">
+        <div class="container-max">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="aboutform-wrap">
+                        <div class="commonconsultation-form">
+                            <!-- <div class="commonconsulationform-heading">
+                                <h2>Schedule Your Consultation</h2>
+                            </div> -->
+                            <form [formGroup]="appointmentForm"  (ngSubmit)="onSubmit()" autocomplete="off">
+                                <div class="text-white"></div>  
+                                
+                          
+                                  <div class="col-12">
+                                      <div class="row">
+                                          <div class="col-12 col-lg-12">
+                                            <h2 class="text-white">Clinic Timings: Monday - Sunday: 11 AM – 7 PM</h2>
+                                              <div class="form-2">
+                                                <input type="text"  class="form-control" id="nameTwo" placeholder="Name*" 
+                                                formControlName="name">
+                                                <small class="text-danger"  *ngIf="(appointmentForm.get('name').errors?.['required'] && appointmentForm.get('name').touched) || ( !appointmentForm.get('name').touched && isSubmitted)" >Name field required</small>
+                                                <small class="text-danger" *ngIf="appointmentForm.get('name').errors?.['pattern'] " >Only alphabets allowed</small>
+                                              </div>
+                                           
+                                          </div>
+                                          <div class="col-12 col-lg-12">
+                                              <div class="form-2">
+                                                <input type="email" class="form-control" id="emailTwo" placeholder="Email*"    
+                                                formControlName="email"       >
+                                                <small class="text-danger"  *ngIf="(appointmentForm.get('email').errors?.['required'] && appointmentForm.get('email').touched) || ( !appointmentForm.get('email').touched && isSubmitted)" >Email field required</small>
+                                                <!-- <small class="text-danger" *ngIf="appointmentForm.get('email').errors?.['email'] && !appointmentForm.get('email').errors?.['required']" >Please Enter Valid email</small> -->
+                                                <small class="text-danger" *ngIf="!appointmentForm.get('email').valid && appointmentForm.get('email').touched" >Please Enter Valid email</small>
+                                              </div>
+                                          </div>
+                                          <div class="col-12 col-lg-12">
+          
+                                              <div class="form-2">
+                                                <input type="text" class="form-control" id="mobileTwo" placeholder="Phone*"
+                                                formControlName="mobile" >
+                                                
+                                                <small class="text-danger"  *ngIf="(appointmentForm.get('mobile').errors?.['required'] && appointmentForm.get('mobile').touched) || ( !appointmentForm.get('mobile').touched && isSubmitted)" >Mobile  field required</small>
+                                                <small class="text-danger"  *ngIf="(appointmentForm.get('mobile').errors?.['pattern'] && appointmentForm.get('mobile').touched)" >Enter a 10 digit  Mobile No</small>
+                                              </div>
+                                            
+                                          </div>
+                                         <input type="hidden" formControlName="date"/>
+                                      </div>
+                                      <div class="col-12 col-lg-12">
+                                          <div class="form-2">
+                                              <textarea rows="6" cols="" placeholder="Message" class="form-control"    formControlName="message" ></textarea>
+                                          </div>
+                                      </div>
+                                      <!-- {{captcha | json}}
+                                      captcha status={{captchaStatus}} -->
+                                        
+                                      <div class="row appointmentmanage">
+                                        <div class="col-12 col-md-6 apointmentcaptacha">
+                                              <div class="form-alignment d-flex">
+                                                  <img src="{{captcha.img}}" alt="captcha" />
+                                                  <p (click)="reloadcaptcha()" class="btn btn-primery text-white"><span class="fa fa-refresh"></span></p>
+                                                  <input type="text" class="form-control"  formControlName="captcha" style="width:60px;">
+                                                  <small class="text-danger"  *ngIf="(appointmentForm.get('captcha').errors?.['required'] && appointmentForm.get('captcha').touched) || ( !appointmentForm.get('captcha').touched && isSubmitted)" >Captcha required</small>
+                                                  <input type="hidden" class="form-control"  formControlName="key" id="key">
+                                                  <small class="text-danger"  *ngIf="captchastatus=='invalid'" >Captcha Required</small>
+                                              </div>
+                                          </div>
+                                          
+                                          <input type="hidden" class="form-control"  formControlName="key" >
+                                          <div class="col-12 col-md-6 apointmentsubmit-now mt-md-0 mt-4">
+                                            <button type="submit" class="submit-button" [class.disabled]="!appointmentForm.valid" >submit</button>
+                                          </div>
+                                      </div>
+                                  </div>
+          
+                              </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=Skinlogics&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                href="https://123movies-to.org"></a><br>
+                            <a href="https://www.embedgooglemap.net">google maps on web site</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact-address">
+    <div class="container-fluid">
+        <div class="container-max">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="contactaddress-wrapper">
+                       <a href="tel:+919999172667"> <div class="contactIcon-wrap"> <span class="fa fa-phone"> </span> </div></a>
+                        <div class="contact-detailpage">
+                            <h5>Phone</h5>
+                            <p>+91 9999172667</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="contactaddress-wrapper">
+                        <div class="contactIcon-wrap"> <span class="fa fa-map-marker"> </span> </div>
+                        <div class="contact-detailpage">
+                            <h5>Address</h5>
+                            <h4>Skinlogics Clinic</h4>
+                            <p>D-82A, D-Block, Sector 26,</p>
+                            <p>Noida, Uttar Pradesh 201301</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="contactaddress-wrapper">
+                       <a href="mailto:skinlogicsclinic@gmail.com"> <div class="contactIcon-wrap"> <span class="fa fa-envelope"> </span> </div></a>
+                        <div class="contact-detailpage">
+                            <h5>Email</h5>
+                            <p>skinlogicsclinic@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

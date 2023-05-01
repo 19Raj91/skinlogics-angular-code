@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+  <!--   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- <link rel="preload" as="style" href="https://use.typekit.net/gug5uer.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
+<link rel="preload" as="style" href="https://use.typekit.net/ymf7lzr.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.typekit.net/gug5uer.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.typekit.net/ymf7lzr.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous"> -->
+
+  <style type="text/css">
+    @font-face {
+      font-family: 'FontAwesome';
+      font-display: swap;
+      src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot) format('embedded-opentype');
+    }
+
+    @font-face {
+      font-family: 'FontAwesome';
+      font-display: swap;
+      src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2) format('woff2');
+    }
+
+    @font-face {
+      font-family: 'FontAwesome';
+      font-display: swap;
+      src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff) format('embedded-opentype');
+    }
+
+    @font-face {
+      font-family: 'FontAwesome';
+      font-display: swap;
+      src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf) format('truetype');
+    }
+
+    @font-face {
+      font-family: 'FontAwesome';
+      font-display: swap;
+      src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg) format('svg');
+    }
+  </style>
+
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/banner-mob.webp" width="286"
+    height="324" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/home-banner.webp" width="1550"
+    height="650" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/home-crousel-1.webp" width="500"
+    height="334" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/home-crousel-2.webp" width="500"
+    height="334" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/home-crousel-3.webp" width="500"
+    height="334" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/pigments-spots.webp" width="360"
+    height="416" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/pigmentbg.webp" width="1550"
+    height="763" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/Aboutclnic-Skin-Tightening.webp"
+    width="457" height="610" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/Aboutclnic-FacialLiftContouring.webp"
+    width="457" height="610" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/Aboutclnic-Skin-Brightening.webp"
+    width="457" height="610" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/dskinaging.webp" width="500"
+    height="569" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/homeunwantedhair.webp" width="500"
+    height="471" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/homeResurfacing.webp" width="500"
+    height="471" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/homemobile-hair-care.webp" width="300"
+    height="454" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/homemobile-antiaging.webp" width="300"
+    height="454" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/young-couple.webp" width="300"
+    height="300" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/pretty-woman.webp" width="300"
+    height="300" />
+  <link rel="preload" as="image" href="https://www.skinlogics.in/assets/images/homemobile-antiaging.webp" width="300"
+    height="454" />
+  <meta name="google-site-verification" content="13_fD0uFKrZmvA3iaehDtqWpfyn7_tvcBzL6WStFDZw" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180659654-1"></script>
+
+  <script async>
+    setTimeout(function () {
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { dataLayer.push(arguments); }
+
+      gtag('js', new Date());
+
+      gtag('config', 'UA-180659654-1');
+      gtag('config', 'AW-469688250');
+    }, 5000);
+
+
+
+  </script>
+
+  <script async>
+    setTimeout(function () {
+
+      gtag('config', 'AW-469688250/SdokCI-B-OsBELq_-98B', {
+
+        'phone_conversion_number': '09999171667'
+
+      });
+    }, 5000)
+
+  </script>
+
+  <script async>
+    setTimeout(function () {
+      gtag('config', 'AW-469688250/SdokCI-B-OsBELq_-98B', {
+
+        'phone_conversion_number': '08860950936'
+
+      });
+    }, 5000)
+
+  </script>
+
+  <!--Website Schema-->
+  <script async type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DiagnosticLab",
+    "name": "Skinlogics Clinic",
+    "url": "https://www.skinlogics.in/",
+    "logo": "https://www.skinlogics.in/assets/images/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91 9999172667",
+      "contactType": "customer service",
+      "contactOption": "TollFree",
+      "areaServed": "IN",
+      "availableLanguage": ["en","Hindi"]
+    },
+    "sameAs": [
+      "https://www.facebook.com/skinlogicsnoida",
+      "https://mobile.twitter.com/logicsskin",
+      "https://www.instagram.com/skinlogics_derma/?igshid=171l2jda11ymj",
+      "https://www.youtube.com/channel/UCkP79Zx95xFREbwidwuVJhA"
+    ]
+  }
+  </script>
+  <script async type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DiagnosticLab",
+      "name": "Skinlogics Clinic",
+      "url": "https://www.skinlogics.in/",
+      "logo": "https://www.skinlogics.in/assets/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 9999172667",
+        "contactType": "customer service",
+        "contactOption": "TollFree",
+        "areaServed": "IN",
+        "availableLanguage": ["en","Hindi"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/skinlogicsnoida",
+        "https://mobile.twitter.com/logicsskin",
+        "https://www.instagram.com/skinlogics_derma/?igshid=171l2jda11ymj",
+        "https://www.youtube.com/channel/UCkP79Zx95xFREbwidwuVJhA"
+      ]
+    }
+    </script>
+  <!-- Meta Pixel Code -->
+
+  <script async>
+
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+
+      n.queue = []; t = b.createElement(e); t.async = !0;
+
+      t.src = v; s = b.getElementsByTagName(e)[0];
+
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+
+      'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '705660620535808');
+
+    fbq('track', 'PageView');
+
+  </script>
+
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=705660620535808&ev=PageView&noscript=1" /></noscript>
+
+  <meta name="facebook-domain-verification" content="s10n9fpcepus4ma0iak3qxuglzjrhg" />
+
+  <!-- End Meta Pixel Code -->
+
+  <!-- Google Tag Manager -->
+  <script async>
+
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M3KRBVH');
+
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="preload" as="image" href="assets/images/banner-mob.jpg" imagesrcset="assets/images/banner-mob.jpg"
+    imagesizes="" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3KRBVH" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <app-root></app-root>
+  <!--Start of Tawk.to Script-->
+  <script async type="text/javascript">
+    setTimeout(function () {
+      var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/637b0b54b0d6371309d0265e/1gicfmtn6';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+      // Custom styling of Offset starts here
+      Tawk_API.customStyle = {
+        visibility: {
+          //for desktop only
+          desktop: {
+            // position: 'br', // bottom-right
+            // xOffset: 9, // 15px away from right
+            //  yOffset: 45 // 40px up from bottom
+          },
+          // for mobile only
+          mobile: {
+            position: 'br', // bottom-left
+            xOffset: 10, // 5px away from left
+            yOffset: 70 // 50px up from bottom
+          },
+          // change settings of bubble if necessary
+          bubble: {
+            rotate: '0deg',
+            xOffset: -10,
+            yOffset: 10
+          }
+        }
+      }
+      //alert('chatbot load');
+    }, 5000);
+
+
+
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>

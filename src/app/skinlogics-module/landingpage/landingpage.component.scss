@@ -1,0 +1,994 @@
+
+#landingpageWrap {
+    position: relative;
+
+    .content-form {
+        position: absolute;
+        top: 20%;
+        width: 60%;
+        left: 100px;
+
+        .landingpageheading {
+            font-size: 50px;
+            font-family: "acumin-pro-extra-condensed";
+            font-weight: bold;
+            padding-left: 15px;
+        }
+
+        .landingbannercontent {
+            font-size: 28px;
+            font-family: "acumin-pro-extra-condensed";
+            padding-left: 15px;
+        }
+
+        #landingpageform {
+            margin-top: 50px;
+
+            form {
+                background-color: #f197a57b;
+                padding: 20px;
+
+                .requestheading {
+                    text-align: center;
+
+                    p {
+                        font-size: 30px;
+                        font-weight: 600;
+                        font-family: "acumin-pro-extra-condensed";
+                    }
+                }
+
+                .commonform-group {
+                    .form-group {
+                        margin-bottom: 10px;
+
+                        .form-control {
+                            padding: 10px;
+                            border-radius: 0px;
+                            border: 0px;
+                        }
+                    }
+
+                    .form-submit {
+                        text-align: center;
+
+                        button {
+                            background-color: #000;
+                            color: #fff;
+                            padding: 8px 40px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#landingsecond {
+    margin-top: 20px;
+
+    .manage-landingabout {
+        align-items: center;
+
+        .landskinlogicsimage {
+            img {
+                width: 100%;
+            }
+        }
+
+        .landaboutskinlogics {
+            padding-left: 40px;
+
+            .cacs {
+                font-size: 50px;
+                font-family: "acumin-pro-extra-condensed";
+                font-weight: 600;
+                line-height: 1;
+                margin-bottom: 0px;
+            }
+
+            .ssin {
+                font-size: 30px;
+            }
+        }
+
+        .landaboutskintext {
+            padding-left: 40px;
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+#whatwedoland {
+    margin-top: 50px;
+    background-color: #ffefeb;
+    padding: 50px 0px 20px;
+
+    .whatwedolandingheading {
+        font-size: 60px;
+        font-family: "acumin-pro-extra-condensed";
+        line-height: 1;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .landingheadingbottomtext {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .landing-service {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 30px;
+
+        span {
+            margin-right: 20px;
+            font-size: 18px;
+            color: #f17689;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+#landing-videos {
+    margin-top: 50px;
+
+    .landingvideosheading {
+        font-size: 60px;
+        font-family: "acumin-pro-extra-condensed";
+        line-height: 1;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-transform: capitalize;
+    }
+
+    .videoimage-wrap {
+        position: relative;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+
+        .videoplay-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .video-info {
+        margin-top: 20px;
+        text-align: center;
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+#whychooselandingpage {
+    background-color: #ffefeb;
+    margin-top: 50px;
+
+    .landcombind {
+        padding: 50px;
+
+        .landingwhychooseheading {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 20px;
+            font-family: "acumin-pro-extra-condensed";
+        }
+
+        .landingpagepoints {
+            p {
+                font-size: 18px;
+
+                span {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .landsecondcombind {
+        padding: 50px;
+        background-color: #fff;
+
+        .landingwhychooseheading {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 20px;
+            font-family: "acumin-pro-extra-condensed";
+        }
+
+        .landingpagepoints {
+            p {
+                font-size: 18px;
+
+                span {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+#landingrealresults {
+    margin-top: 50px;
+
+    .landingrealresultheading {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 50px;
+        font-family: "acumin-pro-extra-condensed";
+        text-align: center;
+    }
+
+    .landingcommonresult {
+        border: 8px solid #f197a5;
+        transition: .5s;
+
+        &:hover {
+            transform: translateY(-20px);
+            transition: .5s;
+        }
+
+        .categoryname {
+            text-align: center;
+            margin: 10px;
+            font-size: 20px;
+            font-weight: 600;
+
+        }
+    }
+}
+
+#landingpagetestimonial {
+    margin-top: 50px;
+
+    .landingpagetestimonialheading {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 50px;
+        font-family: "acumin-pro-extra-condensed";
+        text-align: center;
+    }
+
+    .landinglivetestimonial {
+        width: 95%;
+        margin: 0 auto;
+
+        .contentdesktop {
+            margin-bottom: 0px;
+
+            .client-detail {
+                justify-content: space-between;
+            }
+
+            .client-image {
+                height: auto;
+            }
+        }
+    }
+}
+
+#landingform {
+    margin-top: 50px;
+
+    #consultation-wrapper {
+        .consultation-form {
+            .landingsubmit-now {
+                text-align: center;
+
+                .landingsubmit-button {
+                    background-color: #f197a5;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    padding: 4px 50px;
+                }
+            }
+        }
+    }
+
+    .landingdisclimer {
+        .landinginformation {
+            text-align: center;
+            margin-top: 20px;
+
+            p {
+                color: #fff;
+                font-size: 20px;
+
+                a {
+                    color: #f197a5;
+                }
+            }
+        }
+
+        .book_socialmedia {
+            text-align: center;
+
+            h3 {
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 1;
+                margin: 30px 0px;
+                font-family: "acumin-pro-extra-condensed";
+                color: #fff;
+            }
+
+            .social-networkbook {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                li {
+                    a {
+                        width: 70px;
+                        height: 70px;
+                        display: block;
+                        border: 2px solid #fff;
+                        color: #fff;
+                        margin-right: 20px;
+                        font-size: 40px;
+                        line-height: 70px;
+                        border-radius: 50%;
+                        transition: .5s;
+                    }
+
+                    &:hover {
+                        &:nth-child(1) {
+                            a {
+                                background-color: #3B5998;
+                                border: 2px solid #3B5998;
+                                transform: rotate(360deg);
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            a {
+                                background-color: #d6249f;
+                                border: 2px solid #d6249f;
+                                transform: rotate(360deg);
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            a {
+                                background-color: #ff2700;
+                                border: 2px solid #ff2700;
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        a {
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#landingadress {
+    margin-top: 50px;
+
+    .landingacommonicon {
+        text-align: center;
+
+        .socialcommon {
+            background-color: #f17689;
+            height: 70px;
+            width: 70px;
+            line-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+
+            span {
+                height: 50px;
+                width: 50px;
+                border: 2px solid #ffffff;
+                border-radius: 50%;
+                font-size: 30px;
+                text-align: center;
+                line-height: 50px;
+                color: #fff;
+            }
+        }
+
+        .commoncontactdetail {
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .landingdisclamer {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 18px;
+
+        a {
+            color: #f17689;
+        }
+    }
+}
+
+
+#landingbottomfooter {
+    padding: 10px 10px 10px;
+    background: #000;
+
+    .bottam-footer {
+        .bottam-footerlinks {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            ul {
+                text-align: center;
+                margin: 0px;
+                padding: 0px;
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        display: block;
+                        color: #fff;
+                        font-size: 12px;
+
+                        &:after {
+                            content: '|';
+                            margin: 0px 10px;
+                        }
+                    }
+
+                    &:last-child {
+                        a {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            p {
+                color: #fff;
+                margin: 0px;
+                text-align: center;
+                font-size: 12px;
+
+                span {
+                    display: none;
+                }
+
+                a {
+                    display: inline-block;
+                    color: #fff;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+
+#consultation-wrapper {
+    padding: 100px 0px;
+
+    .AboutskinformWrap {
+        padding-right: 100px;
+
+        .AboutskinformWrap-heading {
+            h2 {
+                font-size: 60px;
+                font-family: "acumin-pro-extra-condensed";
+                color: #fff;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: #fff;
+                line-height: 30px;
+                font-size: 18px;
+            }
+        }
+
+        .skinlogicscontactdetail {
+            p {
+                color: #fff;
+
+                span {
+                    display: inline-block;
+                    color: #f197a5;
+                    margin-right: 4px;
+                }
+            }
+
+            .smalldisription {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .consultation-form {
+        .consulationform-heading {
+            text-align: left;
+
+            h2 {
+                font-size: 60px;
+            }
+        }
+
+        .manageform-buttons {
+            .captacha {
+                img {
+                    width: 200px;
+                }
+            }
+
+            .submit-now {
+                button {
+                    background-color: #ffb6c1;
+                    color: #000;
+                    font-weight: bold;
+                    font-size: 24px;
+                    width: 80%;
+                    text-transform: capitalize;
+                    padding: 18px 8px;
+                    line-height: 18px;
+                    margin-left: auto;
+                    display: block;
+                    cursor: pointer;
+                    font-family: "acumin-pro-extra-condensed";
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 766px) {
+    #landingpageWrap {
+        position: relative;
+
+        .content-form {
+            position: static;
+            width: 100%;
+            left: 10px;
+
+            .landingbanner-text {
+                position: absolute;
+                top: 15%;
+
+                .landingpageheading {
+                    font-size: 21px;
+                }
+
+                .landingbannercontent {
+                    font-size: 14px;
+                }
+            }
+
+
+            #landingpageform {
+                margin-top: 20px;
+
+            }
+        }
+    }
+
+
+    #landingsecond {
+
+        .manage-landingabout {
+            align-items: center;
+
+            .landaboutskinlogics {
+                padding-left: 0px;
+
+                .cacs {
+                    font-size: 30px;
+                    font-family: "acumin-pro-extra-condensed";
+                    font-weight: 600;
+                    line-height: 1;
+                    margin-bottom: 0px;
+                }
+
+                .ssin {
+                    font-size: 16px;
+                }
+            }
+
+            .landaboutskintext {
+                padding-left: 0px;
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    #whatwedoland {
+        margin-top: 20px;
+        padding: 20px 0px 20px;
+        .whatwedolandingheading {
+            font-size: 30px;
+        }
+
+        .landingheadingbottomtext {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 20px;
+            br{
+                display: none;
+            }
+        }
+
+        .landing-service {
+            margin-bottom: 10px;
+
+            span {
+                margin-right: 10px;
+                font-size: 14px;
+                color: #f17689;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    #consultation-wrapper {
+        padding: 40px 0px;
+
+        .AboutskinformWrap {
+            padding-right: 0px;
+
+            .AboutskinformWrap-heading {
+                h2 {
+                    font-size: 30px;
+                    font-family: "acumin-pro-extra-condensed";
+                    color: #fff;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: #fff;
+                    line-height: 24px;
+                    font-size: 14px;
+                }
+            }
+
+            .skinlogicscontactdetail {
+                p {
+                    color: #fff;
+
+                    span {
+                        display: inline-block;
+                        color: #f197a5;
+                        margin-right: 4px;
+                    }
+                }
+
+                .smalldisription {
+                    margin-top: 30px;
+                }
+            }
+        }
+
+        .consultation-form {
+            .consulationform-heading {
+                text-align: left;
+
+                h2 {
+                    font-size: 40px;
+                }
+            }
+
+            .manageform-buttons {
+                .captacha {
+                    img {
+                        width: 200px;
+                    }
+                }
+
+                .submit-now {
+                    button {
+                        background-color: #ffb6c1;
+                        color: #000;
+                        font-weight: bold;
+                        font-size: 24px;
+                        width: 80%;
+                        text-transform: capitalize;
+                        padding: 18px 8px;
+                        line-height: 18px;
+                        margin-left: auto;
+                        display: block;
+                        cursor: pointer;
+                        font-family: "acumin-pro-extra-condensed";
+                    }
+                }
+            }
+        }
+    }
+
+    #landingadress {
+
+        .landingdisclamer {
+            font-size: 10px;
+        }
+    }
+
+
+    #landing-videos {
+        margin-top: 20px;
+        .landingvideosheading {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    }
+
+    #landingrealresults {
+        .landingrealresultheading {
+            font-size: 40px;
+        }
+    }
+
+    #landingpagetestimonial {
+        .landingpagetestimonialheading {
+            font-size: 40px;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    #landingpageWrap {
+        position: relative;
+
+        .content-form {
+            position: static;
+            top: 20%;
+            width: 100%;
+            left: 10px;
+
+            .landingbanner-text {
+                position: absolute;
+                top: 20%;
+
+                .landingpageheading {
+                    font-size: 40px;
+                }
+
+                .landingbannercontent {
+                    font-size: 18px;
+                }
+            }
+
+
+            #landingpageform {
+                margin-top: 20px;
+
+            }
+        }
+    }
+
+
+    #landingsecond {
+
+        .manage-landingabout {
+            align-items: center;
+
+            .landaboutskinlogics {
+                padding-left: 0px;
+
+                .cacs {
+                    font-size: 30px;
+                    font-family: "acumin-pro-extra-condensed";
+                    font-weight: 600;
+                    line-height: 1;
+                    margin-bottom: 0px;
+                }
+
+                .ssin {
+                    font-size: 16px;
+                }
+            }
+
+            .landaboutskintext {
+                padding-left: 0px;
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    #whatwedoland {
+
+        .whatwedolandingheading {
+            font-size: 40px;
+        }
+
+        .landingheadingbottomtext {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .landing-service {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 30px;
+
+            span {
+                margin-right: 20px;
+                font-size: 14px;
+                color: #f17689;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    #consultation-wrapper {
+        padding: 40px 0px;
+
+        .AboutskinformWrap {
+            padding-right: 0px;
+
+            .AboutskinformWrap-heading {
+                h2 {
+                    font-size: 40px;
+                    font-family: "acumin-pro-extra-condensed";
+                    color: #fff;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: #fff;
+                    line-height: 30px;
+                    font-size: 18px;
+                }
+            }
+
+            .skinlogicscontactdetail {
+                p {
+                    color: #fff;
+
+                    span {
+                        display: inline-block;
+                        color: #f197a5;
+                        margin-right: 4px;
+                    }
+                }
+
+                .smalldisription {
+                    margin-top: 30px;
+                }
+            }
+        }
+
+        .consultation-form {
+            .consulationform-heading {
+                text-align: left;
+
+                h2 {
+                    font-size: 40px;
+                }
+            }
+
+            .manageform-buttons {
+                .captacha {
+                    img {
+                        width: 200px;
+                    }
+                }
+
+                .submit-now {
+                    button {
+                        background-color: #ffb6c1;
+                        color: #000;
+                        font-weight: bold;
+                        font-size: 24px;
+                        width: 80%;
+                        text-transform: capitalize;
+                        padding: 18px 8px;
+                        line-height: 18px;
+                        margin-left: auto;
+                        display: block;
+                        cursor: pointer;
+                        font-family: "acumin-pro-extra-condensed";
+                    }
+                }
+            }
+        }
+    }
+
+    #landingadress {
+
+        .landingdisclamer {
+            font-size: 10px;
+        }
+    }
+
+
+    #landing-videos {
+        .landingvideosheading {
+            font-size: 40px;
+        }
+    }
+
+    #landingrealresults {
+        .landingrealresultheading {
+            font-size: 40px;
+        }
+    }
+
+    #landingpagetestimonial {
+        .landingpagetestimonialheading {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1025px) {
+
+    #landingpageWrap {
+        position: relative;
+
+        .content-form {
+            position: absolute;
+            top: 20%;
+            width: 70%;
+            left: 10px;
+
+            .landingpageheading {
+                font-size: 40px;
+            }
+
+            .landingbannercontent {
+                font-size: 18px;
+            }
+
+            #landingpageform {
+                margin-top: 20px;
+
+            }
+        }
+    }
+
+}

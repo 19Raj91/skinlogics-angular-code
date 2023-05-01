@@ -1,0 +1,63 @@
+<div id="topcommon-banner" class="mobile-none">
+    <div class="image-overlay"></div>
+    <img [src]="baseUrl+'/backend/service_result/category_banner/'+category?.banner_image" alt="bg-image" class="w-100">
+    
+    <div class="banner-heading">
+        <h2>{{beforeafterinner[0].name}}</h2>
+    </div>
+</div>
+<div class="breadcrumb-menu mobile-none">
+    <div class="container-max">
+        <ul>
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/real-results">Real Results</a></li>
+            <li>{{beforeafterinner[0].name}}</li>
+        </ul>
+    </div>
+</div>
+<div id="innertopcommon-bannermobile" class="dekhstop-non">
+    <div class="stylingcontent">
+        <div class="banner-heading">
+            <h2>{{beforeafterinner[0].name}}</h2>
+        </div>
+        <div class="breadcrumb-menu">
+            <div class="container-max">
+                <ul>
+                    <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/real-results">Real Results</a></li>
+            <li>{{beforeafterinner[0].name}}</li>
+                </ul>
+
+            
+            </div>
+        </div>
+    </div>
+    </div>
+<app-requestacallbackform></app-requestacallbackform>
+<app-requestcallbackform-mobile></app-requestcallbackform-mobile>
+<div id="beforeAfter">
+    <div class="container">
+        <div class="container-max">
+            <div class="row">
+                <div class="col-12 col-lg-6"  *ngFor="let result of beforeafterinner" >
+                    <div class="galeryimage">
+                        <img src="{{baseUrl}}/backend/service_result/inner/{{result.beforeimg}}" alt="gallery" class="w-100 img-fluid">
+                        <p class="text-center mt-2" style="font-size:12px;">✱ Opinions/Results may vary from person to person.</p>
+                    </div>
+                </div>
+
+              
+            </div>
+         
+
+        </div>
+    </div>
+</div>
+
+<div class="dst-form">
+    <app-dt-form></app-dt-form>
+</div>
+<div class="mb-form">
+    <app-mobile-form></app-mobile-form>
+</div>
+

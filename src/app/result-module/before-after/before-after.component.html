@@ -1,0 +1,59 @@
+<div id="topcommon-banner" class="mobile-none">
+    <div class="image-overlay"></div>
+    <img src="assets/images/real-result-bg.jpg" alt="bg-image" class="w-100">
+    <div class="banner-heading">
+        <h2>Real Results</h2>
+    </div>
+</div>
+<div class="breadcrumb-menu mobile-none">
+    <div class="container-max">
+        <ul>
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/real-results">Real Results</a></li>
+        </ul>
+    </div>
+</div>
+<div id="innertopcommon-bannermobile" class="dekhstop-non">
+    <div class="stylingcontent">
+        <div class="banner-heading">
+            <h2>Real Results</h2>
+        </div>
+        <div class="breadcrumb-menu">
+            <div class="container-max">
+                <ul>
+                    <li><a routerLink="/">Home</a></li>
+                    <li><a routerLink="/real-results">Real Results</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+<app-requestacallbackform></app-requestacallbackform>
+<app-requestcallbackform-mobile></app-requestcallbackform-mobile>
+
+<div id="beforeAfter">
+    <div class="container">
+        <div class="container-max">
+            <div class="row">
+           
+                <div class="col-12 col-lg-4" *ngFor="let result of beforeafter">
+                    <div class="galeryimage">
+                        <a (click)="onSelect(result)" style="cursor: pointer;"><img src="{{baseUrl}}/backend/service_result/image/{{result.image}}" alt="gallery" class="w-100 img-fluid">
+                            <div class="categoryname">{{result.name}}</div>
+                        </a>
+                    </div>
+                </div>
+
+              
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="dst-form">
+    <app-dt-form></app-dt-form>
+</div>
+<div class="mb-form">
+    <app-mobile-form></app-mobile-form>
+</div>

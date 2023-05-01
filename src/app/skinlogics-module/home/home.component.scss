@@ -1,0 +1,3709 @@
+.gallery {
+  background: #eee;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8c8;
+  counter-increment: gallery-cell;
+}
+
+/* */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+#skinlogics-noida {
+  margin: 30px 0px 40px;
+
+  .extraskinlogics {
+    align-items: center;
+
+    .skinlogix-heading {
+      .homeskin-heading, h2 {
+        font-family: "oswald";
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 0px;
+        color: #000;
+      }
+      h2{
+        color: #f197A5;
+      }
+
+      p {
+        color: #f197A5;
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .skinlogics-noidatext {
+      p {
+        color: #171717;
+        font-size: 16px;
+        opacity: 1;
+        line-height: 26px;
+      }
+
+      p+p {
+        margin: 20px 0px;
+      }
+
+      .skinlogics-aboutbuttons {
+        .skinlogicsebutton {
+          border: 1px solid #f197a5;
+          display: inline-block;
+          padding: 4px 10px;
+          margin-right: 10px;
+          color: #000;
+          font-size: 14px;
+        }
+
+        .skinlogicsbookapm {
+          display: inline-block;
+          background-color: #ffb6c1;
+          text-transform: capitalize;
+          border: 1px solid #f197a5;
+          padding: 4px 20px;
+          color: #fff;
+          font-size: 14px;
+        }
+
+      }
+    }
+  }
+}
+
+
+#aging-skinwrap {
+  margin: 30px 0px;
+
+
+  .aging-imagebox {
+    display: flex;
+
+    .aging-image {
+      width: 45%;
+    }
+
+    .aging-text {
+      width: 55%;
+      margin-left: 20px;
+
+      .agingdeskheading {
+        font-family: "oswald";
+        color: #f197a5;
+        font-size: 26px;
+      }
+
+      ul {
+        padding: 0px;
+
+        li {
+
+          a {
+            color: #000;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+
+            i {
+              color: #f197a5;
+              margin-right: 5px;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+
+      .buttongroups {
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+
+        .commonvideobutton {
+          color: #fff;
+          background-color: #f197a5;
+          height: 30px;
+          width: 30px;
+          text-align: center;
+          line-height: 30px;
+          border-radius: 50%;
+        }
+
+        .bttonsborder {
+          border: 1px solid #f197a5;
+          padding: 2px 10px;
+          margin-right: 10px;
+          display: inline-block;
+          font-size: 16px;
+          color: #000;
+
+
+        }
+
+      }
+
+    }
+  }
+
+  .margintop {
+    margin-top: 30px;
+  }
+
+
+}
+
+#mobile-image-slider {
+  margin-top: 0px;
+}
+
+#aging-maintext {
+  background-color: #fff6f7;
+  padding: 20px 0px;
+
+  p {
+    font-weight: 600;
+    text-align: center;
+    font-family: "oswald";
+    font-size: 23px;
+    line-height: 28px;
+  }
+
+}
+
+#image-box2 {
+  margin: 30PX 0PX;
+
+  .image-boxwrapper2 {
+    position: relative;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 9px 0px rgb(0 0 0 / 24%);
+    -moz-box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 5px 9px 0px rgb(0 0 0 / 24%);
+  }
+
+  .imagebox-text2 {
+    padding: 0px 10px 10px;
+  }
+
+  h2 {
+    font-family: "oswald";
+    color: #f197a5;
+    font-size: 24px;
+  }
+  .mombheading{
+    font-family: "oswald";
+    color: #f197a5;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .commonvideobutton {
+    position: absolute;
+    top: 10px;
+    left: 4px;
+  }
+
+  .coustumplay-2 {
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 1px 0px 0px 4px;
+    color: #000;
+  }
+}
+
+.dekhstop-non {
+  display: block;
+}
+
+.mobile-none {
+  display: none;
+}
+
+@media screen and (min-width: 546px) and (max-width: 767px) {
+  .popup {
+    width: 50%;
+  }
+
+  #home-banner {
+    .managehome-banner {
+      align-items: center;
+      margin-top: 90px;
+
+      .homebaner-image {
+        img {
+          width: 90%;
+        }
+      }
+
+      .homebanner-heading {
+        text-align: center;
+
+        .homehd {
+          font-size: 90px;
+          font-family: "oswald";
+          color: #171717;
+          line-height: 1;
+          font-weight: 500;
+
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+
+  }
+
+  .partnerJourney {
+    padding: 1rem 20rem;
+    text-align: center;
+    margin: 0px 40px;
+
+    .hdng {
+      font-size: 5rem;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+
+  #skinlogics-noida {
+    margin-top: 50px;
+
+    .extraskinlogics {
+      align-items: center;
+
+      .skinlogix-heading {
+        .homeskin-heading, h2 {
+          font-family: "oswald";
+          font-size: 60px;
+          font-weight: 400;
+        }
+
+        p {
+          color: #f197A5;
+          font-size: 25px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .skinlogics-noidatext {
+        p {
+          color: #171717;
+          font-size: 18px;
+          opacity: 1;
+        }
+
+        p+p {
+          margin: 40px 0px;
+        }
+
+        .skinlogics-aboutbuttons {
+          .skinlogicsebutton {
+            border: 1px solid #f197a5;
+            display: inline-block;
+            padding: 4px 10px;
+            margin-right: 10px;
+            color: #000;
+            transition: .5s;
+
+            &:hover {
+              background-color: #ffb6c1;
+              color: #fff;
+              transition: .5s;
+            }
+          }
+
+          .skinlogicsbookapm {
+            display: inline-block;
+            background-color: #ffb6c1;
+            text-transform: capitalize;
+            border: 1px solid #f197a5;
+            padding: 4px 20px;
+            color: #fff;
+            transition: .5s;
+
+            &:hover {
+              background-color: #fff;
+              color: #000;
+              transition: .5s;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  #desktoppigmenspots {
+    margin: 40px 0px;
+    position: relative;
+
+    .desktoppigmenspotsextracontainer {
+      left: 7%;
+      top: 8%;
+      position: absolute;
+      width: 100%;
+
+      .desktoppigmenspotscontentwrap {
+        .desktoppigmenspotscontentHeading {
+          .pigheading {
+            font-size: 60px;
+            color: #f197A5;
+            font-family: "oswald";
+            font-weight: 400;
+          }
+
+          p {
+            color: #fff;
+            font-size: 26px;
+          }
+        }
+
+        .desktoppigmenspotscontentText {
+          p {
+            color: #fff;
+            line-height: 30px;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .desktoppigmenspotscommonlinks {
+        margin-top: 20px;
+
+        ul {
+          padding: 0px;
+
+          li {
+            margin-bottom: 15px;
+
+            a {
+              color: #f197A5;
+              font-size: 16px;
+
+              i {
+                color: #fff;
+                margin-right: 10px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .desktoppigmenspotscommonvideo {
+        margin-top: 30px;
+
+        .desktoppigmenspotsviewall {
+          border: 1px solid #f197a5;
+          display: inline-block;
+          padding: 6px 20px;
+          margin-right: 10px;
+          color: white;
+          transition: .5s;
+
+          &:hover {
+            background-color: #ffb6c1;
+            transition: .5s;
+          }
+        }
+      }
+    }
+  }
+
+  /*------------------video-section------------------------*/
+
+  #mobile-image-slider {
+    background-color: #fff6f7;
+    padding: 40px 0px;
+
+    .mobslider {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0px;
+    }
+
+    .manage-widthslider {
+      width: 33.33%;
+    }
+
+    .mobile-image-box {
+      position: relative;
+
+      &:hover {
+        .box-image-text {
+          transform: translateY(0);
+          transition: .5s;
+        }
+      }
+
+      .commonvideobutton {
+        position: absolute;
+        top: 10px;
+        z-index: 1;
+        right: 10px;
+      }
+
+      overflow: hidden;
+
+      .box-image-text {
+        transform: translateY(32%);
+        transition: .5s;
+
+        .mobile-image-boxhover {
+          ul {
+            padding: 0px;
+            margin-top: 30px;
+
+            li {
+              margin-bottom: 15px;
+
+              &:last-child {
+                margin-bottom: 0px;
+              }
+
+              a {
+                color: #f197A5;
+                text-transform: capitalize;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+
+                i {
+                  margin-right: 10px;
+                  font-size: 8px;
+                }
+              }
+            }
+          }
+
+          .mobile-imagebutton {
+            color: #f197A5;
+            text-transform: uppercase;
+            margin-top: 20px
+          }
+        }
+      }
+    }
+  }
+
+  #haircareWrapper {
+    background-image: url(/assets/images/hare-carebg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .haircare-heading {
+      text-align: center;
+      margin-bottom: 30px;
+
+      .haircare-headingreplace{
+        font-family: "oswald";
+        color: #fff;
+        font-size: 60px;
+        font-weight: 400;
+      }
+    }
+
+    .haircare-textwrap {
+      text-align: center;
+      width: 56%;
+      margin: 0 auto;
+
+      p {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+
+    .haircarelink-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+
+      .haircare-commonlinkwrap {
+        margin-right: 40px;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        p {
+          a {
+            color: #f197a5;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+
+            i {
+              color: #fff;
+              font-size: 12px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+    }
+
+    .haircarebuttonwrap {
+      text-align: center;
+      margin-top: 40px;
+
+      .desktoppigmenspotsviewall {
+        border: 1px solid #f197a5;
+        display: inline-block;
+        padding: 6px 20px;
+        margin-right: 10px;
+        color: white;
+        transition: .5s;
+
+        &:hover {
+          background-color: #ffb6c1;
+          color: #fff;
+          transition: .5s;
+        }
+      }
+    }
+  }
+
+  #dekstop-aginwrap {
+    padding: 60px 0px;
+
+    .dekstopAgingheading {
+      text-align: center;
+      margin-bottom: 120px;
+
+      .desktoplongheading {
+        font-family: "oswald";
+        font-size: 37px;
+        line-height: 50px;
+        color: #171717;
+
+        span {
+          display: block;
+        }
+      }
+    }
+
+    .dekstop-aginwrapaligment {
+      align-items: center;
+      justify-content: center;
+
+      .desktopAgingimage-wrap {
+        position: relative;
+
+        .dekstopAgingplaybutton {
+          position: absolute;
+          bottom: 30px;
+          right: 20px;
+
+          a {
+            display: inline-block;
+            height: 60px;
+            width: 60px;
+            background: #fff;
+            text-align: center;
+            line-height: 60px;
+            border-radius: 50%;
+            padding-left: 7px;
+            padding-top: 4px;
+            color: #9d8378;
+            transition: .5s;
+
+            &:hover {
+              background-color: #ffb6c1;
+              color: #fff;
+              transition: .5s;
+            }
+
+            i {
+              font-size: 24px;
+            }
+
+          }
+        }
+      }
+
+      .desktopSkinaging-text {
+        padding-left: 50px;
+
+        .agingdeskheading {
+          font-family: "oswald";
+          color: #f197a5;
+          font-size: 60px;
+        }
+
+        p {
+          font-size: 18px;
+          margin: 30px 0px 40px;
+        }
+
+        .desktopSkinaging-link {
+          display: flex;
+
+          .desktopSkinaging-commonlink {
+            li {
+              a {
+                color: #171717;
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                margin-bottom: 20px;
+
+                i {
+                  font-size: 12px;
+                  color: #f197a5;
+                  margin-right: 10px;
+                }
+              }
+
+              &:last-child {
+                a {
+                  margin-bottom: 0px;
+                }
+              }
+            }
+          }
+
+          .desktopSkinaging-link2 {
+            margin-left: 50px;
+          }
+        }
+
+        .desktopSkinaging-view {
+          margin-top: 40px;
+
+          button {
+            border: 1px solid #f197a5;
+            padding: 6px 20px;
+            margin-right: 10px;
+            color: #000;
+            cursor: pointer;
+            transition: .5s;
+
+            &:hover {
+              background-color: #ffb6c1;
+              color: #fff;
+              transition: .5s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #desktopImage-wrap {
+    display: flex;
+
+    .commonImagestyle {
+      width: 50%;
+      position: relative;
+
+      .textonImage {
+        position: absolute;
+        bottom: 50px;
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+
+        .homeunwantedheading {
+          font-family: "oswald";
+          font-size: 40px;
+          color: #fff;
+        }
+
+        p {
+          color: #fff;
+        }
+      }
+
+      .playbuttononimage {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        a {
+          display: inline-block;
+          height: 60px;
+          width: 60px;
+          background: #fff;
+          text-align: center;
+          line-height: 60px;
+          border-radius: 50%;
+          padding-left: 7px;
+          padding-top: 4px;
+          color: #9d8378;
+          transition: .5s;
+
+          &:hover {
+            background-color: #ffb6c1;
+            color: #fff;
+            transition: .5s;
+          }
+
+          i {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  /*-------------------------------*/
+
+  #testimonial-wrapper {
+
+    .testimonial-heading {
+
+      h2 {
+        color: #f197a5;
+        font-family: "oswald";
+        font-size: 70px;
+      }
+    }
+
+  }
+
+
+  #dksblogsection {
+    margin: 50px 0px;
+
+    .dksheading {
+      text-align: center;
+      margin-bottom: 50px;
+
+      .latest-blogheading {
+        color: #f197a5;
+        font-family: "oswald";
+        font-size: 60px;
+      }
+    }
+
+    .blogimgaecontent-wrap {
+      position: relative;
+
+      .blog-imagewrap {
+        position: relative;
+
+        .blog-imagetext {
+          position: absolute;
+          bottom: 40px;
+          left: 20px;
+
+          p {
+            font-family: "oswald";
+            color: #fff;
+            font-size: 24px;
+          }
+        }
+      }
+
+      .blogimageContent {
+        bottom: 10px;
+        width: 90%;
+        margin: -20px auto 0px;
+        background: #fff;
+        padding: 30px;
+        position: relative;
+        -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+
+        small {
+          opacity: .5;
+          display: inline-block;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 18px;
+          opacity: .8;
+        }
+
+        button {
+          display: inline-block;
+          border: 1px solid #f197a5;
+          padding: 8px 10px;
+          cursor: pointer;
+          margin-top: 10px;
+          transition: .5s;
+
+          &:hover {
+            background-color: #ffb6c1;
+            color: #fff;
+            transition: .5s;
+          }
+        }
+      }
+    }
+
+    .blog-button {
+      text-align: center;
+      margin-top: 50px;
+
+      button {
+        display: inline-block;
+        border: 1px solid #f197a5;
+        padding: 10px 30px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .5s;
+
+        &:hover {
+          background-color: #ffb6c1;
+          color: #fff;
+          transition: .5s;
+        }
+      }
+    }
+  }
+
+
+  .dekhstop-non {
+    display: none;
+  }
+
+  .mobile-none {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .popup {
+    width: 50%;
+  }
+
+  #home-banner {
+    .managehome-banner {
+      align-items: center;
+
+      .homebaner-image {
+        img {
+          width: 100%;
+        }
+      }
+
+      .homebanner-heading {
+        text-align: center;
+
+        .homehd {
+          font-size: 38px;
+          font-family: "oswald";
+          color: #171717;
+          line-height: 1;
+          font-weight: 500;
+
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+
+  }
+
+  .partnerJourney {
+    padding: 1rem 2rem;
+    text-align: center;
+    margin: 0px 20px;
+
+    .hdng {
+      font-size: 5rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 30px;
+    }
+  }
+
+  #skinlogics-noida {
+    margin-top: 50px;
+
+    .extraskinlogics {
+      align-items: center;
+
+      .skinlogix-heading {
+        .homeskin-heading, h2 {
+          font-family: "oswald";
+          font-size: 60px;
+          font-weight: 400;
+        }
+
+        p {
+          color: #f197A5;
+          font-size: 25px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .skinlogics-noidatext {
+        p {
+          color: #171717;
+          font-size: 18px;
+          opacity: 1;
+        }
+
+        p+p {
+          margin: 40px 0px;
+        }
+
+        .skinlogics-aboutbuttons {
+          .skinlogicsebutton {
+            border: 1px solid #f197a5;
+            display: inline-block;
+            padding: 4px 10px;
+            margin-right: 10px;
+            color: #000;
+            transition: .5s;
+
+            &:hover {
+              background-color: #ffb6c1;
+              color: #fff;
+              transition: .5s;
+            }
+          }
+
+          .skinlogicsbookapm {
+            display: inline-block;
+            background-color: #ffb6c1;
+            text-transform: capitalize;
+            border: 1px solid #f197a5;
+            padding: 4px 20px;
+            color: #fff;
+            transition: .5s;
+
+            &:hover {
+              background-color: #fff;
+              color: #000;
+              transition: .5s;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  #desktoppigmenspots {
+    margin: 40px 0px;
+    position: relative;
+
+    .desktoppigmenspotsextracontainer {
+      left: 7%;
+      top: 8%;
+      position: absolute;
+      width: 100%;
+
+      .desktoppigmenspotscontentwrap {
+        .desktoppigmenspotscontentHeading {
+          .pigheading {
+            font-size: 60px;
+            color: #f197A5;
+            font-family: "oswald";
+            font-weight: 400;
+          }
+
+          p {
+            color: #fff;
+            font-size: 26px;
+          }
+        }
+
+        .desktoppigmenspotscontentText {
+          p {
+            color: #fff;
+            line-height: 30px;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .desktoppigmenspotscommonlinks {
+        margin-top: 20px;
+
+        ul {
+          padding: 0px;
+
+          li {
+            margin-bottom: 15px;
+
+            a {
+              color: #f197A5;
+              font-size: 16px;
+
+              i {
+                color: #fff;
+                margin-right: 10px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .desktoppigmenspotscommonvideo {
+        margin-top: 30px;
+
+        .desktoppigmenspotsviewall {
+          border: 1px solid #f197a5;
+          display: inline-block;
+          padding: 6px 20px;
+          margin-right: 10px;
+          color: white;
+          transition: .5s;
+
+          &:hover {
+            background-color: #ffb6c1;
+            transition: .5s;
+          }
+        }
+      }
+    }
+  }
+
+  /*------------------video-section------------------------*/
+
+  #mobile-image-slider {
+    background-color: #fff6f7;
+    padding: 40px 0px;
+
+    .mobslider {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 0px;
+    }
+
+    .mobile-image-box {
+      position: relative;
+
+      &:hover {
+        .box-image-text {
+          transform: translateY(0);
+          transition: .5s;
+        }
+      }
+
+      .commonvideobutton {
+        position: absolute;
+        top: 10px;
+        z-index: 1;
+        right: 10px;
+      }
+
+      overflow: hidden;
+
+      .box-image-text {
+        transition: .5s;
+        padding: 10px;
+
+        .mobile-image-boxhover {
+          ul {
+            margin-top: 0px;
+            padding: 0px;
+
+            li {
+              margin-bottom: 16px;
+
+              &:last-child {
+                margin-bottom: 0px;
+              }
+
+              a {
+                color: #f197A5;
+                text-transform: capitalize;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+
+                i {
+                  margin-right: 10px;
+                  font-size: 8px;
+                }
+              }
+            }
+          }
+
+          .mobile-imagebutton {
+            color: #f197A5;
+            text-transform: uppercase;
+            margin-top: 10px
+          }
+        }
+      }
+    }
+  }
+
+  #dekstop-aginwrap {
+    padding: 60px 0px;
+
+    .dekstopAgingheading {
+      text-align: center;
+      margin-bottom: 120px;
+
+      .desktoplongheading {
+        font-family: "oswald";
+        font-size: 37px;
+        line-height: 50px;
+        color: #171717;
+
+        span {
+          display: block;
+        }
+      }
+    }
+
+    .dekstop-aginwrapaligment {
+      align-items: center;
+      justify-content: center;
+
+      .desktopAgingimage-wrap {
+        position: relative;
+
+        .dekstopAgingplaybutton {
+          position: absolute;
+          bottom: 30px;
+          right: 20px;
+
+          a {
+            display: inline-block;
+            height: 60px;
+            width: 60px;
+            background: #fff;
+            text-align: center;
+            line-height: 60px;
+            border-radius: 50%;
+            padding-left: 7px;
+            padding-top: 4px;
+            color: #9d8378;
+            transition: .5s;
+
+            &:hover {
+              background-color: #ffb6c1;
+              color: #fff;
+              transition: .5s;
+            }
+
+            i {
+              font-size: 24px;
+            }
+
+          }
+        }
+      }
+
+      .desktopSkinaging-text {
+        padding-left: 50px;
+
+        .agingdeskheading {
+          font-family: "oswald";
+          color: #f197a5;
+          font-size: 60px;
+        }
+
+        p {
+          font-size: 18px;
+          margin: 30px 0px 40px;
+        }
+
+        .desktopSkinaging-link {
+          display: flex;
+
+          .desktopSkinaging-commonlink {
+            li {
+              a {
+                color: #171717;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                margin-bottom: 20px;
+
+                i {
+                  font-size: 12px;
+                  color: #f197a5;
+                  margin-right: 10px;
+                }
+              }
+
+              &:last-child {
+                a {
+                  margin-bottom: 0px;
+                }
+              }
+            }
+          }
+
+          .desktopSkinaging-link2 {
+            margin-left: 50px;
+          }
+        }
+
+        .desktopSkinaging-view {
+          margin-top: 40px;
+
+          button {
+            border: 1px solid #f197a5;
+            padding: 6px 20px;
+            margin-right: 10px;
+            color: #000;
+            cursor: pointer;
+            transition: .5s;
+
+            &:hover {
+              background-color: #ffb6c1;
+              color: #fff;
+              transition: .5s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #desktopImage-wrap {
+    display: flex;
+
+    .commonImagestyle {
+      width: 50%;
+      position: relative;
+
+      .textonImage {
+        position: absolute;
+        bottom: 50px;
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+
+        .homeunwantedheading {
+          font-family: "oswald";
+          font-size: 40px;
+          color: #fff;
+        }
+
+        p {
+          color: #fff;
+        }
+      }
+
+      .playbuttononimage {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        a {
+          display: inline-block;
+          height: 60px;
+          width: 60px;
+          background: #fff;
+          text-align: center;
+          line-height: 60px;
+          border-radius: 50%;
+          padding-left: 7px;
+          padding-top: 4px;
+          color: #9d8378;
+          transition: .5s;
+
+          &:hover {
+            background-color: #ffb6c1;
+            color: #fff;
+            transition: .5s;
+          }
+
+          i {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  /*-------------------------------*/
+
+  #testimonial-wrapper {
+
+    .testimonial-heading {
+
+      h2 {
+        color: #f197a5;
+        font-family: "oswald";
+        font-size: 70px;
+      }
+    }
+
+  }
+
+
+  #dksblogsection {
+    margin: 50px 0px;
+
+    .dksheading {
+      text-align: center;
+      margin-bottom: 50px;
+
+      .latest-blogheading {
+        color: #f197a5;
+        font-family: "oswald";
+        font-size: 60px;
+      }
+    }
+
+    .blogimgaecontent-wrap {
+      position: relative;
+
+      .blog-imagewrap {
+        position: relative;
+
+        .blog-imagetext {
+          position: absolute;
+          bottom: 40px;
+          left: 20px;
+
+          p {
+            font-family: "oswald";
+            color: #fff;
+            font-size: 24px;
+          }
+        }
+      }
+
+      .blogimageContent {
+        bottom: 10px;
+        width: 90%;
+        margin: -20px auto 0px;
+        background: #fff;
+        padding: 30px;
+        position: relative;
+        -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+
+        small {
+          opacity: .5;
+          display: inline-block;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 18px;
+          opacity: .8;
+        }
+
+        button {
+          display: inline-block;
+          border: 1px solid #f197a5;
+          padding: 8px 10px;
+          cursor: pointer;
+          margin-top: 10px;
+          transition: .5s;
+
+          &:hover {
+            background-color: #ffb6c1;
+            color: #fff;
+            transition: .5s;
+          }
+        }
+      }
+    }
+
+    .blog-button {
+      text-align: center;
+      margin-top: 50px;
+
+      button {
+        display: inline-block;
+        border: 1px solid #f197a5;
+        padding: 10px 30px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .5s;
+
+        &:hover {
+          background-color: #ffb6c1;
+          color: #fff;
+          transition: .5s;
+        }
+      }
+    }
+  }
+
+
+}
+@media screen and (min-width: 993px) and (max-width:1024px) {
+  .popup {
+    width: 60%;
+  }
+
+  .popup {
+    width: 50%;
+  }
+
+
+
+  #home-banner {
+    position: relative;
+    .forcustomeadd{
+      position:absolute;
+      top:70px;
+      bottom:0px;
+    
+    .managehome-banner {
+      align-items: center;
+      margin-top: 90px;
+
+      .homebaner-image {
+        img {
+          width: 90%;
+        }
+      }
+
+      .homebanner-heading {
+        text-align: center;
+
+        .homehd {
+          font-size: 50px;
+          font-family: "oswald";
+          color: #fff;
+          line-height: 1;
+          font-weight: 500;
+
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  }
+
+  .partnerJourney {
+    padding: 1rem 3rem;
+    text-align: center;
+    margin: 0px 40px;
+
+    .hdng {
+      font-size: 5rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 30px;
+    }
+  }
+
+  #skinlogics-noida {
+    margin-top: 50px;
+
+    .extraskinlogics {
+      align-items: center;
+
+      .skinlogix-heading {
+        .homeskin-heading, h2 {
+          font-family: "oswald";
+          font-size: 60px;
+          font-weight: 400;
+        }
+
+        p {
+          color: #f197A5;
+          font-size: 25px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .skinlogics-noidatext {
+        p {
+          color: #171717;
+          font-size: 18px;
+          opacity: 1;
+        }
+
+        p+p {
+          margin: 40px 0px;
+        }
+
+        .skinlogics-aboutbuttons {
+          .skinlogicsebutton {
+            border: 1px solid #f197a5;
+            display: inline-block;
+            padding: 4px 10px;
+            margin-right: 10px;
+            color: #000;
+            transition: .5s;
+
+            &:hover {
+              background-color: #ffb6c1;
+              color: #fff;
+              transition: .5s;
+            }
+          }
+
+          .skinlogicsbookapm {
+            display: inline-block;
+            background-color: #ffb6c1;
+            text-transform: capitalize;
+            border: 1px solid #f197a5;
+            padding: 4px 20px;
+            color: #fff;
+            transition: .5s;
+
+            &:hover {
+              background-color: #fff;
+              color: #000;
+              transition: .5s;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  #desktoppigmenspots {
+    margin: 40px 0px;
+    position: relative;
+    height: 750px;
+    .imagepigmnspots{
+      img{
+        height: 750px;
+        object-fit: cover;
+      }
+    }
+
+    .desktoppigmenspotsextracontainer {
+      left: 7%;
+      top: 8%;
+      position: absolute;
+      width: 100%;
+
+      .desktoppigmenspotscontentwrap {
+        .desktoppigmenspotscontentHeading {
+          .pigheading {
+            font-size: 60px;
+            color: #f197A5;
+            font-family: "oswald";
+            font-weight: 400;
+          }
+
+          p {
+            color: #fff;
+            font-size: 26px;
+          }
+        }
+
+        .desktoppigmenspotscontentText {
+          p {
+            color: #fff;
+            line-height: 30px;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .desktoppigmenspotscommonlinks {
+        margin-top: 20px;
+
+        ul {
+          padding: 0px;
+
+          li {
+            margin-bottom: 15px;
+
+            a {
+              color: #f197A5;
+              font-size: 16px;
+
+              i {
+                color: #fff;
+                margin-right: 10px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .desktoppigmenspotscommonvideo {
+        margin-top: 0px;
+
+        .desktoppigmenspotsviewall {
+          border: 1px solid #f197a5;
+          display: inline-block;
+          padding: 6px 20px;
+          margin-right: 10px;
+          color: white;
+          transition: .5s;
+
+          &:hover {
+            background-color: #ffb6c1;
+            transition: .5s;
+          }
+        }
+      }
+    }
+  }
+
+  /*------------------video-section------------------------*/
+
+  #mobile-image-slider {
+    background-color: #fff6f7;
+    padding: 40px 0px;
+
+    .mobslider {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0px;
+    }
+
+    .manage-widthslider {
+      width: 33.33%;
+    }
+
+    .mobile-image-box {
+      position: relative;
+
+      &:hover {
+        .box-image-text {
+          transform: translateY(0);
+          transition: .5s;
+        }
+      }
+
+      .commonvideobutton {
+        position: absolute;
+        top: 10px;
+        z-index: 1;
+        right: 10px;
+      }
+
+      overflow: hidden;
+
+      .box-image-text {
+        transform: translateY(0);
+        transition: .5s;
+
+        .mobile-image-boxhover {
+          ul {
+            padding: 0px;
+            margin-top: 30px;
+
+            li {
+              margin-bottom: 15px;
+
+              &:last-child {
+                margin-bottom: 0px;
+              }
+
+              a {
+                color: #f197A5;
+                text-transform: capitalize;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+
+                i {
+                  margin-right: 10px;
+                  font-size: 8px;
+                }
+              }
+            }
+          }
+
+          .mobile-imagebutton {
+            color: #f197A5;
+            text-transform: uppercase;
+            margin-top: 20px
+          }
+        }
+      }
+    }
+  }
+
+  #haircareWrapper {
+    background-image: url(/assets/images/hare-carebg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .haircare-heading {
+      text-align: center;
+      margin-bottom: 30px;
+
+      .haircare-headingreplace{
+        font-family: "oswald";
+        color: #fff;
+        font-size: 60px;
+        font-weight: 400;
+      }
+    }
+
+    .haircare-textwrap {
+      text-align: center;
+      width: 56%;
+      margin: 0 auto;
+
+      p {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+
+    .haircarelink-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+
+      .haircare-commonlinkwrap {
+        margin-right: 40px;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        p {
+          a {
+            color: #f197a5;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+
+            i {
+              color: #fff;
+              font-size: 12px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+    }
+
+    .haircarebuttonwrap {
+      text-align: center;
+      margin-top: 40px;
+
+      .desktoppigmenspotsviewall {
+        border: 1px solid #f197a5;
+        display: inline-block;
+        padding: 6px 20px;
+        margin-right: 10px;
+        color: white;
+        transition: .5s;
+
+        &:hover {
+          background-color: #ffb6c1;
+          color: #fff;
+          transition: .5s;
+        }
+      }
+    }
+  }
+
+  #dekstop-aginwrap {
+    padding: 60px 0px;
+
+    .dekstopAgingheading {
+      text-align: center;
+      margin-bottom: 50px;
+
+      .desktoplongheading {
+        font-family: "oswald";
+        font-size: 37px;
+        line-height: 50px;
+        color: #171717;
+
+        span {
+          display: block;
+        }
+      }
+    }
+
+    .dekstop-aginwrapaligment {
+      align-items: center;
+      justify-content: center;
+
+      .desktopAgingimage-wrap {
+        position: relative;
+
+        .dekstopAgingplaybutton {
+          position: absolute;
+          bottom: 30px;
+          right: 20px;
+
+          a {
+            display: inline-block;
+            height: 60px;
+            width: 60px;
+            background: #fff;
+            text-align: center;
+            line-height: 60px;
+            border-radius: 50%;
+            padding-left: 7px;
+            padding-top: 4px;
+            color: #9d8378;
+            transition: .5s;
+
+            &:hover {
+              background-color: #ffb6c1;
+              color: #fff;
+              transition: .5s;
+            }
+
+            i {
+              font-size: 24px;
+            }
+
+          }
+        }
+      }
+
+      .desktopSkinaging-text {
+        padding-left: 50px;
+
+        .agingdeskheading {
+          font-family: "oswald";
+          color: #f197a5;
+          font-size: 60px;
+        }
+
+        p {
+          font-size: 18px;
+          margin: 30px 0px 40px;
+        }
+
+        .desktopSkinaging-link {
+          display: flex;
+
+          .desktopSkinaging-commonlink {
+            li {
+              a {
+                color: #171717;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                margin-bottom: 20px;
+
+                i {
+                  font-size: 12px;
+                  color: #f197a5;
+                  margin-right: 10px;
+                }
+              }
+
+              &:last-child {
+                a {
+                  margin-bottom: 0px;
+                }
+              }
+            }
+          }
+
+          .desktopSkinaging-link2 {
+            margin-left: 50px;
+          }
+        }
+
+        .desktopSkinaging-view {
+          margin-top: 40px;
+
+          button {
+            border: 1px solid #f197a5;
+            padding: 6px 20px;
+            margin-right: 10px;
+            color: #000;
+            cursor: pointer;
+            transition: .5s;
+
+            &:hover {
+              background-color: #ffb6c1;
+              color: #fff;
+              transition: .5s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #desktopImage-wrap {
+    display: flex;
+
+    .commonImagestyle {
+      width: 50%;
+      position: relative;
+
+      .textonImage {
+        position: absolute;
+        bottom: 50px;
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+
+        .homeunwantedheading {
+          font-family: "oswald";
+          font-size: 40px;
+          color: #fff;
+        }
+
+        p {
+          color: #fff;
+        }
+      }
+
+      .playbuttononimage {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        a {
+          display: inline-block;
+          height: 60px;
+          width: 60px;
+          background: #fff;
+          text-align: center;
+          line-height: 60px;
+          border-radius: 50%;
+          padding-left: 7px;
+          padding-top: 4px;
+          color: #9d8378;
+          transition: .5s;
+
+          &:hover {
+            background-color: #ffb6c1;
+            color: #fff;
+            transition: .5s;
+          }
+
+          i {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  /*-------------------------------*/
+
+  #testimonial-wrapper {
+
+    .testimonial-heading {
+
+      h2 {
+        color: #f197a5;
+        font-family: "oswald";
+        font-size: 70px;
+      }
+    }
+
+  }
+
+
+  #dksblogsection {
+    margin: 50px 0px;
+
+    .dksheading {
+      text-align: center;
+      margin-bottom: 50px;
+
+      .latest-blogheading {
+        color: #f197a5;
+        font-family: "oswald";
+        font-size: 60px;
+      }
+    }
+
+    .blogimgaecontent-wrap {
+      position: relative;
+
+      .blog-imagewrap {
+        position: relative;
+
+        .blog-imagetext {
+          position: absolute;
+          bottom: 40px;
+          left: 20px;
+
+          p {
+            font-family: "oswald";
+            color: #fff;
+            font-size: 24px;
+          }
+        }
+      }
+
+      .blogimageContent {
+        bottom: 10px;
+        width: 90%;
+        margin: -20px auto 0px;
+        background: #fff;
+        padding: 30px;
+        position: relative;
+        -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+
+        small {
+          opacity: .5;
+          display: inline-block;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 18px;
+          opacity: .8;
+        }
+
+        button {
+          display: inline-block;
+          border: 1px solid #f197a5;
+          padding: 8px 10px;
+          cursor: pointer;
+          margin-top: 10px;
+          transition: .5s;
+
+          &:hover {
+            background-color: #ffb6c1;
+            color: #fff;
+            transition: .5s;
+          }
+        }
+      }
+    }
+
+    .blog-button {
+      text-align: center;
+      margin-top: 50px;
+
+      button {
+        display: inline-block;
+        border: 1px solid #f197a5;
+        padding: 10px 30px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .5s;
+
+        &:hover {
+          background-color: #ffb6c1;
+          color: #fff;
+          transition: .5s;
+        }
+      }
+    }
+  }
+
+
+  .dekhstop-non {
+    display: none;
+  }
+
+  .mobile-none {
+    display: block;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width:1370px) {
+  .popup {
+    width: 60%;
+  }
+
+  .popup {
+    width: 50%;
+  }
+
+  #home-banner {
+    position: relative;
+    .forcustomeadd{
+      position:absolute;
+      top:0px;
+      bottom:0px;
+    
+    .managehome-banner {
+      align-items: center;
+      margin-top: 90px;
+
+      .homebaner-image {
+        img {
+          width: 90%;
+        }
+      }
+
+      .homebanner-heading {
+        text-align: center;
+
+        .homehd {
+          font-size: 94px;
+          font-family: "oswald";
+          color: #fff;
+          line-height: 1;
+          font-weight: 500;
+
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  }
+
+  .partnerJourney {
+    padding: 1rem 20rem;
+    text-align: center;
+    margin: 40px 40px 0px;
+    background: #000;
+
+    .hdng {
+      font-size: 5rem;
+      font-weight: 500;
+    }
+    h1{
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 30px;
+    }
+  }
+
+  #skinlogics-noida {
+    margin-top: 50px;
+
+    .extraskinlogics {
+      align-items: center;
+
+      .skinlogix-heading {
+        .homeskin-heading, h2 {
+          font-family: "oswald";
+          font-size: 60px;
+          font-weight: 400;
+        }
+
+        p {
+          color: #f197A5;
+          font-size: 25px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .skinlogics-noidatext {
+        p {
+          color: #171717;
+          font-size: 16px;
+          opacity: 1;
+          font-weight: 500;
+          line-height: 28px;
+        }
+        p+p {
+          margin: 40px 0px;
+        }
+
+        .skinlogics-aboutbuttons {
+          .skinlogicsebutton {
+            border: 1px solid #f197a5;
+            display: inline-block;
+            padding: 4px 10px;
+            margin-right: 10px;
+            color: #000;
+            transition: .5s;
+
+            &:hover {
+              background-color: #ffb6c1;
+              color: #fff;
+              transition: .5s;
+            }
+          }
+
+          .skinlogicsbookapm {
+            display: inline-block;
+            background-color: #ffb6c1;
+            text-transform: capitalize;
+            border: 1px solid #f197a5;
+            padding: 4px 20px;
+            color: #fff;
+            transition: .5s;
+
+            &:hover {
+              background-color: #fff;
+              color: #000;
+              transition: .5s;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  #desktoppigmenspots {
+    margin: 40px 0px;
+    position: relative;
+
+    .desktoppigmenspotsextracontainer {
+      left: 7%;
+      top: 8%;
+      position: absolute;
+      width: 100%;
+
+      .desktoppigmenspotscontentwrap {
+        .desktoppigmenspotscontentHeading {
+          .pigheading {
+            font-size: 60px;
+            color: #f197A5;
+            font-family: "oswald";
+            font-weight: 400;
+          }
+
+          p {
+            color: #fff;
+            font-size: 26px;
+          }
+        }
+
+        .desktoppigmenspotscontentText {
+          p {
+            color: #fff;
+            line-height: 30px;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .desktoppigmenspotscommonlinks {
+        margin-top: 20px;
+
+        ul {
+          padding: 0px;
+
+          li {
+            margin-bottom: 15px;
+
+            a {
+              color: #f197A5;
+              font-size: 16px;
+
+              i {
+                color: #fff;
+                margin-right: 10px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .desktoppigmenspotscommonvideo {
+        margin-top: 30px;
+
+        .desktoppigmenspotsviewall {
+          border: 1px solid #f197a5;
+          display: inline-block;
+          padding: 6px 20px;
+          margin-right: 10px;
+          color: white;
+          transition: .5s;
+
+          &:hover {
+            background-color: #ffb6c1;
+            transition: .5s;
+          }
+        }
+      }
+    }
+  }
+
+  /*------------------video-section------------------------*/
+
+  #mobile-image-slider {
+    background-color: #fff6f7;
+    padding: 40px 0px;
+
+    .mobslider {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0px;
+    }
+
+    .manage-widthslider {
+      width: 33.33%;
+    }
+
+    .mobile-image-box {
+      position: relative;
+
+      &:hover {
+        .box-image-text {
+          transform: translateY(0);
+          transition: .5s;
+        }
+      }
+
+      .commonvideobutton {
+        position: absolute;
+        top: 10px;
+        z-index: 1;
+        right: 10px;
+      }
+
+      overflow: hidden;
+
+      .box-image-text {
+        transform: translateY(42%);
+        transition: .5s;
+
+        .mobile-image-boxhover {
+          ul {
+            padding: 0px;
+            margin-top: 30px;
+
+            li {
+              margin-bottom: 15px;
+
+              &:last-child {
+                margin-bottom: 0px;
+              }
+
+              a {
+                color: #f197A5;
+                text-transform: capitalize;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+
+                i {
+                  margin-right: 10px;
+                  font-size: 8px;
+                }
+              }
+            }
+          }
+
+          .mobile-imagebutton {
+            color: #f197A5;
+            text-transform: uppercase;
+            margin-top: 20px
+          }
+        }
+      }
+    }
+  }
+
+  #haircareWrapper {
+    background-image: url(/assets/images/hare-carebg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .haircare-heading {
+      text-align: center;
+      margin-bottom: 30px;
+
+      .haircare-headingreplace {
+        font-family: "oswald";
+        color: #fff;
+        font-size: 60px;
+        font-weight: 400;
+      }
+    }
+
+    .haircare-textwrap {
+      text-align: center;
+      width: 56%;
+      margin: 0 auto;
+
+      p {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+
+    .haircarelink-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+
+      .haircare-commonlinkwrap {
+        margin-right: 40px;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        p {
+          a {
+            color: #f197a5;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+
+            i {
+              color: #fff;
+              font-size: 12px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+    }
+
+    .haircarebuttonwrap {
+      text-align: center;
+      margin-top: 40px;
+
+      .desktoppigmenspotsviewall {
+        border: 1px solid #f197a5;
+        display: inline-block;
+        padding: 6px 20px;
+        margin-right: 10px;
+        color: white;
+        transition: .5s;
+
+        &:hover {
+          background-color: #ffb6c1;
+          color: #fff;
+          transition: .5s;
+        }
+      }
+    }
+  }
+
+  #dekstop-aginwrap {
+    padding: 60px 0px;
+
+    .dekstopAgingheading {
+      text-align: center;
+      margin-bottom: 120px;
+
+      .desktoplongheading {
+        font-family: "oswald";
+        font-size: 37px;
+        line-height: 50px;
+        color: #171717;
+
+        span {
+          display: block;
+        }
+      }
+    }
+
+    .dekstop-aginwrapaligment {
+      align-items: center;
+      justify-content: center;
+
+      .desktopAgingimage-wrap {
+        position: relative;
+
+        .dekstopAgingplaybutton {
+          position: absolute;
+          bottom: 30px;
+          right: 20px;
+
+          a {
+            display: inline-block;
+            height: 60px;
+            width: 60px;
+            background: #fff;
+            text-align: center;
+            line-height: 60px;
+            border-radius: 50%;
+            padding-left: 7px;
+            padding-top: 4px;
+            color: #9d8378;
+            transition: .5s;
+
+            &:hover {
+              background-color: #ffb6c1;
+              color: #fff;
+              transition: .5s;
+            }
+
+            i {
+              font-size: 24px;
+            }
+
+          }
+        }
+      }
+
+      .desktopSkinaging-text {
+        padding-left: 50px;
+
+        .agingdeskheading {
+          font-family: "oswald";
+          color: #f197a5;
+          font-size: 60px;
+        }
+
+        p {
+          font-size: 18px;
+          margin: 30px 0px 40px;
+        }
+
+        .desktopSkinaging-link {
+          display: flex;
+
+          .desktopSkinaging-commonlink {
+            li {
+              a {
+                color: #171717;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                margin-bottom: 20px;
+
+                i {
+                  font-size: 12px;
+                  color: #f197a5;
+                  margin-right: 10px;
+                }
+              }
+
+              &:last-child {
+                a {
+                  margin-bottom: 0px;
+                }
+              }
+            }
+          }
+
+          .desktopSkinaging-link2 {
+            margin-left: 50px;
+          }
+        }
+
+        .desktopSkinaging-view {
+          margin-top: 40px;
+
+          button {
+            border: 1px solid #f197a5;
+            padding: 6px 20px;
+            margin-right: 10px;
+            color: #000;
+            cursor: pointer;
+            transition: .5s;
+
+            &:hover {
+              background-color: #ffb6c1;
+              color: #fff;
+              transition: .5s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #desktopImage-wrap {
+    display: flex;
+
+    .commonImagestyle {
+      width: 50%;
+      position: relative;
+
+      .textonImage {
+        position: absolute;
+        bottom: 50px;
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+
+        .homeunwantedheading {
+          font-family: "oswald";
+          font-size: 40px;
+          color: #fff;
+        }
+
+        p {
+          color: #fff;
+        }
+      }
+
+      .playbuttononimage {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        a {
+          display: inline-block;
+          height: 60px;
+          width: 60px;
+          background: #fff;
+          text-align: center;
+          line-height: 60px;
+          border-radius: 50%;
+          padding-left: 7px;
+          padding-top: 4px;
+          color: #9d8378;
+          transition: .5s;
+
+          &:hover {
+            background-color: #ffb6c1;
+            color: #fff;
+            transition: .5s;
+          }
+
+          i {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  /*-------------------------------*/
+
+  #testimonial-wrapper {
+
+    .testimonial-heading {
+
+      h2 {
+        color: #f197a5;
+        font-family: "oswald";
+        font-size: 70px;
+      }
+    }
+
+  }
+
+
+  #dksblogsection {
+    margin: 50px 0px;
+
+    .dksheading {
+      text-align: center;
+      margin-bottom: 50px;
+
+      .latest-blogheading {
+        color: #f197a5;
+        font-family: "oswald";
+        font-size: 60px;
+      }
+    }
+
+    .blogimgaecontent-wrap {
+      position: relative;
+
+      .blog-imagewrap {
+        position: relative;
+
+        .blog-imagetext {
+          position: absolute;
+          bottom: 40px;
+          left: 20px;
+
+          p {
+            font-family: "oswald";
+            color: #fff;
+            font-size: 24px;
+          }
+        }
+      }
+
+      .blogimageContent {
+        bottom: 10px;
+        width: 90%;
+        margin: -20px auto 0px;
+        background: #fff;
+        padding: 30px;
+        position: relative;
+        -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+
+        small {
+          opacity: .5;
+          display: inline-block;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 18px;
+          opacity: .8;
+        }
+
+        button {
+          display: inline-block;
+          border: 1px solid #f197a5;
+          padding: 8px 10px;
+          cursor: pointer;
+          margin-top: 10px;
+          transition: .5s;
+
+          &:hover {
+            background-color: #ffb6c1;
+            color: #fff;
+            transition: .5s;
+          }
+        }
+      }
+    }
+
+    .blog-button {
+      text-align: center;
+      margin-top: 50px;
+
+      button {
+        display: inline-block;
+        border: 1px solid #f197a5;
+        padding: 10px 30px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .5s;
+
+        &:hover {
+          background-color: #ffb6c1;
+          color: #fff;
+          transition: .5s;
+        }
+      }
+    }
+  }
+
+
+  .dekhstop-non {
+    display: none;
+  }
+
+  .mobile-none {
+    display: block;
+  }
+}
+
+@media (min-width: 1371px) {
+  .popup {
+    width: 60%;
+  }
+
+  .popup {
+    width: 50%;
+  }
+
+  #home-banner {
+    position: relative;
+    .forcustomeadd{
+      position: absolute;
+      top: 0px;
+    
+    .managehome-banner {
+      align-items: center;
+      margin-top: 90px;
+
+      .homebaner-image {
+        img {
+          width: 90%;
+        }
+      }
+
+      .homebanner-heading {
+        text-align: center;
+        margin-top: 15%;
+
+        .homehd {
+          font-size: 94px;
+          font-family: "oswald";
+          color: #fff;
+          line-height: 1;
+          font-weight: 500;
+
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  }
+
+  .partnerJourney {
+    padding: 1rem 20rem;
+    text-align: center;
+    margin: 40px 40px 0px;
+    background: #000;
+
+    .hdng {
+      font-size: 5rem;
+      font-weight: 500;
+    }
+    h1{
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 30px;
+    }
+  }
+
+  #skinlogics-noida {
+    margin-top: 50px;
+
+    .extraskinlogics {
+      align-items: center;
+
+      .skinlogix-heading {
+        .homeskin-heading, h2 {
+          font-family: "oswald";
+          font-size: 60px;
+          font-weight: 400;
+        }
+
+        p {
+          color: #f197A5;
+          font-size: 25px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .skinlogics-noidatext {
+        p {
+          color: #171717;
+          font-size: 16px;
+          opacity: 1;
+          font-weight: 500;
+          line-height: 28px;
+        }
+
+        p+p {
+          margin: 40px 0px;
+        }
+
+        .skinlogics-aboutbuttons {
+          .skinlogicsebutton {
+            border: 1px solid #f197a5;
+            display: inline-block;
+            padding: 4px 10px;
+            margin-right: 10px;
+            color: #000;
+            transition: .5s;
+
+            &:hover {
+              background-color: #ffb6c1;
+              color: #fff;
+              transition: .5s;
+            }
+          }
+
+          .skinlogicsbookapm {
+            display: inline-block;
+            background-color: #ffb6c1;
+            text-transform: capitalize;
+            border: 1px solid #f197a5;
+            padding: 4px 20px;
+            color: #fff;
+            transition: .5s;
+
+            &:hover {
+              background-color: #fff;
+              color: #000;
+              transition: .5s;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  #desktoppigmenspots {
+    margin: 40px 0px;
+    position: relative;
+
+    .desktoppigmenspotsextracontainer {
+      left: 7%;
+      top: 8%;
+      position: absolute;
+      width: 100%;
+
+      .desktoppigmenspotscontentwrap {
+        .desktoppigmenspotscontentHeading {
+          .pigheading {
+            font-size: 60px;
+            color: #f197A5;
+            font-family: "oswald";
+            font-weight: 400;
+          }
+
+          p {
+            color: #fff;
+            font-size: 26px;
+          }
+        }
+
+        .desktoppigmenspotscontentText {
+          p {
+            color: #fff;
+            line-height: 30px;
+            font-size: 17px;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .desktoppigmenspotscommonlinks {
+        margin-top: 20px;
+
+        ul {
+          padding: 0px;
+
+          li {
+            margin-bottom: 15px;
+
+            a {
+              color: #f197A5;
+              font-size: 16px;
+
+              i {
+                color: #fff;
+                margin-right: 10px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .desktoppigmenspotscommonvideo {
+        margin-top: 30px;
+
+        .desktoppigmenspotsviewall {
+          border: 1px solid #f197a5;
+          display: inline-block;
+          padding: 6px 20px;
+          margin-right: 10px;
+          color: white;
+          transition: .5s;
+
+          &:hover {
+            background-color: #ffb6c1;
+            transition: .5s;
+          }
+        }
+      }
+    }
+  }
+
+  /*------------------video-section------------------------*/
+
+  #mobile-image-slider {
+    background-color: #fff6f7;
+    padding: 40px 0px;
+
+    .mobslider {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0px;
+    }
+
+    .manage-widthslider {
+      width: 33.33%;
+    }
+
+    .mobile-image-box {
+      position: relative;
+
+      &:hover {
+        .box-image-text {
+          transform: translateY(0);
+          transition: .5s;
+        }
+      }
+
+      .commonvideobutton {
+        position: absolute;
+        top: 10px;
+        z-index: 1;
+        right: 10px;
+      }
+
+      overflow: hidden;
+
+      .box-image-text {
+        transform: translateY(32%);
+        transition: .5s;
+
+        .mobile-image-boxhover {
+          ul {
+            padding: 0px;
+            margin-top: 30px;
+
+            li {
+              margin-bottom: 15px;
+
+              &:last-child {
+                margin-bottom: 0px;
+              }
+
+              a {
+                color: #f197A5;
+                text-transform: capitalize;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+
+                i {
+                  margin-right: 10px;
+                  font-size: 8px;
+                }
+              }
+            }
+          }
+
+          .mobile-imagebutton {
+            color: #f197A5;
+            text-transform: uppercase;
+            margin-top: 20px
+          }
+        }
+      }
+    }
+  }
+
+  #haircareWrapper {
+    background-image: url(/assets/images/hare-carebg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .haircare-heading {
+      text-align: center;
+      margin-bottom: 30px;
+
+      .haircare-headingreplace {
+        font-size: 60px;
+        color: #f197A5;
+        font-family: "oswald";
+        font-weight: 400;
+        
+      }
+    }
+
+    .haircare-textwrap {
+      text-align: center;
+      width: 56%;
+      margin: 0 auto;
+
+      p {
+        color: #fff;
+        font-size: 17px;
+      }
+    }
+
+    .haircarelink-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+
+      .haircare-commonlinkwrap {
+        margin-right: 40px;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        p {
+          a {
+            color: #f197a5;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+
+            i {
+              color: #fff;
+              font-size: 12px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+    }
+
+    .haircarebuttonwrap {
+      text-align: center;
+      margin-top: 40px;
+
+      .desktoppigmenspotsviewall {
+        border: 1px solid #f197a5;
+        display: inline-block;
+        padding: 6px 20px;
+        margin-right: 10px;
+        color: white;
+        transition: .5s;
+
+        &:hover {
+          background-color: #ffb6c1;
+          color: #fff;
+          transition: .5s;
+        }
+      }
+    }
+  }
+
+  #dekstop-aginwrap {
+    padding: 60px 0px;
+
+    .dekstopAgingheading {
+      text-align: center;
+      margin-bottom: 120px;
+
+      .desktoplongheading {
+        font-family: "oswald";
+        font-size: 37px;
+        line-height: 50px;
+        color: #171717;
+
+        span {
+          display: block;
+        }
+      }
+    }
+
+    .dekstop-aginwrapaligment {
+      align-items: center;
+      justify-content: center;
+
+      .desktopAgingimage-wrap {
+        position: relative;
+
+        .dekstopAgingplaybutton {
+          position: absolute;
+          bottom: 30px;
+          right: 20px;
+
+          a {
+            display: inline-block;
+            height: 60px;
+            width: 60px;
+            background: #fff;
+            text-align: center;
+            line-height: 60px;
+            border-radius: 50%;
+            padding-left: 7px;
+            padding-top: 4px;
+            color: #9d8378;
+            transition: .5s;
+
+            &:hover {
+              background-color: #ffb6c1;
+              color: #fff;
+              transition: .5s;
+            }
+
+            i {
+              font-size: 24px;
+            }
+
+          }
+        }
+      }
+
+      .desktopSkinaging-text {
+        padding-left: 50px;
+
+        .agingdeskheading {
+          font-family: "oswald";
+          color: #f197a5;
+          font-size: 60px;
+        }
+
+        p {
+          font-size: 18px;
+          margin: 30px 0px 40px;
+        }
+
+        .desktopSkinaging-link {
+          display: flex;
+
+          .desktopSkinaging-commonlink {
+            li {
+              a {
+                color: #171717;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                margin-bottom: 20px;
+                font-weight: 600;
+
+                i {
+                  font-size: 12px;
+                  color: #f197a5;
+                  margin-right: 10px;
+                }
+              }
+
+              &:last-child {
+                a {
+                  margin-bottom: 0px;
+                }
+              }
+            }
+          }
+
+          .desktopSkinaging-link2 {
+            margin-left: 50px;
+          }
+        }
+
+        .desktopSkinaging-view {
+          margin-top: 40px;
+
+          button {
+            border: 1px solid #f197a5;
+            padding: 6px 20px;
+            margin-right: 10px;
+            color: #000;
+            cursor: pointer;
+            transition: .5s;
+
+            &:hover {
+              background-color: #ffb6c1;
+              color: #fff;
+              transition: .5s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #desktopImage-wrap {
+    display: flex;
+
+    .commonImagestyle {
+      width: 50%;
+      position: relative;
+
+      .textonImage {
+        position: absolute;
+        bottom: 50px;
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+
+        .homeunwantedheading {
+          font-family: "oswald";
+          font-size: 40px;
+          color: #fff;
+        }
+
+        p {
+          color: #fff;
+        }
+      }
+
+      .playbuttononimage {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        a {
+          display: inline-block;
+          height: 60px;
+          width: 60px;
+          background: #fff;
+          text-align: center;
+          line-height: 60px;
+          border-radius: 50%;
+          padding-left: 7px;
+          padding-top: 4px;
+          color: #9d8378;
+          transition: .5s;
+
+          &:hover {
+            background-color: #ffb6c1;
+            color: #fff;
+            transition: .5s;
+          }
+
+          i {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  /*-------------------------------*/
+
+  #testimonial-wrapper {
+
+    .testimonial-heading {
+
+      h2 {
+        color: #f197a5;
+        font-family: "oswald";
+        font-size: 70px;
+      }
+    }
+
+  }
+
+
+  #dksblogsection {
+    margin: 50px 0px;
+
+    .dksheading {
+      text-align: center;
+      margin-bottom: 50px;
+
+      .latest-blogheading {
+        color: #f197a5;
+        font-family: "oswald";
+        font-size: 60px;
+      }
+    }
+
+    .blogimgaecontent-wrap {
+      position: relative;
+
+      .blog-imagewrap {
+        position: relative;
+
+        .blog-imagetext {
+          position: absolute;
+          bottom: 40px;
+          left: 20px;
+
+          p {
+            font-family: "oswald";
+            color: #fff;
+            font-size: 24px;
+          }
+        }
+      }
+
+      .blogimageContent {
+        bottom: 10px;
+        width: 90%;
+        margin: -20px auto 0px;
+        background: #fff;
+        padding: 30px;
+        position: relative;
+        -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+
+        small {
+          opacity: .5;
+          display: inline-block;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 18px;
+          opacity: .8;
+        }
+
+        button {
+          display: inline-block;
+          border: 1px solid #f197a5;
+          padding: 8px 10px;
+          cursor: pointer;
+          margin-top: 10px;
+          transition: .5s;
+
+          &:hover {
+            background-color: #ffb6c1;
+            color: #fff;
+            transition: .5s;
+          }
+        }
+      }
+    }
+
+    .blog-button {
+      text-align: center;
+      margin-top: 50px;
+
+      button {
+        display: inline-block;
+        border: 1px solid #f197a5;
+        padding: 10px 30px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .5s;
+
+        &:hover {
+          background-color: #ffb6c1;
+          color: #fff;
+          transition: .5s;
+        }
+      }
+    }
+  }
+
+
+  .dekhstop-non {
+    display: none;
+  }
+
+  .mobile-none {
+    display: block;
+  }
+}
+
+
+
+
+
+/* Move slides overflowed container */
+/* Color of bullets */
+/* Color of bullets - END */
+/* Text of slides */
+/* Text of slides - END */
+/* Calculate AUTOPLAY for BULLETS */
+@keyframes bullet {
+	0%,33.32333333333334% {
+		background: #F197A5;
+	}
+	33.333333333333336%,100% {
+		background: gray;
+	}
+}
+/* Calculate AUTOPLAY for BULLETS - END */
+/* Calculate AUTOPLAY for SLIDES */
+@keyframes slide {
+	0%,25.203252032520325% {
+		margin-left: 0;
+	}
+	33.333333333333336%,58.53658536585366% {
+		margin-left: -100%;
+	}
+	66.66666666666667%,91.869918699187% {
+		margin-left: -200%;
+	}
+}
+/* Calculate AUTOPLAY for SLIDES - END */
+/* Calculate AUTOPLAY for CAPTION */
+@keyframes caption {
+	0%,33.32333333333334% {
+		opacity: 1;
+	}
+	33.333333333333336%,100% {
+		opacity: 0;
+	}
+}
+/* Calculate AUTOPLAY for CAPTION - END */
+.image {
+	width: 100%;
+	height: 430px;
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.images {
+	overflow: hidden;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+.images-inner {
+	width: 500%;
+	transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+	transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+.image-slide {
+	width: 20%;
+	float: left;
+	transition: all 0.5s ease-out;
+}
+.fake-radio {
+	transition: all 0.5s ease-out;
+	text-align: center;
+}
+.radio-btn {
+  transition: all 0.5s ease-out;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: gray;
+  display: inline-block !important;
+  margin: 0 2px;
+  cursor: pointer;
+}
+#slide1 {
+	&:checked {
+		~ {
+			.images {
+				.images-inner {
+					margin-left: 0;
+				}
+			}
+			div {
+				.fake-radio {
+					.radio-btn {
+						&:nth-child(1) {
+							background: #F197A5;
+						}
+					}
+				}
+			}
+			.labels {
+				.label {
+					&:nth-child(1) {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+#slide2 {
+	&:checked {
+		~ {
+			.images {
+				.images-inner {
+					margin-left: -100%;
+				}
+			}
+			div {
+				.fake-radio {
+					.radio-btn {
+						&:nth-child(2) {
+							background: #F197A5;
+						}
+					}
+				}
+			}
+			.labels {
+				.label {
+					&:nth-child(2) {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+#slide3 {
+	&:checked {
+		~ {
+			.images {
+				.images-inner {
+					margin-left: -200%;
+				}
+			}
+			div {
+				.fake-radio {
+					.radio-btn {
+						&:nth-child(3) {
+							background: #F197A5;
+						}
+					}
+				}
+			}
+			.labels {
+				.label {
+					&:nth-child(3) {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+.label {
+	opacity: 0;
+	position: absolute;
+}
+.playbuttonradio{
+  opacity: 0;
+	&:checked {
+		~ {
+			div {
+				.fake-radio {
+					.radio-btn {
+						&:nth-child(1) {
+							animation: bullet 12300ms infinite -1000ms;
+						}
+						&:nth-child(2) {
+							animation: bullet 12300ms infinite 3100ms;
+						}
+						&:nth-child(3) {
+							animation: bullet 12300ms infinite 7200ms;
+						}
+					}
+				}
+			}
+			.labels {
+				.label {
+					&:nth-child(1) {
+						animation: caption 12300ms infinite -1000ms;
+					}
+					&:nth-child(2) {
+						animation: caption 12300ms infinite 3100ms;
+					}
+					&:nth-child(3) {
+						animation: caption 12300ms infinite 7200ms;
+					}
+				}
+			}
+		}
+	}
+}
+.st-slider {
+	>.playbuttonradio {
+		&:checked {
+			~ {
+				.images {
+					.images-inner {
+						animation: slide 12300ms infinite;
+					}
+				}
+			}
+		}
+	}
+}

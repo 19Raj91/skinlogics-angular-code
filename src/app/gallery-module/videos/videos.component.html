@@ -1,0 +1,80 @@
+<div id="topcommon-banner" class="mobile-none">
+    <div class="image-overlay"></div>
+    <img [src]="baseUrl + '/backend/service_video/category_banner/1665988152_banner.jpg'" alt="bg-image" class="w-100">
+    <div class="banner-heading">
+        <h2>Videos</h2>
+    </div>
+</div>
+<div class="breadcrumb-menu mobile-none">
+    <div class="container-max">
+        <ul>
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/videos">Videos</a></li>
+        </ul>
+    </div>
+</div>
+<div id="innertopcommon-bannermobile" class="dekhstop-non">
+    <div class="stylingcontent">
+        <div class="banner-heading">
+            <h2>Videos</h2>
+        </div>
+        <div class="breadcrumb-menu">
+            <div class="container-max">
+                <ul>
+                    <li><a routerLink="/">Home</a></li>
+                    <li><a routerLink="/videos">Videos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <app-requestacallbackform></app-requestacallbackform>
+    <app-requestcallbackform-mobile></app-requestcallbackform-mobile>
+<div id="videosWrapper">
+    <div class="container">
+        <div class="container-max">
+            <div class="row">
+
+                <div class="row">
+                    <div class="col-12 col-lg-4" *ngFor="let video of allvideos">
+                        <div class="videoimage-wrap">
+                            <img [src]="baseUrl+'/backend/service_video/inner/'+ video.image" alt="cover image" class="w-100">
+      
+                            <div class="videoplay-button">
+                                <!-- <a href="#"><i class="fa fa-play"></i></a> -->
+                                <button class="commonvideobutton" (click)="open(mymodal23,video)"><i class="fa fa-play"></i></button>
+                            </div>
+                           
+                        </div>
+                        <div class="video-info">
+                            <p>{{video.name}}</p>
+                        </div>
+                    </div>
+                    <ng-template #mymodal23 let-modal>
+                      <div class="modal-header">
+                          <h4 class="modal-title" id="modal-basic-title">{{title}}</h4>
+                          <button type="button" class="close" aria-label="Close"
+                              (click)="modal.dismiss('Cross click')">
+                              <span aria-hidden="true">×</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <iframe width="100%" height="auto" [src]="getSantizeUrl(videoUrl)"
+                              title="YouTube video player" frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen></iframe>
+                      </div>
+                  </ng-template>
+                  <p class="text-center mt-2" style="font-size:12px;">✱ Opinions/Results may vary from person to person.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dst-form">
+    <!-- <app-dt-form></app-dt-form> -->
+</div>
+<div class="mb-form">
+    <!-- <app-mobile-form></app-mobile-form> -->
+</div>

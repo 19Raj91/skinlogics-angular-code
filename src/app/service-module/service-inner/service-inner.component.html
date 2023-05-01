@@ -1,0 +1,481 @@
+<!-- {{listseo | json}} -->
+<div *ngIf="serviceType.service_type=='service'; else elseBlock">
+    <!-- {{beforeafterinner | json}} -->
+        <div id="topcommon-banner">
+            <div class="image-overlay"></div>
+           
+            <img  [src]="serviceDetails?.service_banner_image!=null ? baseUrl+'/backend/service/banner/'+serviceDetails?.service_banner_image : 'https://www.skinlogics.in/assets/images/bg-image.jpg' " alt="bg-image" class="w-100">
+            <div class="banner-heading">
+                <p>{{serviceDetails?.service_name}}</p>
+            </div>
+        </div>
+        <div class="breadcrumb-menu">
+            <div class="container-max">
+                <ul>
+                    <li><a routerLink="/">Home</a></li>
+                    <li><a routerLink="/treatments">Treatments</a></li>
+                    <li>{{serviceDetails?.service_name}}</li>
+                </ul>
+            </div>
+        </div>
+        <div id="innertopcommon-bannermobile" class="d-none">
+            <div class="stylingcontent">=
+                <div class="banner-heading">
+                    <p>Treatments</p>
+                </div>
+                <div class="breadcrumb-menu">
+                    <div class="container-max">
+                        <ul>
+                            <li><a routerLink="/">Home</a></li>
+                            <li><a routerLink="/treatments">Treatments</a></li>
+                            <li>{{serviceDetails?.service_name}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+         <app-requestacallbackform></app-requestacallbackform> 
+            <app-requestcallbackform-mobile></app-requestcallbackform-mobile>
+        <div class="serviceskeyword">
+    <h1>{{serviceDetails?.name_desc}}</h1>
+        </div>
+        <!-- Looping through all services -->
+        <div *ngFor="let section of serviceSection">
+            <!-- Rendering twoparagraph -->
+            <div *ngIf="section.type=='twoparagraph'" >
+                <div class="{{section.class_add}}">
+                    <div class="container">
+                       <!--tag rendering-->
+                    <div *ngIf="section.select_tag!=null" class="for_section_heading">
+                        <h1 *ngIf="section.select_tag=='h1'">{{section.section_heading}}</h1>
+                        <h2 *ngIf="section.select_tag=='h2'">{{section.section_heading}}</h2>
+                        <h3 *ngIf="section.select_tag=='h3'">{{section.section_heading}}</h3>
+                        <h4 *ngIf="section.select_tag=='h4'">{{section.section_heading}}</h4>
+                        <p *ngIf="section.select_tag=='p'">{{section.section_heading}}</p>
+                        <div *ngIf="section.select_tag=='div'">{{section.section_heading}}</div>
+                   </div>
+                   <div *ngIf="!section.select_tag" class="for_section_heading">
+                       <p  *ngIf="section.section_heading">{{section.section_heading}}</p>
+                   </div>
+                        <p class="text-lg-center" *ngIf="section.section_heading!=null && section.service_heading!=null && section.service_heading1==null">
+    
+                           {{section.service_heading}}
+                        </p>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="twosideleftwrap commontwosidewrap">
+                                    <h2 class="twosideleftheading" *ngIf="section.service_heading!=null && section.service_heading1!=null ">{{section.service_heading}}</h2>
+                                    <div [innerHtml]="section.section1"></div>
+                                </div>
+                            </div>
+                
+                            <div class="col-12 col-lg-6">
+                                <div class="twosiderightwrap commontwosidewrap">
+                                    <h2 class="twosideleftheading" *ngIf="section.service_heading1!=null">{{section.service_heading1}}</h2>
+                                    <div [innerHtml]="section.section2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+              
+            </div>
+            <!-- End of rendering twoparagraph-->
+        
+             <!-- Rendering twoparagraphdifflayout -->
+             <div  *ngIf="section.type=='twoparagraphdifflayout'"  class="{{section.class_add}}">
+                <div class="container">
+                    <div class="headingwithtext">
+                        <!--tag rendering-->
+                            <div *ngIf="section.select_tag!=null" class="for_section_heading">
+                                <h1 *ngIf="section.select_tag=='h1'">{{section.section_heading}}</h1>
+                                <h2 *ngIf="section.select_tag=='h2'">{{section.section_heading}}</h2>
+                                <h3 *ngIf="section.select_tag=='h3'">{{section.section_heading}}</h3>
+                                <h4 *ngIf="section.select_tag=='h4'">{{section.section_heading}}</h4>
+                                <p *ngIf="section.select_tag=='p'">{{section.section_heading}}</p>
+                                <div *ngIf="section.select_tag=='div'">{{section.section_heading}}</div>
+                        </div>
+                        <div *ngIf="!section.select_tag" class="for_section_heading">
+                            <p  *ngIf="section.section_heading">{{section.section_heading}}</p>
+                        </div>
+    
+                        
+                       <div *ngIf="section.section_heading!=null" [innerHtml]="section.service_heading"> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <!-- <h2 class="headingtext"  [innerHtml]="section.service_heading"></h2> -->
+                            <div class="smallcontentleft commonsmallcontent">
+                                <div [innerHtml]="section.section1"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h2 class="headingtext"  [innerHtml]="section.service_heading1"></h2>
+                            <div class="smallcontentright commonsmallcontent">
+                                <div [innerHtml]="section.section2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+              <!--End of Rendering twoparagraphdifflayout -->
+              <!--rendering fulltext-->
+              <div  *ngIf="section.type=='fulltext'" class="{{section.class_add}}">
+                <div class="container">
+                    
+                    <!--tag rendering-->
+                    <div *ngIf="section.select_tag!=null" class="for_section_heading">
+                         <h1 *ngIf="section.select_tag=='h1'">{{section.section_heading}}</h1>
+                         <h2 *ngIf="section.select_tag=='h2'">{{section.section_heading}}</h2>
+                         <h3 *ngIf="section.select_tag=='h3'">{{section.section_heading}}</h3>
+                         <h4 *ngIf="section.select_tag=='h4'">{{section.section_heading}}</h4>
+                         <p *ngIf="section.select_tag=='p'">{{section.section_heading}}</p>
+                         <div *ngIf="section.select_tag=='div'">{{section.section_heading}}</div>
+                    </div>
+                    <div *ngIf="!section.select_tag" class="for_section_heading">
+                        <p  *ngIf="section.section_heading">{{section.section_heading}}</p>
+                    </div>
+                       
+                    
+                    
+                   
+    
+                    <h2 *ngIf="section.service_heading!=null" [innerHtml]="section.service_heading"></h2>
+                    <div class="row">
+                        <div class="col-12 col-lg-12">
+                            <div class="fullcentertextcontent" [innerHtml]="section.section1">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+              <!-- end of rendering fulltext-->
+        
+              <!--Rendering Left Image and Right Text-->
+              <div *ngIf="section.type=='imagetext'"  class="{{section.class_add}}">
+                <div class="container">
+                    <div class="row managestyletwo">
+                        <div class="col-12 col-lg-6">
+                            <div class="leftimagewrap">
+                                <img src="{{baseUrl}}/backend/service/section/{{section.image}}" class="w-100 img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="imageright-text">
+                                <!-- <p class="imageright-heading" [innerHtml]="section.section_heading"></p> -->
+                                    <!--tag rendering-->
+                                    <div *ngIf="section.select_tag!=null" class="for_section_heading">
+                                        <h1 *ngIf="section.select_tag=='h1'">{{section.section_heading}}</h1>
+                                        <h2 *ngIf="section.select_tag=='h2'">{{section.section_heading}}</h2>
+                                        <h3 *ngIf="section.select_tag=='h3'">{{section.section_heading}}</h3>
+                                        <h4 *ngIf="section.select_tag=='h4'">{{section.section_heading}}</h4>
+                                        <p *ngIf="section.select_tag=='p'">{{section.section_heading}}</p>
+                                        <div *ngIf="section.select_tag=='div'">{{section.section_heading}}</div>
+                                </div>
+                                <div *ngIf="!section.select_tag" class="for_section_heading">
+                                    <p  *ngIf="section.section_heading">{{section.section_heading}}</p>
+                                </div>
+    
+                            <div [innerHtml]="section.section1"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+              <!-- End of Rendering Left Image and Right Text -->
+              <!-- Right image left text-->
+              <div *ngIf="section.type=='rightimagetext'"  class="{{section.class_add}}">
+                <div class="container-fluid">
+                    <div class="container-max">
+                       
+                        <div class="row">
+                           
+                            <div class="col-12 col-lg-6">
+                                <div class="peelTreatmentwrapperheading">
+                                    <!-- <h2>{{section.section_heading}}</h2> -->
+                                       <!--tag rendering-->
+                                        <div *ngIf="section.select_tag!=null" class="for_section_heading">
+                                            <h1 *ngIf="section.select_tag=='h1'">{{section.section_heading}}</h1>
+                                            <h2 *ngIf="section.select_tag=='h2'">{{section.section_heading}}</h2>
+                                            <h3 *ngIf="section.select_tag=='h3'">{{section.section_heading}}</h3>
+                                            <h4 *ngIf="section.select_tag=='h4'">{{section.section_heading}}</h4>
+                                            <p *ngIf="section.select_tag=='p'">{{section.section_heading}}</p>
+                                            <div *ngIf="section.select_tag=='div'">{{section.section_heading}}</div>
+                                        </div>
+                                        <div *ngIf="!section.select_tag" class="for_section_heading">
+                                            <p  *ngIf="section.section_heading">{{section.section_heading}}</p>
+                                        </div>
+                                    <!--end of tag rendering-->
+                                </div>
+                                  
+                                <div class="peelTreatmentwrappercontent" [innerHtml]="section.section1">
+                                    
+                                </div>
+                            </div>
+        
+                            <div class="col-12 col-lg-6">
+                                <div class="peelTreatmentwrappercontent">
+                                    <img src="{{baseUrl}}/backend/service/section/{{section.image}}" alt="bg-image" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="treatmentappointment">
+                            <a routerLink="/book-an-appointment"><button type="button" class="common-blinkbutton">Schedule A Consultation</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               <!-- end of Right image left text-->
+              <!-- Rendering three paragraph or more-->
+              <div *ngIf="section.type=='threeparagraph'"  class="{{section.class_add}}" >
+                <div class="container">
+                    <div class="threeparaheadingwrap">
+                        <!-- <p class="threeparamainheading">{{section.section_heading}}</p>
+                            <div [innerHtml]="section.service_heading"></div> -->
+                              
+                                  <!--tag rendering-->
+                                    <div *ngIf="section.select_tag!=null" class="for_section_heading">
+                                        <h1 *ngIf="section.select_tag=='h1'">{{section.section_heading}}</h1>
+                                        <h2 *ngIf="section.select_tag=='h2'">{{section.section_heading}}</h2>
+                                        <h3 *ngIf="section.select_tag=='h3'">{{section.section_heading}}</h3>
+                                        <h4 *ngIf="section.select_tag=='h4'">{{section.section_heading}}</h4>
+                                        <p *ngIf="section.select_tag=='p'">{{section.section_heading}}</p>
+                                        <div *ngIf="section.select_tag=='div'">{{section.section_heading}}</div>
+                                </div>
+                                <div *ngIf="!section.select_tag" class="for_section_heading">
+                                    <p  *ngIf="section.section_heading">{{section.section_heading}}</p>
+                                </div>
+                            <!--end of tag rendering-->
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="threeparatext">
+                                <p class="threeparasubheading">{{section.threepragraph.sec_heading[1]}}</p>
+                                <div [innerHtml]="section.threepragraph.threeparagraphdata[1]"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="threeparatext">
+                                <p class="threeparasubheading">{{section.threepragraph.sec_heading[2]}}</p>
+                                <div [innerHtml]="section.threepragraph.threeparagraphdata[2]"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="threeparatext">
+                                <p class="threeparasubheading">{{section.threepragraph.sec_heading[3]}}</p>
+                                <div [innerHtml]="section.threepragraph.threeparagraphdata[3]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="container-fluid">
+                        <div class="container-max">
+                            <div class="howtoplanheading">
+                                <h2>{{section.section_heading}}</h2>
+                                <h4>{{section.service_heading}}</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <div class="howtoplancontent">
+                                    <h1 [innerHtml]="section.threepragraph.threeparagraphdata[1]"></h1>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="howtoplancontent">
+                                    <h1 [innerHtml]="section.threepragraph.threeparagraphdata[2]"></h1>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="howtoplancontent">
+                                    <h1 [innerHtml]="section.threepragraph.threeparagraphdata[3]"></h1>
+                                    </div>
+                                </div>
+                
+                            
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+              <!-- End of Rendering three paragraph or more-->
+        
+              <!-- Rendering Left Heading-->
+              <div *ngIf="section.type=='leftheading'"  class="{{section.class_add}}" >
+               
+                    <!-- <div class="container-fluid">
+                        <div class="container-max">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="laserPeelheading ">
+                                        <h2 [innerHtml]="section.section_heading">
+                                         
+                                            
+                                        </h2>
+                                    </div>
+                                   
+                                 
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="laserPeelcontent" [innerHtml]="section.section1">
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="container">
+                        <div class="row managestyleone">
+                            <div class="col-12 col-lg-6">
+                                <div class="oneleftsideheadingwrap">
+                                    <!-- <p class="oneleftsideheading" [innerHtml]="section.section_heading"></p> -->
+                                <!--tag rendering-->
+                                <div *ngIf="section.select_tag!=null" class="for_section_heading">
+                                    <h1 *ngIf="section.select_tag=='h1'">{{section.section_heading}}</h1>
+                                    <h2 *ngIf="section.select_tag=='h2'">{{section.section_heading}}</h2>
+                                    <h3 *ngIf="section.select_tag=='h3'">{{section.section_heading}}</h3>
+                                    <h4 *ngIf="section.select_tag=='h4'">{{section.section_heading}}</h4>
+                                    <p *ngIf="section.select_tag=='p'">{{section.section_heading}}</p>
+                                    <div *ngIf="section.select_tag=='div'">{{section.section_heading}}</div>
+                                </div>
+                                <div *ngIf="!section.select_tag" class="for_section_heading">
+                                <p  *ngIf="section.section_heading">{{section.section_heading}}</p>
+                                </div>
+                                <!--end of tag rendering-->
+                                    
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="onerightsidetext" [innerHtml]="section.section1">
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <!-- End Of Rendering Left Heading-->
+        
+              
+        </div>
+        
+        <!-- End of Looping through all services -->
+    
+    
+    <div id="faqs-wrapper" *ngIf="serviceFaq.length>0">
+        <div class="container-fluid">
+            <div class="container-max">
+                <div class="faqs-heading">
+                    <h2>Frequently Asked Questions (FAQs)</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-12">
+                        <div class="accordiantabs">
+                            <div class="row">
+                                <div class="col-12 col-lg-12">
+                                    <div class="accordiantab" *ngFor="let faq of serviceFaq; index as i">
+                                        <input type="checkbox" id="chck{{i}}" class="accordian-input">
+                                        <label class="tab-label" for="chck{{i}}" [innerHtml]="faq.question"></label>
+                                        <div class="tab-content" [innerHtml]="faq.answer">  
+                                        </div>
+                                    </div>
+                                </div>
+                                
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mb-form">
+        <app-mobile-form></app-mobile-form>
+    </div>
+    
+    
+    
+    <div class="dst-form">
+        <app-dt-form></app-dt-form>
+    </div>
+
+</div>
+
+<ng-template #elseBlock>
+    <!-- <p>service-by-category works!</p>
+
+{{treatmentList.category}} -->
+
+<div id="topcommon-banner">
+    <div class="image-overlay"></div>
+    <img src="{{baseUrl}}/backend/service/banner/{{treatmentList.categorydata.service_banner_image}}" alt="bg-image" class="w-100">
+    <div class="banner-heading">
+        <h2>{{treatmentList?.category}}  {{treatmentList.service_banner_image}}</h2>
+        <!-- {{serviceCategories | json}} -->
+    </div>
+</div>
+<div class="breadcrumb-menu">
+    <div class="container-max">
+        <ul>
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/treatments">Treatments</a></li>
+          
+        </ul>
+    </div>
+</div>
+<div id="innertopcommon-bannermobile" class="d-none">
+    <div class="stylingcontent">
+        <div class="banner-heading">
+            <h2>{{treatmentList?.category}}</h2>
+        </div>
+        <div class="breadcrumb-menu">
+            <div class="container-max">
+                <ul>
+                    <li><a routerLink="/">Home</a></li>
+                    <li><a routerLink="/treatments">Treatments</a></li>
+                    <li><a routerLink="/">{{treatmentList?.category}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <app-requestacallbackform></app-requestacallbackform>
+    <app-requestcallbackform-mobile></app-requestcallbackform-mobile>
+
+<section id="TreatmentCategories">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4 makesomecoustem" *ngFor="let treatment of treatmentList.treatments ">
+                <div class="maincatwrap">
+                    <a routerLink="/{{treatment?.url}}" class="maincatlink">
+                        <div class="skinimgwrap"> <img [src]="treatment?.service_image!=null ? baseUrl+'/backend/service/image/'+treatment?.service_image : 'https://www.skinlogics.in/assets/images/bg-image.jpg'"  class="img-fluid">
+                            <a routerLink="/{{treatment?.url}}"><p>{{treatment?.service_name}}</p></a>
+                        
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+<div class="mb-form">
+    <app-mobile-form></app-mobile-form>
+</div>
+
+<div class="dst-form">
+    <app-dt-form></app-dt-form>
+</div>
+
+
+
+</ng-template>

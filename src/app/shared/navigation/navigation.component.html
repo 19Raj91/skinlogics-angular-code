@@ -1,0 +1,375 @@
+<!-- <div class="hamburger" (click)="clickEvent()"  
+    [ngClass]="status ? 'success' : 'danger'">                
+     Some content
+</div> -->
+<label for="menu-control" class="hamburger"  (click)="clickEvent()" [ngClass]="status==true || outsideclick==true || statuscopy==false ? 'success' : 'danger'" >
+  <i class="hamburger__icon bar1"></i>
+  <i class="hamburger__icon bar2"></i>
+  <i class="hamburger__icon bar3"></i>
+  <!-- status:{{status}}<br/>
+  outsideclick:{{outsideclick}} -->
+
+</label>
+
+<input type="checkbox" id="menu-control" class="menu-control">
+<aside class="sidebar" (click)="onClick($event)" [class.ajay]="outsideclick">
+  <nav class="sidebar__menu">
+    <a class="sidebarlogo"  routerLink="/"><img src="assets/images/skinlogics-mob.png" width="152px" alt="logo"></a>
+    <ul>
+      <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLik="/">Home</a></li>
+      <li>
+        <label for="menu-4">About Us <i class="fa fa-angle-right"></i></label>
+        <input type="checkbox" id="menu-4" name="menu-4" class="menu-checkbox">
+        <div class="menu">
+          <label class="menu-toggle" for="menu-4"> <i class="fa fa-long-arrow-left"> Back</i></label>
+          <ul>
+            <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/about-skinlogics" routerLinkActive="active-link" (click)="menuClickEvent()"> About Clinic</a></li>           
+            <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/skin-doctor-in-noida" routerLinkActive="active-link" (click)="menuClickEvent()" >Skin Doctor</a></li>            
+            <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/dr-vandana-malik" routerLinkActive="active-link" (click)="menuClickEvent()" >Dr. Vandana Malik</a></li>            
+            <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/dr-pooja-moliya" routerLinkActive="active-link" (click)="menuClickEvent()" >Dr. Pooja Moliya</a></li>                   
+
+          </ul>
+        </div>
+      </li>
+      <li>
+        <label for="menu-9">Treatments<i class="fa fa-angle-right"></i></label>
+        <input type="checkbox" id="menu-9" name="menu-9" class="menu-checkbox">
+        <div class="menu">
+          <label class="menu-toggle" for="menu-9"><i class="fa fa-long-arrow-left"> Back</i></label>
+          <ul>
+            <li>
+              <label for="menu-10">Pigments & Spots <i class="fa fa-angle-right"></i></label>
+              <input type="checkbox" id="menu-10" name="menu-10" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-10"><i class="fa fa-long-arrow-left"> Back</i></label>
+                <ul>
+                
+
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/pigmentation-removal">Pigmentation Removal</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/lip-pigmentation-and-toning">Lip Pigmentation/Toning</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/melasma">Melasma</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/freckle">Freckle</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/carbon-laser-peel">Carbon Peel</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/laser-toning">Laser Toning</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment" >Sun Damage & Spots</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/age-spots">Age Spots</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Dark Spots</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/laser-tattoo-removal">Laser Tattoo Removal</a></li>
+
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <label for="menu-11">Facial Rejuvenation <i class="fa fa-angle-right"></i></label>
+              <input type="checkbox" id="menu-11" name="menu-11" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-11"><i class="fa fa-long-arrow-left"> Back</i></label>
+                <ul>                
+
+
+                   <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/chemical-peels">Chemical Peels</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/microdermabrasion">MDA</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/photofacials">Photofacial</a></li>
+
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <label for="menu-24">Facial Lift & Contouring<i class="fa fa-angle-right"></i></label>
+              <input type="checkbox" id="menu-24" name="menu-24" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-24"><i class="fa fa-long-arrow-left"> Back</i></label>
+                <ul>                  
+
+
+                   <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/dermal-filler">Dermal Filler</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/anti-wrinkle-injection">Anti Wrinkle Injection</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/anti-ageing-facial">Anti Ageing Facial</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/jawline-contouring">Jawline Contouring</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Chin Enhancement</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/lip-enhancement">Lip Enhancement</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Cheek Enhancement</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <label for="menu-12">Acne & Skin Resurfacing<i class="fa fa-angle-right"></i></label>
+              <input type="checkbox" id="menu-12" name="menu-12" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-12"><i class="fa fa-long-arrow-left"> Back</i></label>
+                <ul>
+
+                        <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/acne-scar-removal">Acne Scar Removal</a></li>
+                              <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/acne">Acne Treatment</a></li>
+                              <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/mnrf" >MNRF</a></li>
+                              <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/fractional-co2">Fractional CO2</a></li>
+                              <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/open-pores">Open Pores</a></li>
+                              <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/stretch-marks-removal">Stretch Marks Removal</a></li>
+                              <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/rosacea">Rosacea</a></li>
+                              <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/acne-check">Acne Check</a></li>
+
+
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <label for="menu-13">Unwanted Hair<i class="fa fa-angle-right"></i></label>
+              <input type="checkbox" id="menu-13" name="menu-12" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-13"><i class="fa fa-long-arrow-left"> Back</i></label>
+                <ul>
+
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/body-hair">Body Hair</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/laser-hair-reduction">Laser Hair Reduction</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Under Arms Hair Removal</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Facial Hair Removal</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Legs Hair Removal</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/beard-shaping">Beard Shaping</a></li>
+                    
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <label for="menu-14">Aging Skin<i class="fa fa-angle-right"></i></label>
+              <input type="checkbox" id="menu-14" name="menu-14" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-14"><i class="fa fa-long-arrow-left"> Back</i></label>
+                <ul>                 
+
+
+                   <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/sagging-skin">Sagging Skin</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/wrinkles">Wrinkles</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/anti-ageing-facial">Anti Ageing Facial</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/age-spot">Age Spots</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/crows-feet">Crow's Feet</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/neck-lines">Neck Lines</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/deep-folds" >Deep Folds</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/forehead-lines">Forehead Lines</a></li>
+
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/thread-lift">Thread Lift</a></li>
+                <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/vampire-facelift">Vampire Facelift</a></li>
+
+
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <label for="menu-15">Hair<i class="fa fa-angle-right"></i></label>
+              <input type="checkbox" id="menu-15" name="menu-15" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-15"><i class="fa fa-long-arrow-left"> Back</i></label>
+                <ul>
+
+                   <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/hair-fall-treatment">Hairfall Treatment</a></li>
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/growth-factor-concentrate">Growth Factor Concentrate</a></li>
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/hair-transplant">Hair Transplant</a></li>
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/mesotherapy">Mesotherapy</a></li>
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Dermapen</a></li>
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/dandruff">Dandruff</a></li>
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/premature-greying">Premature Greying</a></li>
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/hair-fall-in-women">Hair Fall in Women</a></li>
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/hair-fall-in-men">Hair Fall in Men</a></li>
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/scarring-alopecia">Scarring Alopecia</a></li>
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/alopecia-areata-treatment">Alopecia Areata Treatment</a></li>
+
+
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <label for="menu-16">Skin Glow & Brightening<i class="fa fa-angle-right"></i></label>
+              <input type="checkbox" id="menu-16" name="menu-16" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-16"><i class="fa fa-long-arrow-left"> Back</i></label>
+                <ul>                
+
+                   <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/laser-toning">Laser Toning</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/chemical-peel">Chemical Peel</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/microdermabrasion">MDA</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/hydrafacial">Hydrafacial</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Oxygen Facial</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/mask-and-skin-care">Mask and Skin Care</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/hyaluronic-acid-therapy">Hyaluronic Acid Therapy</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/ipl-therapy-photofacial">IPL therapy Photofacial</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/high-intensity-focused-ultrasound">High Intensity Focused Ultrasound</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="//insta-glow">Insta Glow</a></li>
+
+
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <label for="menu-17">Eye Rejuvenation<i class="fa fa-angle-right"></i></label>
+              <input type="checkbox" id="menu-17" name="menu-17" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-17"><i class="fa fa-long-arrow-left"> Back</i></label>
+                <ul>
+                   <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/under-eye-dark-circle">Under Eye Dark Circle</a></li>
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/under-eye-hollowness">Under Eye Hollowness</a></li>                  
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/undereye-pigmentation">Undereye Pigmentation</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <label for="menu-18">Facials<i class="fa fa-angle-right"></i></label>
+              <input type="checkbox" id="menu-18" name="menu-18" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-18"><i class="fa fa-long-arrow-left"> Back</i></label>
+                <ul>                  
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/hydrafacial">Hydrafacial</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/photofacials">Photofacial</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/anti-ageing-facial">Anti Ageing Facial</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">BB Glow Facial</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/laser-facials">Laser Facials</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Power Facial</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Oxygen Facial</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <label for="menu-19">Allergies<i class="fa fa-angle-right"></i></label>
+              <input type="checkbox" id="menu-19" name="menu-19" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-19"><i class="fa fa-long-arrow-left"> Back</i></label>
+                <ul>
+                 
+                   <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Skin Allergies</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/eczema">Eczema</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/urticaria">Urticaria</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/atopic-dermatitis">Atopic Dermatitis</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <label for="menu-20">Infections<i class="fa fa-angle-right"></i></label>
+              <input type="checkbox" id="menu-20" name="menu-20" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-20"><i class="fa fa-long-arrow-left"> Back</i></label>
+                <ul>
+                  
+                   <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/fungal-infection">Fungal Infection</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Skin Infection</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Viral Infection</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Bacterial Infection</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <label for="menu-21">Skin Growth<i class="fa fa-angle-right"></i></label>
+              <input type="checkbox" id="menu-21" name="menu-21" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-21"><i class="fa fa-long-arrow-left"> Back</i></label>
+                <ul>                
+
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Corn and Calluses</a></li>
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Skin Tags</a></li>
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Mole</a></li>
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Warts</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <label for="menu-22">General Dermatology<i class="fa fa-angle-right"></i></label>
+              <input type="checkbox" id="menu-22" name="menu-22" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-22"><i class="fa fa-long-arrow-left"> Back</i></label>
+                <ul>  
+
+                   <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/vitiligo">Vitiligo</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/psoriasis">Psoriasis</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/atopic-dermatitis">Atopic Dermatitis</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/keloids">Keloids</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Nail Avulsion</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/contact-dermatitis">Contact Dermatitis</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/seborrheic-dermatitis">Seborrheic Dermatitis</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/pseudo-acanthosis-nigricans">Pseudo Acanthosis Nigricans</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/spider-veins">Spider Veins</a></li>
+                    <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/ingrowing-toe-nails">Ingrowing Toe Nails</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/pcod-treatment">PCOD</a> </li>
+            <!-- <li>
+              <label for="menu-23">PCOD<i class="fa fa-angle-right"></i></label>
+              <input type="checkbox" id="menu-23" name="menu-23" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-23"><i class="fa fa-long-arrow-left"> Back</i></label>
+                <ul>
+                  <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Menu-3-2-1</a> </li>
+                </ul>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </li>
+      <li>
+        <label for="menu-6">Bridal Dermatology <i class="fa fa-angle-right"></i></label>
+        <input type="checkbox" id="menu-6" name="menu-6" class="menu-checkbox">
+        <div class="menu">
+          <label class="menu-toggle" for="menu-6"> <i class="fa fa-long-arrow-left"> Back</i></label>
+          <ul>  
+
+          <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/bride-treatment">Bride Treatments</a></li>
+          <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/groom-treatments">Groom Treatments</a></li>
+          <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/power-glow">Power Glow</a></li>
+          <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/laser-facials">Laser Facials</a></li>
+          <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/lip-pigmentation-and-toning">Lip Pigmentation/ Toning</a></li>
+          <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/photofacials">Photofacial</a></li>
+          <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/laser-toning">Laser Toning</a></li>
+          <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/carbon-laser-peel">Carbon Peel</a></li>
+          <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Full Body Toning </a></li>
+          <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Unwanted Hair Removal</a></li>
+          <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment">Microblading</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <label for="menu-7">Testimonials<i class="fa fa-angle-right"></i></label>
+        <input type="checkbox" id="menu-7" name="menu-7" class="menu-checkbox">
+        <div class="menu">
+          <label class="menu-toggle" for="menu-7"> <i class="fa fa-long-arrow-left"> Back</i></label>
+          <ul>
+            <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/testimonials" >Written Testimonials</a></li>
+            <!-- <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/video-testimonials" >Videos Testimonials</a></li> -->
+          </ul>
+        </div>
+      </li>
+
+      <!-- <li>
+        <label for="menu-25">Gallery<i class="fa fa-angle-right"></i></label>
+        <input type="checkbox" id="menu-25" name="menu-25" class="menu-checkbox">
+        <div class="menu">
+          <label class="menu-toggle" for="menu-25"> <i class="fa fa-long-arrow-left"> Back</i></label>
+          <ul>
+            <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/gallery" >Skinlogics Gallery </a></li>            
+            <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/real-results">Real Results</a></li>            
+            <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/videos">Videos</a></li>
+          </ul>
+        </div>
+      </li> -->
+
+      <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/gallery" >Gallery </a></li>            
+      <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/real-results">Real Results</a></li>            
+      <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/videos">Videos</a></li>
+      <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/blog" >Blogs</a></li>
+      <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/contact-us" >Contact Us</a></li>
+      <li><a routerLinkActive="active-link" (click)="menuClickEvent()" routerLink="/book-an-appointment" >Schedule A Consultation</a></li>
+
+    </ul>
+  </nav>
+  <!-- <label for="menu-control" class="sidebar__close"></label> -->
+</aside>
+

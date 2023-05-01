@@ -1,0 +1,42 @@
+#TreatmentCategories {
+    margin-top: 50px;
+
+    .makesomecoustem {
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+
+        .maincatwrap {
+            .maincatlink {
+                transition: .5s;
+
+                .skinimgwrap {
+                    img {
+                        width: 100%;
+                    }
+
+                    p {
+                        background-color: #ffb6c1;
+                        color: #fff;
+                        text-align: center;
+                        padding: 10px;
+                        font-size: 20px;
+                        margin-top: 10px;
+
+                    }
+                }
+
+                &:hover {
+                    .skinimgwrap {
+                        p {
+                            background-color: #000;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

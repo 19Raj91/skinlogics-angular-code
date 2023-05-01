@@ -1,0 +1,96 @@
+
+<div id="consultation-wrapper" class="mobile-none">
+    <div class="container">
+        <div class="consulationform-heading dekhstop-non">
+            <div class="consulth2">Schedule Your Consultation</div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="AboutskinformWrap">
+                    <div class="AboutskinformWrap-heading">
+                        <div class="formchangeh2">Skinlogics Clinic</div>
+                        <!-- <p>Your body is constantly changing. Gravity, age, and the elements
+                            are constantly pulling at you. But you are not alone in this fight.
+                            The doctors and aesthetic experts at Skinlogics Clinic, are also in
+                            constant motion, relentlessly innovating better ways to overcome
+                            the entropic effects of time and gravity.</p> -->
+                    </div>
+                    <div class="skinlogicscontactdetail">
+                        <p><span>Clinic Timing:</span> Monday - Sunday: 11 AM – 7 PM</p>
+                        <p><span>Phone:</span> +91 9999172667‬</p>
+                        <p><span>Email:</span> skinlogicsclinic@gmail.com</p>
+                        <p class="smalldisription">We are Here to offer more possibilities to meet your every needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="consultation-form">
+                    <div class="consulationform-heading">
+                        <div class="consulth2">Schedule Your Consultation</div>
+                    </div>
+                    <form [formGroup]="appointmentForm"  (ngSubmit)="onSubmit()" autocomplete="off">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-2">
+                                        <input type="text"  class="form-control" id="nameTwo" placeholder="Name*" 
+                                        formControlName="name">
+                                        <small class="text-danger"  *ngIf="(appointmentForm.get('name').errors?.['required'] && appointmentForm.get('name').touched) || ( !appointmentForm.get('name').touched && isSubmitted)" >Name field required</small>
+                                        <small class="text-danger" *ngIf="appointmentForm.get('name').errors?.['pattern'] " >Only alphabets allowed</small>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-2">
+                                        <input type="email" class="form-control" id="emailTwo" placeholder="Email*"    
+                                        formControlName="email"       >
+                                        <small class="text-danger"  *ngIf="(appointmentForm.get('email').errors?.['required'] && appointmentForm.get('email').touched) || ( !appointmentForm.get('email').touched && isSubmitted)" >Email field required</small>
+                                        <!-- <small class="text-danger" *ngIf="appointmentForm.get('email').errors?.['email'] && !appointmentForm.get('email').errors?.['required']" >Please Enter Valid email</small> -->
+                                        <small class="text-danger" *ngIf="!appointmentForm.get('email').valid && appointmentForm.get('email').touched" >Please Enter Valid email</small>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+
+                                    <div class="form-2">
+                                        <input type="text" class="form-control" id="mobileTwo" placeholder="Phone*"
+                                        formControlName="mobile" >
+                                        
+                                        <small class="text-danger"  *ngIf="(appointmentForm.get('mobile').errors?.['required'] && appointmentForm.get('mobile').touched) || ( !appointmentForm.get('mobile').touched && isSubmitted)" >Mobile  field required</small>
+                                        <small class="text-danger"  *ngIf="(appointmentForm.get('mobile').errors?.['pattern'] && appointmentForm.get('mobile').touched)" >Enter a 10 digit  Mobile No</small>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-2">
+                                      
+                                        <ngx-datepicker [(ngModel)]="date" type="text" [options]="options" formControlName="date" placeholder="Select Date*"></ngx-datepicker>
+                                        <small class="text-danger"  *ngIf="(appointmentForm.get('date').errors?.['required'] && isSubmitted)" >Date Required</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-2">
+                                <textarea rows="6" cols="" placeholder="Message" class="form-control"    formControlName="message" ></textarea>
+                            </div>
+                            <div class="row appointmentmanage">
+                                <div class="col-6 apointmentcaptacha">
+                                    <div class="form-alignment d-flex">
+                                        <img src="{{captcha?.img}}" alt="Red dot" />
+                                        <p (click)="reloadcaptcha()" class="btn btn-primery" style="background: #fff; color: #000;margin: 0px 10px;display: flex;align-items: center;"><span class="fa fa-refresh"></span></p>
+                                        <input type="text" class="form-control"  formControlName="captcha" >
+                                        <small class="text-danger"  *ngIf="(appointmentForm.get('captcha').errors?.['required'] && appointmentForm.get('captcha').touched) || ( !appointmentForm.get('captcha').touched && isSubmitted)" >Captcha required</small>
+                                        <input type="hidden" class="form-control"  formControlName="key" id="key">
+                                    </div>
+                                </div>
+                                
+                                <input type="hidden" class="form-control"  formControlName="key" >
+                                
+                                <div class="col-6 apointmentsubmit-now">
+                                    <button type="submit" class="submit-button" [class.disabled]="!appointmentForm.valid" >submit</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,844 @@
+<!-- <h1>The Device is {{device}}</h1> -->
+<div class="bannerbx dekhstop-non" *ngIf="device=='mobile'">
+    <img *ngIf="afterSomeTime==true" src="assets/images/banner-mob.jpg" class="img-fluid" width="324" height="286" alt="Beauty is intrinsic in you" />
+    <!-- <img  [lazyLoad]="image1" class="img-fluid "> -->
+    <div *ngIf="afterSomeTime==true" class="bannerCaption text-black">Beauty is intrinsic in you</div>
+</div>
+<div id="home-banner" class="mobile-none" *ngIf="device=='desktop'">
+    <div class="banner-image">
+        <img  src="assets/images/home-banner.webp" class="img-fluid w-100" width="1500" height="634" alt="Beauty is intrinsic in you"/>
+        <!-- <img [lazyLoad]="image2" class="img-fluid w-100" width="1500" height="634" /> -->
+    </div>
+    <div class="container-fluid forcustomeadd">
+        <div class="row managehome-banner">
+            <div class="col-lg-6 col-sm-6">
+                <!-- <div class="homebaner-image">
+                    <img src="assets/images/homebanner.jpg" class="img-fluid">
+                </div> -->
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="homebanner-heading">
+                    <p class="text-black homehd">Beauty is
+                        <span>intrinsic in you</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <section id="HomeBanner">
+    <div class="banner-image">
+        <img src="assets/images/home-banner.png">
+    </div>
+</section> -->
+<app-requestacallbackform *ngIf="device=='desktop'"></app-requestacallbackform>
+<app-requestcallbackform-mobile *ngIf="device=='mobile'"></app-requestcallbackform-mobile>
+<div class="container">
+    <div class="partnerJourney">
+        <div class="hdng">"A true partner in your journey."</div>
+        <h1>Best Dermatologist in Noida</h1>
+        <p>Our unique approach of exact diagnosis, treating
+            the root cause of problems to prevent reoccurrence,
+            educating the patient to solve their own skin
+            problems more efficiently, personalized care by
+            knowledgeable, trained, and dedicated Skin Specialists
+            at Skinlogics makes us stand out from other
+            dermatology clinics.</p>
+    </div>
+</div>
+<div id="skinlogics-noida">
+    <div class="container">
+        <div class="row extraskinlogics">
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="skinlogix-heading">
+                    <div class="homeskin-heading">Skinlogics</div>
+                    <p>Skin & Hair Clinic In Noida</p>
+                </div>
+                <div class="skinlogics-noidatext">
+                    <p>Skinlogics is a leading dermatology clinic in Noida providing clinical as well as
+                        cosmetic dermatology treatments under one roof. The clinic is led by expert skin
+                        doctors who are acknowledged as one of the <strong>best dermatologist in Noida</strong>.
+                    </p>
+                    <p>Located in the heart of Noida, Skinlogics offers personalised skincare & haircare
+                        treatments to all its patients. All procedures and treatments are performed by
+                        using the latest clinical methods with the help of world-class technology.
+                        Skinlogics is one of the most trusted skincare clinics in Noida offering a wide
+                        range of skincare as well as hair care treatments under the guidance of <strong>best dermatologist
+                            in Noida</strong>. The smooth running of the clinic is due to its experienced dermatologists,
+                        cosmetologists, aestheticians and nurses.
+                    </p>
+                    <div class="skinlogics-aboutbuttons">
+                        <a routerLink="/about-skinlogics" class="skinlogicsebutton">Read More</a>
+                        <a routerLink="/book-an-appointment" class="skinlogicsbookapm common-blinkbutton">Schedule A Consultation</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 no-padding">
+                <div class="moreabout-image mobile-none">
+                    <!-- <img src="assets/images/skinlogics-noida.jpg" alt="Skinlogics" class="w-100"> -->
+                    <div id="homepage-slider" class="st-slider">
+                        <input type="radio" class="cs_anchor radio playbuttonradio" name="slider" id="slide1" checked=""/>
+                        <input type="radio" class="cs_anchor radio playbuttonradio" name="slider" id="slide2" checked=""/>
+                        <input type="radio" class="cs_anchor radio playbuttonradio" name="slider" id="slide3" checked=""/>
+                        <input type="radio" class="cs_anchor radio playbuttonradio" name="slider" id="play1" checked="" />
+
+                        <div class="images">
+                            <div class="images-inner">
+                                <div class="image-slide">
+                                    <div class="image bg-yellow">
+                                        <img [lazyLoad]="image3">
+                                    </div>
+                                </div>
+                                <div class="image-slide">
+                                    <div class="image bg-blue"> 
+                                        <img [lazyLoad]="image4">
+                                        </div>
+                                </div>
+                                <div class="image-slide">
+                                    <div class="image bg-red"> 
+                                      <img [lazyLoad]="image5">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="labels">
+                            <!-- <label for="slide1" class="label">text slide 1</label>
+                            <label for="slide2" class="label">text slide 2</label>
+                            <label for="slide3" class="label">text slide 3</label> -->
+                            <div class="fake-radio">
+                                <label for="slide1" class="radio-btn"></label>
+                                <label for="slide2" class="radio-btn"></label>
+                                <label for="slide3" class="radio-btn"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="pigmentSpots dekhstop-non"  *ngIf="device=='mobile'">
+    <div class="container pigmentZindex">
+        <div class="row align-items-end">
+            <div class="col-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="hdng">Pigments & Spots</div>
+                <!-- <p>Pigmentation Treatment in Noida</p> -->
+                <p>Pigmentation is a very common skin condition occurring due
+                    to increased production of the pigment melanin, the normal
+                    pigment which is responsible for skin color.</p>
+                <p><a routerLink="/treatments" routerLinkActive="active-link" class="btn-border rdMore me-4">View
+                        All</a> <button class="commonvideobutton" (click)="open(mymodal1)"><i
+                            class="fa fa-play"></i></button></p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"></div>
+        </div>
+    </div>
+    <!-- <img src="assets/images/pigments-spots.webp" class="w-100" alt="Pigments Spots"> -->
+
+    <img [lazyLoad]="image6" class="w-100" alt="Pigments Spots">
+    
+
+    <ng-template #mymodal1 let-modal>
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Skinlogics</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/04Qi8V1s-Es"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+        </div> -->
+    </ng-template>
+</section>
+
+<div id="desktoppigmenspots" class="mobile-none" *ngIf="device=='desktop'">
+    <div class="imagepigmnspots">
+        <!-- <img src="assets/images/pigmentbg.webp" class="w-100" alt="Pigments Spots"> -->
+        <img [lazyLoad]="image7" class="w-100" alt="Pigments Spots">
+    </div>
+    <div class="container desktoppigmenspotsextracontainer">
+        <div class="row">
+            <div class="col-md-5 col-lg-5">
+                <div class="desktoppigmenspotscontentwrap">
+                    <div class="desktoppigmenspotscontentHeading">
+                        <div class="pigheading">Pigments & Spots</div>
+                        <!-- <p>Pigmentation Treatment in Noida</p> -->
+                    </div>
+                    <div class="desktoppigmenspotscontentText">
+                        <p>Pigmentation is a very common skin condition occurring due to
+                            increased production of the pigment melanin, the normal pigment
+                            which is responsible for skin color. This increased production of
+                            melanin leads to uneven skin tone and dullness of skin. Freckles
+                            melasma, dark spots etc.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="desktoppigmenspotscontentLinks desktoppigmenspotscommonlinks">
+                            <ul>
+                                 <li><a routerLink="/pigmentation-removal" routerLinkActive="active-link"><i
+                                            class="fa fa-dot-circle-o"></i> Pigmentation Removal</a></li>
+                                <li><a routerLink="/melasma" routerLinkActive="active-link"><i
+                                            class="fa fa-dot-circle-o"></i> Melasma</a></li>
+                                <li><a routerLink="/freckle" routerLinkActive="active-link"><i
+                                            class="fa fa-dot-circle-o"></i> Freckle</a></li>
+                                <li><a routerlink="/book-an-appointment" routerLinkActive="active-link"><i class="fa fa-dot-circle-o"></i>
+                                        Dark Spots</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="desktoppigmenspotscontentLinks2 desktoppigmenspotscommonlinks">
+                            <ul>
+                                <li><a routerLink="/carbon-laser-peel" routerLinkActive="active-link"><i
+                                            class="fa fa-dot-circle-o"></i> Carbon Peel</a></li>
+                                <li> <a routerLink="/pigment-laser-toning" routerLinkActive="active-link"><i
+                                            class="fa fa-dot-circle-o"></i> Laser Toning</a></li>
+                                <li><a routerLink="/age-spots" routerLinkActive="active-link"><i
+                                            class="fa fa-dot-circle-o"></i> Age Spots</a></li>
+                                <li><a routerlink="/book-an-appointment" routerLinkActive="active-link"><i class="fa fa-dot-circle-o"></i>
+                                        Sun Damage & Spots</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="desktoppigmenspotscommonvideo">
+                    <a routerLink="pigments-and-spots" routerLinkActive="active-link"
+                        class="desktoppigmenspotsviewall">View
+                        all</a>
+                    <button class="commonvideobutton" (click)="open(mymodal2)"><i class="fa fa-play"></i></button>
+                </div>
+                <div class="commonvideopopupmodal">
+                    <ng-template #mymodal2 let-modal>
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-basic-title">Skinlogics</h4>
+                            <button type="button" class="close" aria-label="Close"
+                                (click)="modal.dismiss('Cross click')">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/04Qi8V1s-Es"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+        </div> -->
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="mobile-image-slider" *ngIf="device=='mobile'">
+    <div class="container">
+        <div class="row mobslider">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 manage-widthslider">
+                <div class="mobile-image-box">
+                    <!-- <img src="assets/images/Aboutclnic-Skin-Tightening.webp" class="w-100" alt="skin-tightening"> -->
+                    <img [lazyLoad]="image8" class="w-100" alt="skin-tightening">
+                    <div class="box-image-text">
+                        <div class="mobilesliderheading">Facial Rejuvenation</div>
+                        <p>Facial Rejuvenation is a cosmetic procedure which aims to
+                            restore a youthful appearance of the face. It can be
+                            done with either surgical or non-surgical options.
+                        </p>
+                        <div class="mobile-image-boxhover">
+                            <ul>
+                                <li><a routerLink="/chemical-peels" routerLinkActive="active-link"><i
+                                            class="fa fa-dot-circle-o"></i>Chemical Peels</a></li>
+                                <li><a routerLink="/microdermabrasion" routerLinkActive="active-link"><i
+                                            class="fa fa-dot-circle-o"></i>MDA</a></li>
+                                <li><a routerLink="/photofacials" routerLinkActive="active-link"><i
+                                            class="fa fa-dot-circle-o"></i>Photofacial</a></li>
+                            </ul>
+                            <a routerLink="facial-rejuvenation" routerLinkActive="active-link"
+                                class="mobile-imagebutton">Read
+                                More</a>
+                        </div>
+                    </div>
+                    <!-- <button class="commonvideobutton" (click)="open(mymodal3)"><i class="fa fa-play"></i></button> -->
+                    <ng-template #mymodal3 let-modal>
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-basic-title">Skinlogics</h4>
+                            <button type="button" class="close" aria-label="Close"
+                                (click)="modal.dismiss('Cross click')">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/f67P53RPN54"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+                        </div> -->
+                    </ng-template>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 manage-widthslider">
+                <div class="mobile-image-box">
+                    <!-- <img src="assets/images/Aboutclnic-FacialLiftContouring.webp" class="w-100" alt="skin-Resurfacing"> -->
+                    <img [lazyLoad]="image9" class="w-100" alt="skin-Resurfacing">
+                    <div class="box-image-text">
+                        <div class="mobilesliderheading">Facial Lift & Contouring</div>
+                        <p>Facial Contouring is a cosmetic procedure that helps to
+                            improve the appearance and proportion of the face.
+                            It also makes facial features look more balanced with
+                            an improved facial line.
+                        </p>
+                        <div class="mobile-image-boxhover">
+                            <ul>
+                                <li><a routerLink="/dermal-filler" routerLinkActive="active-link"><i
+                                            class="fa fa-dot-circle-o"></i>Dermal Filler</a></li>
+                                <li><a routerLink="/anti-wrinkle-injection" routerLinkActive="active-link"><i
+                                            class="fa fa-dot-circle-o"></i>Anti Wrinkle Injection</a></li>
+                                <li><a routerLink="/jawline-contouring" routerLinkActive="active-link"><i
+                                            class="fa fa-dot-circle-o"></i>Jawline Contouring</a></li>
+                            </ul>
+                            <a routerLink="facial-lift-contouring" routerLinkActive="active-link"
+                                class="mobile-imagebutton">Read
+                                More</a>
+                        </div>
+                    </div>
+                    <!-- <button class="commonvideobutton" (click)="open(mymodal4)"><i class="fa fa-play"></i></button> -->
+                    <ng-template #mymodal4 let-modal>
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-basic-title">Skinlogics</h4>
+                            <button type="button" class="close" aria-label="Close"
+                                (click)="modal.dismiss('Cross click')">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/f67P53RPN54"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+                        </div> -->
+                    </ng-template>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 manage-widthslider">
+                <div class="mobile-image-box">
+                    <!-- <img src="assets/images/Aboutclnic-Skin-Brightening.webp" class="w-100" alt="Skin-Brightening"> -->
+                    <img [lazyLoad]="image10" class="w-100" alt="Skin-Brightening">
+                    <div class="box-image-text">
+                        <div class="mobilesliderheading">Skin Brightening</div>
+                        <p>Skinlogics offers a wide range of skin brightening
+                            treatments that can help regain a fresher-looking appearance.
+                            This is done to provide an even skin complexion.
+                        </p>
+                        <div class="mobile-image-boxhover">
+                            <ul>
+                                <li><a routerLink="/laser-tonings" routerLinkActive="active-link"><i
+                                            class="fa fa-dot-circle-o"></i>Laser Toning</a></li>
+                                <li><a routerLink="/chemical-peel" routerLinkActive="active-link"><i
+                                            class="fa fa-dot-circle-o"></i>Chemical Peel</a></li>
+                                <li><a routerLink="/hydrafacial" routerLinkActive="active-link"><i
+                                            class="fa fa-dot-circle-o"></i>Hydrafacial</a></li>
+                            </ul>
+                            <a routerLink="skin-glow-brightening" routerLinkActive="active-link"
+                                class="mobile-imagebutton">Read
+                                More</a>
+                        </div>
+                    </div>
+                    <!-- <button class="commonvideobutton" (click)="open(mymodal5)"><i class="fa fa-play"></i></button> -->
+                    <ng-template #mymodal5 let-modal>
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-basic-title">Skinlogics</h4>
+                            <button type="button" class="close" aria-label="Close"
+                                (click)="modal.dismiss('Cross click')">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/f67P53RPN54"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+                        </div> -->
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="haircareWrapper" class="mobile-none" *ngIf="device=='desktop'">
+    <div class="container">
+        <div class="haircare-heading">
+            <div class="haircare-headingreplace">Hair Care</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="haircare-textwrap">
+                    <p>Healthy and strong hair comes only with the right care! Having healthy
+                        hair has become really important as it is an extension of one’s personality.
+                        Our hair is our crowning glory, and we must maintain this glorified crown on our heads.
+                        Hair thickness, length and shine of hair have a lot of do with how one treats their hair.
+                        They are a reflection of the scalp's health which often gets ignored and sidelined.
+                        Skinlogics offers a wide range of hair treatments to fix hair problems.</p>
+                </div>
+                <div class="haircarelink-wrap">
+                    <div class="hairecare-firstlinkwrap1 haircare-commonlinkwrap">
+                        <p><a routerLink="/hair-fall-treatment" routerLinkActive="active-link"><i
+                                    class="fa fa-dot-circle-o"></i>Hair Fall Treatment</a></p>
+                        <p><a routerLink="/premature-greying" routerLinkActive="active-link"><i
+                                    class="fa fa-dot-circle-o"></i>Premature Greying</a></p>
+                    </div>
+                    <div class="hairecare-firstlinkwrap2 haircare-commonlinkwrap">
+                        <p><a routerLink="/growth-factor-concentrate" routerLinkActive="active-link"><i
+                                    class="fa fa-dot-circle-o"></i>Growth Factor Concentrate</a></p>
+                        <p><a routerLink="/hair-fall-in-women" routerLinkActive="active-link"><i
+                                    class="fa fa-dot-circle-o"></i>Hair Fall in Women</a></p>
+                    </div>
+                    <div class="hairecare-firstlinkwrap3 haircare-commonlinkwrap">
+                        <p><a routerLink="/hair-transplant" routerLinkActive="active-link"><i
+                                    class="fa fa-dot-circle-o"></i>Hair Transplant</a></p>
+                        <p><a routerlink="/book-an-appointment" routerLinkActive="active-link"><i
+                                    class="fa fa-dot-circle-o"></i>Dermapen</a></p>
+                    </div>
+                    <div class="hairecare-firstlinkwrap4 haircare-commonlinkwrap">
+                        <p><a routerLink="/mesotherapy" routerLinkActive="active-link"><i
+                                    class="fa fa-dot-circle-o"></i>Mesotherapy</a></p>
+                        <p><a routerLink="/dandruff" routerLinkActive="active-link"><i
+                                    class="fa fa-dot-circle-o"></i>Dandruff</a></p>
+                    </div>
+                    <div class="hairecare-firstlinkwrap5 haircare-commonlinkwrap">
+                        <p><a routerLink="/scarring-alopecia" routerLinkActive="active-link"><i
+                                    class="fa fa-dot-circle-o"></i>Scarring Alopecia</a></p>
+                        <p><a routerLink="/hair-fall-in-men" routerLinkActive="active-link"><i
+                                    class="fa fa-dot-circle-o"></i>Hair Fall in Men</a></p>
+                    </div>
+                </div>
+
+                <div class="haircarebuttonwrap">
+                    <a routerLink="hair-care" routerLinkActive="active-link"
+                        class="desktoppigmenspotsviewall">View
+                        all</a>
+                    <button class="commonvideobutton" (click)="open(mymodal6)"><i class="fa fa-play"></i></button>
+                </div>
+                <ng-template #mymodal6 let-modal>
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modal-basic-title">Skinlogics</h4>
+                        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/UZ0LQQ9cUio"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+                    </div> -->
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="dekstop-aginwrap" class="mobile-none" *ngIf="device=='desktop'">
+    <div class="container">
+        <div class="dekstopAgingheading">
+            <div class="desktoplongheading">"We work with patients to develop a care plan that include non-surgical
+                <span>means of enhancing and preserving their natural beauty”</span>
+            </div>
+        </div>
+        <div class="row dekstop-aginwrapaligment">
+            <div class="col-lg-6">
+                <div class="desktopAgingimage-wrap">
+                    <!-- <img src="assets/images/dskinaging.webp" alt="skinlogics" class="w-100"> -->
+                    <img [lazyLoad]="image11" class="w-100" alt="skinlogics">
+                    <div class="dekstopAgingplaybutton">
+                        <!-- <button class="commonvideobutton" (click)="open(mymodal7)"><i class="fa fa-play"></i></button> -->
+                    </div>
+                    <ng-template #mymodal7 let-modal>
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-basic-title">Skinlogics</h4>
+                            <button type="button" class="close" aria-label="Close"
+                                (click)="modal.dismiss('Cross click')">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/f67P53RPN54"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+                        </div> -->
+                    </ng-template>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="desktopSkinaging-text">
+                    <div class="agingdeskheading">Aging Skin</div>
+                    <p>Our skin changes with age. It becomes thin, loses fat, and no longer
+                        looks plump and smooth as it once looked like. The natural
+                        aging process produces wrinkles, dryness, age spots, pigmentation
+                        and other skin flaws. A mole or birthmark that was once appealing
+                        can turn unattractive due to ageing skin. Similarly, features that
+                        were previously unnoticed, like scars, may become more evident when
+                        wrinkles develop around them. </p>
+                    <div class="desktopSkinaging-link">
+                        <ul class="desktopSkinaging-link1 desktopSkinaging-commonlink">
+                            <li><a routerLink="/sagging-skin" routerLinkActive="active-link"><i
+                                        class="fa fa-dot-circle-o"></i>Sagging Skin</a></li>
+                            <li><a routerLink="/wrinkles" routerLinkActive="active-link"><i
+                                        class="fa fa-dot-circle-o"></i>Wrinkles</a></li>
+                            <li><a routerLink="/anti-ageing-facial" routerLinkActive="active-link"><i
+                                        class="fa fa-dot-circle-o"></i>Anti Ageing Facial</a></li>
+                            <li><a routerLink="/age-spot" routerLinkActive="active-link"><i
+                                        class="fa fa-dot-circle-o"></i>Age Spots</a></li>
+                        </ul>
+                        <ul class="desktopSkinaging-link2 desktopSkinaging-commonlink">
+                            <li><a routerLink="/crows-feet" routerLinkActive="active-link"><i
+                                        class="fa fa-dot-circle-o"></i>Crow's Feet</a></li>
+                            <li><a routerLink="/neck-lines" routerLinkActive="active-link"><i
+                                        class="fa fa-dot-circle-o"></i>Neck Lines</a></li>
+                            <li><a routerLink="/deep-folds" routerLinkActive="active-link"><i
+                                        class="fa fa-dot-circle-o"></i>Deep Folds</a></li>
+                            <li><a routerLink="/forehead-lines" routerLinkActive="active-link"><i
+                                        class="fa fa-dot-circle-o"></i>Forehead Lines</a></li>
+                        </ul>
+                    </div>
+                    <div class="desktopSkinaging-view">
+                        <a routerLink="aging-skin" routerLinkActive="active-link"> <button
+                                type="button">View
+                                All</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="desktopImage-wrap" class="mobile-none" *ngIf="device=='desktop'">
+    <div class="leftunwantedWrap commonImagestyle">
+        <!-- <img src="assets/images/homeunwantedhair.webp" alt="skinlogics" class="w-100"> -->
+        <img [lazyLoad]="image12" class="w-100" alt="skinlogics">
+        <div class="textonImage">
+            <div class="homeunwantedheading">Unwanted Hair</div>
+            <p>Most men and women feel embarrassed or conscious about their
+                uninvited facial or body hair and dream of having long-lasting,
+                silky smooth, hair-free skin. Get rid of unwanted hair at Skinlogics!
+            </p>
+        </div>
+        <div class="playbuttononimage">
+            <button class="commonvideobutton" (click)="open(mymodal8)"><i class="fa fa-play"></i></button>
+        </div>
+
+        <ng-template #mymodal8 let-modal>
+            <div class="modal-header">
+                <h4 class="modal-title" id="modal-basic-title">Skinlogics</h4>
+                <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/HAn8ZQIO2zw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+            </div> -->
+        </ng-template>
+    </div>
+    <div class="rightSkinWrap commonImagestyle">
+
+        <!-- <img src="assets/images/homeResurfacing.webp" alt="skinlogics" class="w-100"> -->
+        <img [lazyLoad]="image13" class="w-100" alt="skinlogics">
+        <div class="textonImage">
+            <div class="homeunwantedheading">Skin Resurfacing</div>
+            <p>Skin Resurfacing is a skincare treatment wherein
+                light-based technologies are used to reduce a variety
+                of skin imperfections all at once. It is also a popular
+                treatment among many celebrities.
+            </p>
+        </div>
+        <div class="playbuttononimage">
+            <button class="commonvideobutton" (click)="open(mymodal9)"><i class="fa fa-play"></i></button>
+        </div>
+        <ng-template #mymodal9 let-modal>
+            <div class="modal-header">
+                <h4 class="modal-title" id="modal-basic-title">Skinlogics</h4>
+                <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/lYRKxPs5zYc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+            </div> -->
+        </ng-template>
+
+    </div>
+</div>
+
+
+<div id="aging-skinwrap" class="dekhstop-non" *ngIf="device=='mobile'">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="aging-imagebox">
+                    <div class="aging-image">
+                        <!-- <img src="assets/images/homemobile-hair-care.webp" class="w-100" alt="hair care"> -->
+                        <img [lazyLoad]="image14" class="w-100" alt="hair care">
+                    </div>
+                    <div class="aging-text">
+                        <div class="agingdeskheading">Hair Care</div>
+                        <p>Healthy and strong hair comes only with the right care!
+                            Having healthy hair has become really important as it is an
+                            <!-- extension of one’s personality. Our hair is our crowning glory, 
+                            and we must maintain this glorified crown on our heads. Skinlogics 
+                            offers a wide range of hair treatments to fix hair problems. -->
+                        </p>
+
+                        <ul>
+                            <li><a routerLink="/hair-fall-treatment" routerLinkActive="active-link"><i
+                                        class="fa fa-dot-circle-o"></i>Hair Fall Treatments</a></li>
+                            <li><a routerLink="/hair-transplant" routerLinkActive="active-link"><i
+                                        class="fa fa-dot-circle-o"></i>Hair Transplant</a></li>
+                        </ul>
+                        <div class="buttongroups">
+                            <a routerLink="/treatments" routerLinkActive="active-link" class="bttonsborder">View All</a>
+                            <button class="commonvideobutton" (click)="open(mymodal10)"><i
+                                    class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <ng-template #mymodal10 let-modal>
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-basic-title">Skinlogics</h4>
+                            <button type="button" class="close" aria-label="Close"
+                                (click)="modal.dismiss('Cross click')">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/UZ0LQQ9cUio"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+                        </div> -->
+                    </ng-template>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 margintop">
+                <div class="aging-imagebox">
+                    <div class="aging-image">
+                        <!-- <img src="assets/images/homemobile-antiaging.webp" class="w-100" alt="hair care"> -->
+                        <img [lazyLoad]="image15" class="w-100" alt="hair care">
+                    </div>
+                    <div class="aging-text">
+                        <div class="agingdeskheading">Aging Skin</div>
+                        <p>Our skin changes with age. It becomes thin, loses fat,
+                            and no longer looks plump and smooth as it once looked like.
+                            <!-- The natural aging process produces wrinkles, dryness, age spots, 
+                            pigmentation and other skin flaws. A mole or birthmark that was once
+                             appealing can turn unattractive due to ageing skin. -->
+                        </p>
+                        <ul>
+                            <li><a routerLink="/sagging-skin" routerLinkActive="active-link"><i
+                                        class="fa fa-dot-circle-o"></i>Sagging Skin</a></li>
+                            <li><a routerLink="/wrinkles" routerLinkActive="active-link"><i
+                                        class="fa fa-dot-circle-o"></i>Wrinkles</a></li>
+                        </ul>
+                        <div class="buttongroups">
+                            <a routerLink="/treatments" routerLinkActive="active-link" class="bttonsborder">View All</a>
+                            <!-- <button class="commonvideobutton" (click)="open(mymodal11)"><i
+                                    class="fa fa-play"></i></button> -->
+                        </div>
+                    </div>
+                    <ng-template #mymodal11 let-modal>
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-basic-title">Skinlogics</h4>
+                            <button type="button" class="close" aria-label="Close"
+                                (click)="modal.dismiss('Cross click')">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/f67P53RPN54"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="aging-maintext" class="dekhstop-non" *ngIf="device=='mobile'">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="agingtext-wrapper">
+                    <p>"We work with patients to develop a care plan that
+                        include non-surgical means of enhancing and preserving
+                        their natural beauty”</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="image-box2" class="dekhstop-non" *ngIf="device=='mobile'">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="image-boxwrapper2">
+                    <!-- <img src="assets/images/young-couple.webp" class="w-100" alt="young couple"> -->
+
+                    <img [lazyLoad]="image16" class="w-100" alt="young couple">
+                    <div class="imagebox-text2">
+                        <div class="mombheading">Unwanted Hair</div>
+                        <p>Most men and women feel embarrassed or conscious about
+                            their uninvited facial or body hair and dream of having long-lasting,
+                            silky smooth, hair-free skin. Get rid of unwanted hair at Skinlogics!</p>
+                    </div>
+                    <button class="commonvideobutton" (click)="open(mymodal12)"><i class="fa fa-play"></i></button>
+                    <ng-template #mymodal12 let-modal>
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-basic-title">Skinlogics</h4>
+                            <button type="button" class="close" aria-label="Close"
+                                (click)="modal.dismiss('Cross click')">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/HAn8ZQIO2zw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </ng-template>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="image-boxwrapper2">
+                    <!-- <img src="assets/images/pretty-woman.webp" class="w-100" alt="pretty-woman"> -->
+                    <img [lazyLoad]="image17" class="w-100" alt="pretty-woman">
+                    <div class="imagebox-text2">
+                        <div class="mombheading">Acne & Skin Resurfacing</div>
+                        <p>Skin Resurfacing is a skincare treatment wherein light-based technologies are used to reduce
+                            a variety of skin
+                            imperfections all at once. It is also a popular treatment among many celebrities.</p>
+                    </div>
+                    <button class="commonvideobutton" (click)="open(mymodal13)"><i class="fa fa-play"></i></button>
+                    <ng-template #mymodal13 let-modal>
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-basic-title">Skinlogics</h4>
+                            <button type="button" class="close" aria-label="Close"
+                                (click)="modal.dismiss('Cross click')">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/lYRKxPs5zYc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="skinlogix-wrapper">
+    <div class="container">
+        <div class="skinlogix-heading">
+            <!-- <h2>Skin Expert at Skinlogics</h2> -->
+            <h2>Dermatologist in Noida</h2>
+            <p class="mobile-none">Learn more about Skinlogics talented team of aesthetic providers, including what many
+            consider the <strong> best dermatologist in Noida</strong>.</p>
+        </div>
+        <div class="dst-dermatologist">
+            <app-dt-dermatologist></app-dt-dermatologist>
+        </div>
+    </div>
+</div>
+
+<div class="dt-testimonial" *ngIf="device=='desktop'">
+    <app-testimonial></app-testimonial>
+</div>
+
+<div class="mb-form" *ngIf="device=='mobile'">
+    <app-mobile-form></app-mobile-form>
+</div>
+
+<div class="dst-form" *ngIf="device=='desktop'">
+    <app-dt-form></app-dt-form>
+</div>
+<div id="dksblogsection" class="mobile-none" *ngIf="device=='desktop'">
+    <div class="container">
+        <div class="dksheading">
+            <div class="latest-blogheading">Latest Blogs</div>
+
+
+        </div>
+        <div class="row">
+
+            <div class="col-lg-4" *ngFor="let blog of blogs | slice:0-3">
+                <div class="blogimgaecontent-wrap">
+                    <div class="blog-imagewrap">
+                        <img src="{{baseUrl}}/backend/blog/{{blog.blog_image}}" alt="{{blog.blog_name}}"
+                            alt="skinlogics" class="w-100 img-fluid">
+
+                            <!-- <img [lazyLoad]="image20" alt="{{blog.blog_name}}" class="w-100 img-fluid"> -->
+
+                        <div class="blog-imagetext">
+                            <p [innerHtml]="blog.blog_name">/p>
+                        </div>
+                    </div>
+                    <div class="blogimageContent">
+                        <small class="date">{{blog.date| date:'d MMM, y'}}</small>
+                        <p [innerHtml]="blog.short_desc"></p>
+                        <button (click)="onSelect(blog)" type="button">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="blog-button">
+            <a routerLink="/blog" routerLinkActive="active-link"> <button type="button">View All</button></a>
+        </div>
+    </div>
+</div>
+<div class="mb-testimonial" *ngIf="device=='mobile'">
+    <app-mobile-testimonial></app-mobile-testimonial>
+</div>

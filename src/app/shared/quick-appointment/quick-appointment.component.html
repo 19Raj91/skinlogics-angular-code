@@ -1,0 +1,83 @@
+
+<div id="innertopcommon-bannermobile" class="dekhstop-non">
+    <div class="stylingcontent">
+        <div class="banner-heading">
+            <h2>Quick Appointment</h2>
+        </div>
+        <div class="breadcrumb-menu">
+            <div class="container-max">
+                <ul>
+                    <li><a routerLink="/">Home</a></li>
+                    <li><a routerLink="/book-an-appointment">Quick Appointment</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="quickappointment-wrapper" class="dekhstop-non">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-md-12">
+                <div class="appointment-form">
+                    <div class="opningdetails">
+                        <p><span>Clinic Timings:</span> Monday - Sunday: 11 AM – 7 PM </p>
+                    </div>
+                  <form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()" >
+                       
+                            <!-- <div class="new-requestmobilefromheading">Request a Callback</div> -->
+                            <div class="form-group">
+                                <input type="text"  class="form-control" id="nameTwo" placeholder="Name*" 
+                                formControlName="name">
+                                <small class="text-danger"  *ngIf="(appointmentForm.get('name').errors?.['required'] && appointmentForm.get('name').touched) || ( !appointmentForm.get('name').touched && isSubmitted)" >Name field required</small>
+                                <small class="text-danger" *ngIf="appointmentForm.get('name').errors?.['pattern'] " >Only alphabets allowed</small>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="mobileTwo" placeholder="Phone*"
+                                formControlName="mobile" >
+                                
+                                <small class="text-danger"  *ngIf="(appointmentForm.get('mobile').errors?.['required'] && appointmentForm.get('mobile').touched) || ( !appointmentForm.get('mobile').touched && isSubmitted)" >Mobile  field required</small>
+                                <small class="text-danger"  *ngIf="(appointmentForm.get('mobile').errors?.['pattern'] && appointmentForm.get('mobile').touched)" >Enter a 10 digit  Mobile No</small>
+                            </div>
+                            <div class="form-group">
+                              <input type="email" class="form-control"  formControlName="email" placeholder="Email">
+                            </div>
+                            <button type="submit" class="newreqestsubmit">Submit</button>
+                          </form>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-12 col-lg-6">
+
+                <div id="appointment-address">
+                    <div class="contactaddress-wrapper">
+                        <div class="contactIcon-wrap"> <span class="fa fa-phone"> </span>
+                            <div class="apheading">Phone</div>
+                        </div>
+                        <div class="contact-detailpage">
+                            <p>+91 9999172667</p>
+                        </div>
+                    </div>
+                    <div class="contactaddress-wrapper">
+                        <div class="contactIcon-wrap"> <span class="fa fa-map-marker"> </span>
+                            <div class="apheading">Address</div>
+                        </div>
+                        <div class="contact-detailpage">
+                            <div class="skinnameheading">Skinlogics Clinic</div>
+                            <p>D-82A, D-Block, Sector 26,</p>
+                            <p>Noida, Uttar Pradesh 201301</p>
+                        </div>
+                    </div>
+                    <div class="contactaddress-wrapper">
+                        <div class="contactIcon-wrap"> <span class="fa fa-envelope"> </span>
+                            <div class="apheading">Email</div>
+                        </div>
+                        <div class="contact-detailpage">
+                            <p>skinlogicsclinic@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

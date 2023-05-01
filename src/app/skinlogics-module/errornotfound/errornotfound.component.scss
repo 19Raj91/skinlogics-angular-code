@@ -1,0 +1,53 @@
+#pagenotfound{
+    padding: 100px 0px;
+    background-color: #2e2e2e;
+    .pagenotfoundwrap{
+        .pagenotfoundheading{
+            font-size: 100px;
+            font-family: "acumin-pro-extra-condensed";
+            color: #f197a5;
+            line-height: 1;
+            font-weight: bold;
+            text-align: center;
+        }
+        .pagenotfoundsubheading{
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        .pagenotfoundmassege{
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+}
+
+@media(min-width:992px){
+    #pagenotfound{
+        padding: 150px 0px;
+        background-color: #2e2e2e;
+        .pagenotfoundwrap{
+            .pagenotfoundheading{
+                font-size: 180px;
+                font-family: "acumin-pro-extra-condensed";
+                color: #f197a5;
+                line-height: 1;
+                font-weight: bold;
+                text-align: center;
+            }
+            .pagenotfoundsubheading{
+                font-size: 60px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #fff;
+            }
+            .pagenotfoundmassege{
+                text-align: center;
+                font-size: 24px;
+                color: #fff;
+            }
+        }
+    }
+}

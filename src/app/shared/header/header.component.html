@@ -1,0 +1,244 @@
+<div class="topHeader dekhstop-non">
+    <div><i class="fa fa-phone" aria-hidden="true"></i> <a href="Tel:+919999172667">+91 9999172667</a></div>
+    <div> <i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="Mailto:info@skinlogics.in">info@skinlogics.in</a>
+    </div>
+</div>
+<header [class.headerfix]="navFixed">
+    <div class="container-fluid dekhstop-non">
+        <div class="row arangenavigation">
+            <div class="col-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                <a routerLink="/"> <img src="assets/images/skinlogics-mob.png" width="100%" class="logoicn" alt="logo" /> </a>
+            </div>
+            <div class="col-6 text-center d-block d-sm-none"> <a routerLink="/book-an-appointment"
+                    class="btnTopAppontmnt common-blinkbutton">Schedule A Consultation</a> </div>
+            <div class="col-2">
+                <app-navigation></app-navigation>
+            </div>
+        </div>
+    </div>
+    <!--- web header start--->
+    <div id="web-header" class="mobile-none fixedtop">
+        <div class="web-logo">
+            <a href="#" class=""><img src="assets/images/logo.png" alt="logo" /> </a>
+        </div>
+        <div class="web-menu">
+            <ul class="main-navigation" (mouseover)="togglehover()" (mouseenter)="togglehover()">
+                <li><a routerLink="/">Home</a></li>
+                <li><a >About Us <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdownmenu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                        <li><a routerLink="/about-skinlogics">About Clinic</a></li>
+                        <li><a routerLink="/skin-doctor-in-noida">Skin Doctor</a>
+                        <li><a routerLink="/dr-vandana-malik">Dr. Vandana Malik</a>
+                        <li><a routerLink="/dr-pooja-moliya">Dr. Pooja Moliya</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a routerLink="treatments">Treatments <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdownmenu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                        <!-- <li><a routerLink="/treatments">Carbon Laser Peel Treatment</a>
+                        </li> -->
+
+                        <li class="havesubmenu"><a routerLink="/pigments-and-spots">Pigments & Spots</a>
+                            <ul class="sub-menu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                                <li><a routerLink="/pigmentation-removal">Pigmentation Removal</a></li>
+                                <li><a routerLink="/lip-pigmentation-and-toning">Lip Pigmentation/Toning</a></li>
+                                <li><a routerLink="/melasma">Melasma</a></li>
+                                <li><a routerLink="/freckle">Freckle</a></li>
+                                <li><a routerLink="/carbon-laser-peel">Carbon Peel</a></li>
+                                <li><a routerLink="/laser-toning">Laser Toning</a></li>
+                                <li><a routerLink="/book-an-appointment">Sun Damage & Spots</a></li>
+                                <li><a routerLink="/age-spots">Age Spots</a></li>
+                                <li><a routerLink="/book-an-appointment">Dark Spots</a></li>
+                                <li><a routerLink="/laser-tattoo-removal">Laser Tattoo Removal</a></li>
+                                <li><a routerLink="/cosmelan-peel">Cosmelan Peel</a></li>
+                            </ul>
+                        </li>
+                        <li class="havesubmenu"><a routerLink="/facial-rejuvenation">Facial Rejuvenation</a>
+                            <ul class="sub-menu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                                <li><a routerLink="/chemical-peels">Chemical Peels</a></li>
+                                <li><a routerLink="/microdermabrasion">MDA</a></li>
+                                <li><a routerLink="/photofacials">Photofacial</a></li>
+                            </ul>
+                        </li>
+                        <li class="havesubmenu"><a routerLink="/facial-lift-contouring">Facial Lift &
+                                Contouring</a>
+                            <ul class="sub-menu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                                <li><a routerLink="/dermal-filler">Dermal Filler</a></li>
+                                <li><a routerLink="/anti-wrinkle-injection">Anti Wrinkle Injection</a></li>
+                                <li><a routerLink="/anti-ageing-facial">Anti Ageing Facial</a></li>
+                                <li><a routerLink="/jawline-contouring">Jawline Contouring</a></li>
+                                <li><a routerLink="/book-an-appointment">Chin Enhancement</a></li>
+                                <li><a routerLink="/lip-enhancement">Lip Enhancement</a></li>
+                                <li><a routerLink="/book-an-appointment">Cheek Enhancement</a></li>
+                            </ul>
+                        </li>
+                        <li class="havesubmenu"><a routerLink="/acne-skin-resurfacing">Acne & Skin
+                                Resurfacing</a>
+                            <ul class="sub-menu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                                <li><a routerLink="/acne-scar-removal">Acne Scar Removal</a></li>
+                                <li><a routerLink="/acne">Acne Treatment</a></li>
+                                <li><a routerLink="/mnrf">MNRF</a></li>
+                                <li><a routerLink="/fractional-co2">Fractional CO2</a></li>
+                                <li><a routerLink="/open-pores">Open Pores</a></li>
+                                <li><a routerLink="/stretch-marks-removal">Stretch Marks Removal</a></li>
+                                <li><a routerLink="/rosacea">Rosacea</a></li>
+                                <li><a routerLink="/acne-check">Acne Check</a></li>
+                            </ul>
+                        </li>
+                        <li class="havesubmenu"><a routerLink="/unwanted-hair">Unwanted Hair</a>
+                            <ul class="sub-menu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">                               
+                                <li><a routerLink="/body-hair">Body Hair</a></li>
+                                <li><a routerLink="/laser-hair-reduction">Laser Hair Reduction</a></li>
+                                <li><a routerLink="/book-an-appointment">Under Arms Hair Removal</a></li>
+                                <li><a routerLink="/book-an-appointment">Facial Hair Removal</a></li>
+                                <li><a routerLink="/book-an-appointment">Legs Hair Removal</a></li>
+                                <li><a routerLink="/beard-shaping">Beard Shaping</a></li>
+                            </ul>
+                        </li>
+                        <li class="havesubmenu"><a routerLink="/aging-skin">Aging Skin</a>
+                            <ul class="sub-menu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                                <li><a routerLink="/sagging-skin">Sagging Skin</a></li>
+                                <li><a routerLink="/wrinkles">Wrinkles</a></li>
+                                <li><a routerLink="/anti-ageing-facial">Anti Ageing Facial</a></li>
+                                <li><a routerLink="/age-spot">Age Spots</a></li>
+                                <li><a routerLink="/crows-feet">Crow's Feet</a></li>
+                                <li><a routerLink="/neck-lines">Neck Lines</a></li>
+                                <li><a routerLink="/deep-folds">Deep Folds</a></li>
+                                <li><a routerLink="/forehead-lines">Forehead Lines</a></li>
+
+                                <li><a routerLink="/thread-lift">Thread Lift</a></li>
+                                <li><a routerLink="/vampire-facelift">Vampire Facelift</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="havesubmenu"><a routerLink="/hair-care">Hair</a>
+                            <ul class="sub-menu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                                <li><a routerLink="/hair-fall-treatment">Hairfall Treatment</a></li>
+                                <li><a routerLink="/growth-factor-concentrate">Growth Factor Concentrate</a></li>
+                                <li><a routerLink="/hair-transplant">Hair Transplant</a></li>
+                                <li><a routerLink="/mesotherapy">Mesotherapy</a></li>
+                                <li><a routerLink="/book-an-appointment">Dermapen</a></li>
+                                <li><a routerLink="/dandruff">Dandruff</a></li>
+                                <li><a routerLink="/premature-greying">Premature Greying</a></li>
+                                <li><a routerLink="/hair-fall-in-women">Hair Fall in Women</a></li>
+                                <li><a routerLink="/hair-fall-in-men">Hair Fall in Men</a></li>
+                                <li><a routerLink="/scarring-alopecia">Scarring Alopecia</a></li>
+                                <li><a routerLink="/alopecia-areata-treatment">Alopecia Areata Treatment</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="havesubmenu"><a routerLink="/skin-glow-brightening">Skin Glow & Brightening
+                            </a>
+                            <ul class="sub-menu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                                <li><a routerLink="/laser-toning">Laser Toning</a></li>
+                                <li><a routerLink="/chemical-peel">Chemical Peel</a></li>
+                                <li><a routerLink="/microdermabrasion">MDA</a></li>
+                                <li><a routerLink="/hydrafacial">Hydrafacial</a></li>
+                                <li><a routerLink="/book-an-appointment">Oxygen Facial</a></li>
+                                <li><a routerLink="/mask-and-skin-care">Mask and Skin Care</a></li>
+                                <li><a routerLink="/hyaluronic-acid-therapy">Hyaluronic Acid Therapy</a></li>
+                                <li><a routerLink="/ipl-therapy-photofacial">IPL therapy Photofacial</a></li>
+                                <li><a routerLink="/high-intensity-focused-ultrasound">High Intensity Focused Ultrasound</a></li>
+                                <li><a routerLink="/insta-glow">Insta Glow</a></li>
+                            </ul>
+                        </li>
+                        <li class="havesubmenu"><a routerLink="/eye-rejuvenation">Eye Rejuvenation</a>
+                            <ul class="sub-menu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                                <li><a routerLink="/under-eye-dark-circle">Under Eye Dark Circle</a></li>
+                                <li><a routerLink="/under-eye-hollowness">Under Eye Hollowness</a></li>                                
+                                <li><a routerLink="/undereye-pigmentation">Under Eye Pigmentation</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="havesubmenu"><a routerLink="/facials">Facials</a>
+                            <ul class="sub-menu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                                <li><a routerLink="/hydrafacial">Hydrafacial</a></li>
+                                <li><a routerLink="/photofacials">Photofacial</a></li>
+                                <li><a routerLink="/anti-ageing-facial">Anti Ageing Facial</a></li>
+                                <li><a routerLink="/book-an-appointment">BB Glow Facial</a></li>
+                                <li><a routerLink="/laser-facials">Laser Facials</a></li>
+                                <li><a routerLink="/book-an-appointment">Power Facial</a></li>
+                                <li><a routerLink="/book-an-appointment">Oxygen Facial</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="havesubmenu"><a routerLink="/allergies">Allergies</a>
+                            <ul class="sub-menu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                                <li><a routerLink="/book-an-appointment">Skin Allergies</a></li>
+                                <li><a routerLink="/eczema">Eczema</a></li>
+                                <li><a routerLink="/urticaria">Urticaria</a></li>
+                                <li><a routerLink="/atopic-dermatitis">Atopic Dermatitis</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="havesubmenu"><a routerLink="/infections">Infections</a>
+                            <ul class="sub-menu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                                <li><a routerLink="/fungal-infection">Fungal Infection</a></li>
+                                <li><a routerLink="/book-an-appointment">Skin Infection</a></li>
+                                <li><a routerLink="/book-an-appointment">Viral Infection</a></li>
+                                <li><a routerLink="/book-an-appointment">Bacterial Infection</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="havesubmenu"><a routerLink="/book-an-appointment">Skin Growth</a>
+                            <ul class="sub-menu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                                <li><a routerLink="/book-an-appointment">Corn and Calluses</a></li>
+                                <li><a routerLink="/book-an-appointment">Skin Tags</a></li>
+                                <li><a routerLink="/book-an-appointment">Mole</a></li>
+                                <li><a routerLink="/book-an-appointment">Warts</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="havesubmenu"><a routerLink="/general-dermatology">General Dermatology</a>
+                            <ul class="sub-menu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                                <li><a routerLink="/vitiligo">Vitiligo</a></li>
+                                <li><a routerLink="/psoriasis">Psoriasis</a></li>
+                                <li><a routerLink="/atopic-dermatitis">Atopic Dermatitis</a></li>
+                                <li><a routerLink="/keloids">Keloids</a></li>
+                                <li><a routerLink="/book-an-appointment">Nail Avulsion</a></li>
+                                <li><a routerLink="/contact-dermatitis">Contact Dermatitis</a></li>
+                                <li><a routerLink="/seborrheic-dermatitis">Seborrheic Dermatitis</a></li>
+                                <li><a routerLink="/pseudo-acanthosis-nigricans">Pseudo Acanthosis Nigricans</a></li>
+                                <li><a routerLink="/spider-veins">Spider Veins</a></li>
+                                <li><a routerLink="/ingrowing-toe-nails">Ingrowing Toe Nails</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a routerLink="/pcod-treatment">PCOD</a></li>
+                    </ul>
+                </li>
+                <li><a routerLink="/bridal-dermatology">Bridal Dermatology <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdownmenu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                        <li><a routerLink="/bride-treatment">Bride Treatments</a></li>
+                        <li><a routerLink="/groom-treatments">Groom Treatments</a></li>
+                        <li><a routerLink="/power-glow">Power Glow</a></li>
+                        <li><a routerLink="/laser-facials">Laser Facials</a></li>
+                        <li><a routerLink="/lip-pigmentation-and-toning">Lip Pigmentation/ Toning</a></li>
+                        <li><a routerLink="/photofacials">Photofacial</a></li>
+                        <li><a routerLink="/laser-toning">Laser Toning</a></li>
+                        <li><a routerLink="/carbon-laser-peel">Carbon Peel</a></li>
+                        <li><a routerLink="/book-an-appointment">Full Body Toning </a></li>
+                        <li><a routerLink="/book-an-appointment">Unwanted Hair Removal</a></li>
+                        <li><a routerLink="/book-an-appointment">Microblading</a></li>
+                    </ul>
+                </li>
+                <li><a routerLink="/">Testimonials <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdownmenu" (click)="toggledropdown()" [class.d-none]="dropdownstatus">
+                        <li><a routerLink="/testimonials">Written Testimonials</a></li>
+                        <!-- <li><a routerLink="/video-testimonials">Video Testimonials</a> </li> -->
+                    </ul>
+                </li>                
+                <!-- <li><a routerLink="/">Gallery <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdownmenu" (click)="toggledropdown()" [class.d-none]="dropdownstatus"></ul>
+                </li> -->
+                <li><a routerLink="/gallery">Gallery</a></li>
+                <li><a routerLink="/videos">Videos</a></li>
+                <li><a routerLink="/real-results">Real Results</a>
+                <li><a routerLink="/blog">Blogs</a></li>
+                <li><a routerLink="/contact-us">Contact</a></li>
+                <li><a routerLink="/book-an-appointment" class="dekhstopbook common-blinkbutton">Schedule A Consultation</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- Header -->

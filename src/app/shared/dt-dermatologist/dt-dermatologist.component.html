@@ -1,0 +1,101 @@
+
+<!-- Single Doctor-->
+<!-- {{doctors |json}} -->
+<div *ngIf="doctors.length==1">
+    <div class="row" *ngFor="let doctor of doctors">
+        <div class="col-12 col-lg-6 skinlogix-margin1">
+            <div class="skinlogix-imagebox">
+                <div class="skinlogix-image">
+                    <img src="{{baseUrl}}/backend/doctor/{{doctor?.image}}" class="w-100" alt="{{doctor?.name}}">
+                    
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="col-12 col-lg-6 skinlogix-margin">
+            <div class="dr-name">
+                <div class="drnameheading" *ngIf="doctor?.name">{{doctor?.name}}</div>
+                
+            </div>
+            <div class="dr-specility" [innerHtml]="doctor?.short_degree">
+               
+            </div>
+            <div class="dr-discriptio" [innerHtml]="doctor?.home_desc">
+               
+            </div>
+            <div class="skinlogix-button">
+                <a routerLink="/{{doctor?.url}}" class="dr-readmorebutton">Read More</a>
+                <a routerLink="/book-an-appointment" class="dr-appointmentmorebutton common-blinkbutton">Schedule A Consultation</a>
+            </div>
+        </div>
+    </div> 
+</div>
+
+
+<!--end of Single Doctor-->
+<!-- two Doctor-->
+<div *ngIf="doctors.length==2">
+
+
+<div class="row" >
+    <div class="col-12 col-lg-6 skinlogix-margin1" *ngFor="let doctor of doctors">
+        <div class="skinlogix-imagebox">
+            <div class="skinlogix-image">
+                <img src="{{baseUrl}}/backend/doctor/{{doctor?.image}}" class="w-100" alt="{{doctor?.name}}">
+                <div class="dr-name">
+                    <div class="drnameheading" *ngIf="doctor?.name">{{doctor?.name}}</div>
+                </div>
+            </div>
+
+            <div class="dr-specility" [innerHtml]="doctor?.short_degree">
+                
+            </div>
+            <div class="dr-discriptio" [innerHtml]="doctor?.home_desc">
+              
+            </div>
+            <div class="skinlogix-button">
+                <a routerLink="/{{doctor?.url}}" class="dr-readmorebutton">Read More</a>
+                <a routerLink="/book-an-appointment" class="dr-appointmentmorebutton common-blinkbutton">Schedule A Consultation</a>
+            </div>
+        </div>
+    </div>
+
+   
+</div>
+</div>
+
+
+<!--end of two doctor-->
+
+<!--Three Doctor-->
+
+ <div *ngIf="doctors.length==3">
+    <div class="row">
+        <div class="col-12 col-lg-4 skinlogix-margin1" *ngFor="let doctor of doctors">
+            <div class="skinlogix-imagebox">
+                <div class="skinlogix-image">
+                    <img src="{{baseUrl}}/backend/doctor/{{doctor?.home_image}}" class="w-100" alt="{{doctor?.name}}">
+                    <div class="dr-name">
+                        <div class="drnameheading" *ngIf="doctor?.name">{{doctor?.name}}</div>
+                    </div>
+                </div>
+    
+                <div class="dr-specility" [innerHtml]="doctor?.short_degree">
+                
+                </div>
+                <div class="dr-discriptio" [innerHtml]="doctor?.home_desc">
+                  
+                </div>
+                <div class="skinlogix-button">
+                    <a routerLink="/{{doctor?.url}}" class="dr-readmorebutton">Read More</a>
+                    <a routerLink="/book-an-appointment" class="dr-appointmentmorebutton common-blinkbutton">Schedule A Consultation</a>
+                </div>
+            </div>
+        </div>
+    
+       
+    </div>
+</div> 
+
+<!--End of three doctor-->

@@ -1,0 +1,154 @@
+
+
+<div id="topcommon-banner" class="mobile-none">
+    <div class="image-overlay"></div>
+    <img src="assets/images/blog.jpg" alt="bg-image" class="w-100">
+    <div class="banner-heading">
+        <h2>Blogs</h2>
+    </div>
+</div>
+<div class="breadcrumb-menu mobile-none">
+    <div class="container-max">
+        <ul>
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/blog">Blogs</a></li>
+        </ul>
+    </div>
+</div>
+<div id="innertopcommon-bannermobile" class="dekhstop-non">
+    <div class="stylingcontent">
+        <div class="banner-heading">
+            <h2>Blogs</h2>
+        </div>
+        <div class="breadcrumb-menu">
+            <div class="container-max">
+                <ul>
+                    <li><a routerLink="/">Home</a></li>
+                    <li><a routerLink="/blog">Blogs</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+<app-requestacallbackform></app-requestacallbackform>
+<app-requestcallbackform-mobile></app-requestcallbackform-mobile>
+<div id="blogPgaewrapper">
+    <div class="container-fluid">
+        <div class="container-max">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+
+                    <div (click)="onSelect(blog)" style="cursor:pointer;" class="blogcontentwrapper" *ngFor="let blog of blogs | paginate: { itemsPerPage: 4, currentPage: p }">
+                        <div class="blogimagewrap">
+                            <img src="{{baseUrl}}/backend/blog/{{blog.blog_image}}" alt="{{blog.blog_name}}" class="img-fluid w-100">
+                        </div>
+                        <div (click)="onSelect(blog)" style="cursor:pointer;" class="blogcontentdetailwrap">
+                            <div class="blogcontentdetail">
+                                <h2 [innerHtml]="blog.blog_name"></h2>
+                                <p class="blogdateb">{{blog.date| date:'d MMM, y'}}</p>
+                                <p class="blogcontetb" [innerHtml]="blog.short_desc"></p>
+                            </div>
+
+                            <div class="bloganchorbutton">
+                                <a (click)="onSelect(blog)" ><button type="button"><i class="fa fa-long-arrow-right arrow1"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="an-pagination">
+                    <pagination-controls (pageChange)="p=$event"></pagination-controls>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                 
+                    <div class="aboutform-wrap">
+                        <div class="commonconsultation-form">
+                            <div class="commonconsulationform-heading">
+                                <h2>Schedule A Consultation</h2>
+                            </div>
+                            <div class="commoncontactdetail">
+                                <p><span>Clinic Timing:</span> Monday - Sunday: 11 AM – 7 PM</p>
+                                <p><span>Phone:</span> +91 9999172667‬</p>
+                                <p><span>Email:</span> skinlogicsclinic@gmail.com</p>
+                            </div>
+                            <form [formGroup]="appointmentForm"  (ngSubmit)="onSubmit()" autocomplete="off">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-2">
+                                                <input type="text"  class="form-control" id="nameTwo" placeholder="Name*" 
+                                                formControlName="name">
+                                                <small class="text-danger"  *ngIf="(appointmentForm.get('name').errors?.['required'] && appointmentForm.get('name').touched) || ( !appointmentForm.get('name').touched && isSubmitted)" >Name field required</small>
+                                                <small class="text-danger" *ngIf="appointmentForm.get('name').errors?.['pattern'] " >Only alphabets allowed</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-2">
+                                                <input type="email" class="form-control" id="emailTwo" placeholder="Email*"    
+                                                formControlName="email"       >
+                                                <small class="text-danger"  *ngIf="(appointmentForm.get('email').errors?.['required'] && appointmentForm.get('email').touched) || ( !appointmentForm.get('email').touched && isSubmitted)" >Email field required</small>
+                                                <!-- <small class="text-danger" *ngIf="appointmentForm.get('email').errors?.['email'] && !appointmentForm.get('email').errors?.['required']" >Please Enter Valid email</small> -->
+                                                <small class="text-danger" *ngIf="!appointmentForm.get('email').valid && appointmentForm.get('email').touched" >Please Enter Valid email</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+
+                                            <div class="form-2">
+                                                                                       
+                                                <input type="text" class="form-control" id="mobileTwo" placeholder="Phone*"
+                                        formControlName="mobile" >
+                                        
+                                        <small class="text-danger"  *ngIf="(appointmentForm.get('mobile').errors?.['required'] && appointmentForm.get('mobile').touched) || ( !appointmentForm.get('mobile').touched && isSubmitted)" >Mobile  field required</small>
+                                        <small class="text-danger"  *ngIf="(appointmentForm.get('mobile').errors?.['pattern'] && appointmentForm.get('mobile').touched)" >Enter a 10 digit  Mobile No</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-2">
+                                                <ngx-datepicker [(ngModel)]="date" type="text" [options]="options" formControlName="date" placeholder="Select Date*"></ngx-datepicker>
+                                                <small class="text-danger"  *ngIf="(appointmentForm.get('date').errors?.['required'] && isSubmitted)" >Date Required</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-2">
+                                        <textarea rows="6" cols="" placeholder="Message" class="form-control"    formControlName="message" ></textarea>
+                                    </div>
+                                    <div class="row commonmanageform-buttons">
+                                        <div class="col-12 col-md-12 captacha d-flex">
+                                            <img src="{{captcha.img}}" alt="Red dot" />
+                                        <p (click)="reloadcaptcha()" class="btn btn-primery text-white"><span class="fa fa-refresh"></span></p>
+                                        <input type="text" class="form-control"  formControlName="captcha" >
+                                        <small class="text-danger"  *ngIf="(appointmentForm.get('captcha').errors?.['required'] && appointmentForm.get('captcha').touched) || ( !appointmentForm.get('captcha').touched && isSubmitted)" >Captcha required</small>
+                                        <input type="hidden" class="form-control"  formControlName="key" id="key">
+                                        </div>
+                                        <input type="hidden" class="form-control"  formControlName="key" >
+                                        <div class="col-12 col-md-12 submit-now mt-4 mt-sm-0">
+                                            <button type="submit" class="submit-button" [class.disabled]="!appointmentForm.valid" >submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="blogpost">
+                        <h3>Popular Posts</h3>
+                        <ul class="widget-tabs" *ngFor="let blog of blogs |  slice:0:5">
+                            <li>
+                                <div class="widget-content">
+                                    <div class="widget-thumb">
+                                        <a > <img style="cursor: pointer;" (click)="onSelect(blog)" src="{{baseUrl}}/backend/blog/{{blog.blog_image}}" alt="bg-image"></a>
+                                    </div>
+                                    <div class="widget-text">
+                                        <h5><a routerLink="/" routerLinkActive="active-link" [innerHtml]="blog.short_desc"></a></h5>
+                                        <span>{{blog.date| date:'d MMM, y'}} </span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

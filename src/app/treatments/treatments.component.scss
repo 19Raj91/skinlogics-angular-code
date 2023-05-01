@@ -1,0 +1,940 @@
+#peelTreatmentwrapper {
+    margin: 40px 0px;
+
+    .peelTreatmentwrapperheading {
+        text-align: center;
+        margin-bottom: 30px;
+
+        h2 {
+            color: #f197a5;
+            font-family: "oswald";
+            font-size: 36px;
+            line-height: 1;
+
+            span {
+                display: block;
+            }
+        }
+    }
+
+    .peelTreatmentwrappercontent {
+        font-size: 14px;
+    }
+
+    .treatmentappointment {
+        button {
+            display: inline-block;
+            background-color: #ffb6c1;
+            text-transform: capitalize;
+            border: 1px solid #f197a5;
+            padding: 8px 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+#laserPeelwrapper {
+    background-color: #fff6f7;
+    margin: 40px 0px;
+    padding: 40px 0px;
+
+    .laserPeelheading {
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 36px;
+            font-family: "oswald";
+            color: #f197a5;
+            line-height: 1;
+        }
+    }
+
+    .laserPeelcontent {
+        p {
+            display: flex;
+            align-items: baseline;
+
+            i {
+                margin-right: 6px;
+                color: #f197a5;
+            }
+        }
+    }
+}
+
+#contraindicationsWrap {
+    margin-bottom: 40px;
+
+    .contraindicationsHeading {
+        h2 {
+            font-size: 36px;
+            font-family: "oswald";
+            color: #f197a5;
+            line-height: 1;
+            margin-bottom: 30px;
+
+            span {
+                display: block;
+            }
+        }
+    }
+
+    .notidealwrap {
+        p {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+
+            i {
+                margin-right: 6px;
+                color: #f197a5;
+
+            }
+        }
+    }
+}
+
+#howToplan {
+    background-color: #fff6f7;
+    margin: 40px 0px;
+    padding: 40px 0px;
+
+    .howtoplanheading {
+        h2 {
+            font-size: 36px;
+            font-family: "oswald";
+            color: #f197a5;
+            line-height: 1;
+            margin-bottom: 30px;
+        }
+    }
+
+    .howtoplancontent {
+        p {
+            display: flex;
+            align-items: baseline;
+
+            i {
+                color: #f197a5;
+                font-size: 14px;
+                margin-right: 6px;
+            }
+        }
+    }
+}
+
+#whatHappenwrapper{
+    margin-bottom: 40px;
+    .whathappenheading{
+        h2{
+            font-size: 36px;
+            font-family: "oswald";
+            color: #f197a5;
+            line-height: 1;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+#expectedWrapper{
+    margin: 40px 0px;
+    .expectedheading{
+        text-align: center;
+        h2{
+            font-size: 36px;
+            font-family: "oswald";
+            color: #f197a5;
+            line-height: 1;
+            margin-bottom: 30px;
+        }
+    }
+    .expectedcontent{
+        text-align: center;
+    }
+}
+#posTtreatmentwrap{
+    background-color: #fff6f7;
+    margin: 40px 0px;
+    padding: 40px 0px;
+    .posTtreatmentheading{
+        h2{
+            font-size: 36px;
+            font-family: "oswald";
+            color: #f197a5;
+            line-height: 1;
+            margin-bottom: 30px;
+        }
+    }
+    .posTtreatmentcontent{
+        p{
+            display: flex;
+            align-items: baseline;
+            i{
+                color: #f197a5;
+                margin-right: 8px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 546px) and (max-width: 767px) {
+ 
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    #peelTreatmentwrapper {
+        margin: 40px 0px;
+    
+        .peelTreatmentwrapperheading {
+            text-align: center;
+            margin-bottom: 30px;
+    
+            h2 {
+                color: #f197a5;
+                font-family: "oswald";
+                font-size: 36px;
+                line-height: 1;
+    
+                span {
+                    display: inline;
+                }
+            }
+        }
+    
+        .peelTreatmentwrappercontent {
+            font-size: 14px;
+        }
+    
+        .treatmentappointment {
+            button {
+                display: inline-block;
+                background-color: #ffb6c1;
+                text-transform: capitalize;
+                border: 1px solid #f197a5;
+                padding: 8px 20px;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    #laserPeelwrapper {
+        background-color: #fff6f7;
+        margin: 40px 0px;
+        padding: 40px 0px;
+    
+        .laserPeelheading {
+            margin-bottom: 20px;
+    
+            h2 {
+                font-size: 36px;
+                font-family: "oswald";
+                color: #f197a5;
+                line-height: 1;
+            }
+        }
+    
+        .laserPeelcontent {
+            p {
+                display: flex;
+                align-items: baseline;
+    
+                i {
+                    margin-right: 6px;
+                    color: #f197a5;
+                }
+            }
+        }
+    }
+    
+    #contraindicationsWrap {
+        margin-bottom: 40px;
+    
+        .contraindicationsHeading {
+            h2 {
+                font-size: 36px;
+                font-family: "oswald";
+                color: #f197a5;
+                line-height: 1;
+                margin-bottom: 30px;
+    
+                span {
+                    display: inline;
+                }
+            }
+        }
+    
+        .notidealwrap {
+            p {
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+    
+                i {
+                    margin-right: 6px;
+                    color: #f197a5;
+    
+                }
+            }
+        }
+    }
+    
+    #howToplan {
+        background-color: #fff6f7;
+        margin: 40px 0px;
+        padding: 40px 0px;
+    
+        .howtoplanheading {
+            h2 {
+                font-size: 36px;
+                font-family: "oswald";
+                color: #f197a5;
+                line-height: 1;
+                margin-bottom: 30px;
+            }
+        }
+    
+        .howtoplancontent {
+            p {
+                display: flex;
+                align-items: baseline;
+    
+                i {
+                    color: #f197a5;
+                    font-size: 14px;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+    
+    #whatHappenwrapper{
+        margin-bottom: 40px;
+        .whathappenheading{
+            h2{
+                font-size: 36px;
+                font-family: "oswald";
+                color: #f197a5;
+                line-height: 1;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    
+    #expectedWrapper{
+        margin: 40px 0px;
+        .expectedheading{
+            text-align: center;
+            h2{
+                font-size: 36px;
+                font-family: "oswald";
+                color: #f197a5;
+                line-height: 1;
+                margin-bottom: 30px;
+            }
+        }
+        .expectedcontent{
+            text-align: center;
+        }
+    }
+    #posTtreatmentwrap{
+        background-color: #fff6f7;
+        margin: 40px 0px;
+        padding: 40px 0px;
+        .posTtreatmentheading{
+            h2{
+                font-size: 36px;
+                font-family: "oswald";
+                color: #f197a5;
+                line-height: 1;
+                margin-bottom: 30px;
+            }
+        }
+        .posTtreatmentcontent{
+            p{
+                display: flex;
+                align-items: baseline;
+                i{
+                    color: #f197a5;
+                    margin-right: 8px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:993px) and (max-width:1025px){
+    #peelTreatmentwrapper {
+        padding: 0px 80px;
+        .peelTreatmentwrapperheading {
+    
+            h2 {
+                font-size: 50px;
+    
+                span {
+                    display: inline;
+                }
+            }
+        }
+    
+        .peelTreatmentwrappercontent {
+            padding: 0px 20px;
+            p{
+                font-size: 16px;
+            }
+        }
+    
+        .treatmentappointment {
+            text-align: center;
+        }
+    }
+    
+    #laserPeelwrapper {
+        padding: 40px 100px;
+    
+        .laserPeelheading2 {
+            margin-bottom: 20px;
+    
+            h2 {
+                font-size: 50px;
+                font-family: "oswald";
+                color: #f197a5;
+                line-height: 1;
+                padding-right: 20px;
+                span{
+                    display: block;
+                }
+            }
+        }
+    .laserPeelheadingsubtext{
+        font-size: 16px;
+        padding-right: 20px;
+    }
+        .laserPeelcontent {
+            p {
+                display: flex;
+                align-items: baseline;
+                margin-bottom: 20px;
+                padding-left: 20px;
+                font-size: 16px;
+    
+                i {
+                    margin-right: 8px;
+                    color: #f197a5;
+                }
+            }
+        }
+    }
+    
+    #contraindicationsWrap {
+        margin-bottom: 40px;
+        padding: 0px 100px;
+    
+        .contraindicationsHeading {
+            margin-bottom: 40px;
+            text-align: center;
+            h2 {
+                font-size: 50px;
+    
+                span {
+                    display: inline;
+                }
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    
+        .notidealwrap {
+            p {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+    
+                i {
+                    margin-right: 6px;
+                    color: #f197a5;
+    
+                }
+            }
+        }
+        .notidealwrap1{
+
+            padding-left: 60px;
+        }
+    }
+    
+    #howToplan {
+        padding: 40px 100px;
+    
+        .howtoplanheading {
+            text-align: center;
+            margin-bottom: 50px;
+            h2 {
+                font-size: 50px;
+            }
+            p{
+                font-size: 16px;
+                padding: 0px 0px;
+            }
+        }
+    
+        .howtoplancontent {
+            p {
+                display: flex;
+                align-items: baseline;
+    
+                i {
+                    color: #f197a5;
+                    font-size: 14px;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+    
+    #whatHappenwrapper{
+        padding: 0px 100px;
+        .whathappenheading{
+            text-align: center;
+            margin-bottom: 50px;
+            h2{
+                font-size: 50px;
+            }
+        }
+        .whathappencontent{
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+    
+    #expectedWrapper{
+        padding: 0px 100px;
+        .expectedheading{
+            text-align: center;
+            h2{
+                font-size: 50px;
+            }
+        }
+        .expectedcontent{
+            text-align: center;
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    #posTtreatmentwrap{
+        padding: 40px 100px;
+        .posTtreatmentheading{
+            h2{
+                font-size: 50px;
+            }
+        }
+        .posTtreatmentcontent{
+            p{
+                display: flex;
+                align-items: baseline;
+                font-size: 16px;
+                i{
+                    color: #f197a5;
+                    margin-right: 8px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .disclamertreatment{
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+    #faqs-wrapper {
+        background: #fff;
+        padding: 0px 60px 0px;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (min-width: 1026px) and (max-width:1370px){
+    #peelTreatmentwrapper {
+        padding: 0px 80px;
+        .peelTreatmentwrapperheading {
+    
+            h2 {
+                font-size: 60px;
+    
+                span {
+                    display: inline;
+                }
+            }
+        }
+    
+        .peelTreatmentwrappercontent {
+            padding: 0px 20px;
+            p{
+                font-size: 16px;
+            }
+        }
+    
+        .treatmentappointment {
+            text-align: center;
+        }
+    }
+    
+    #laserPeelwrapper {
+        padding: 40px 100px;
+    
+        .laserPeelheading2 {
+            margin-bottom: 20px;
+    
+            h2 {
+                font-size: 60px;
+                font-family: "oswald";
+                color: #f197a5;
+                line-height: 1;
+                padding-right: 20px;
+                span{
+                    display: block;
+                }
+            }
+        }
+    .laserPeelheadingsubtext{
+        font-size: 16px;
+        padding-right: 20px;
+    }
+        .laserPeelcontent {
+            p {
+                display: flex;
+                align-items: baseline;
+                margin-bottom: 20px;
+                padding-left: 20px;
+                font-size: 16px;
+    
+                i {
+                    margin-right: 8px;
+                    color: #f197a5;
+                }
+            }
+        }
+    }
+    
+    #contraindicationsWrap {
+        margin-bottom: 40px;
+        padding: 0px 100px;
+    
+        .contraindicationsHeading {
+            margin-bottom: 40px;
+            text-align: center;
+            h2 {
+                font-size: 60px;
+    
+                span {
+                    display: inline;
+                }
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    
+        .notidealwrap {
+            p {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+    
+                i {
+                    margin-right: 6px;
+                    color: #f197a5;
+    
+                }
+            }
+        }
+        .notidealwrap1{
+
+            padding-left: 200px;
+        }
+    }
+    
+    #howToplan {
+        padding: 40px 100px;
+    
+        .howtoplanheading {
+            text-align: center;
+            margin-bottom: 50px;
+            h2 {
+                font-size: 60px;
+            }
+            p{
+                font-size: 16px;
+                padding: 0px 190px;
+            }
+        }
+    
+        .howtoplancontent {
+            p {
+                display: flex;
+                align-items: baseline;
+    
+                i {
+                    color: #f197a5;
+                    font-size: 14px;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+    
+    #whatHappenwrapper{
+        padding: 0px 100px;
+        .whathappenheading{
+            text-align: center;
+            margin-bottom: 50px;
+            h2{
+                font-size: 60px;
+            }
+        }
+        .whathappencontent{
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+    
+    #expectedWrapper{
+        padding: 0px 100px;
+        .expectedheading{
+            text-align: center;
+            h2{
+                font-size: 60px;
+            }
+        }
+        .expectedcontent{
+            text-align: center;
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    #posTtreatmentwrap{
+        padding: 40px 100px;
+        .posTtreatmentheading{
+            h2{
+                font-size: 60px;
+            }
+        }
+        .posTtreatmentcontent{
+            p{
+                display: flex;
+                align-items: baseline;
+                font-size: 16px;
+                i{
+                    color: #f197a5;
+                    margin-right: 8px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .disclamertreatment{
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+    #faqs-wrapper {
+        background: #fff;
+        padding: 0px 60px 0px;
+        margin-bottom: 40px;
+    }
+}
+@media (min-width: 1371px) {
+    #peelTreatmentwrapper {
+        padding: 0px 80px;
+        .peelTreatmentwrapperheading {
+    
+            h2 {
+                font-size: 60px;
+    
+                span {
+                    display: inline;
+                }
+            }
+        }
+    
+        .peelTreatmentwrappercontent {
+            padding: 0px 20px;
+            p{
+                font-size: 16px;
+            }
+        }
+    
+        .treatmentappointment {
+            text-align: center;
+        }
+    }
+    
+    #laserPeelwrapper {
+        padding: 40px 100px;
+    
+        .laserPeelheading2 {
+            margin-bottom: 20px;
+    
+            h2 {
+                font-size: 60px;
+                font-family: "oswald";
+                color: #f197a5;
+                line-height: 1;
+                padding-right: 20px;
+                span{
+                    display: block;
+                }
+            }
+        }
+    .laserPeelheadingsubtext{
+        font-size: 16px;
+        padding-right: 20px;
+    }
+        .laserPeelcontent {
+            p {
+                display: flex;
+                align-items: baseline;
+                margin-bottom: 20px;
+                padding-left: 20px;
+                font-size: 16px;
+    
+                i {
+                    margin-right: 8px;
+                    color: #f197a5;
+                }
+            }
+        }
+    }
+    
+    #contraindicationsWrap {
+        margin-bottom: 40px;
+        padding: 0px 100px;
+    
+        .contraindicationsHeading {
+            margin-bottom: 40px;
+            text-align: center;
+            h2 {
+                font-size: 60px;
+    
+                span {
+                    display: inline;
+                }
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    
+        .notidealwrap {
+            p {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+    
+                i {
+                    margin-right: 6px;
+                    color: #f197a5;
+    
+                }
+            }
+        }
+        .notidealwrap1{
+
+            padding-left: 200px;
+        }
+    }
+    
+    #howToplan {
+        padding: 40px 100px;
+    
+        .howtoplanheading {
+            text-align: center;
+            margin-bottom: 50px;
+            h2 {
+                font-size: 60px;
+            }
+            p{
+                font-size: 16px;
+                padding: 0px 190px;
+            }
+        }
+    
+        .howtoplancontent {
+            p {
+                display: flex;
+                align-items: baseline;
+    
+                i {
+                    color: #f197a5;
+                    font-size: 14px;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+    
+    #whatHappenwrapper{
+        padding: 0px 100px;
+        .whathappenheading{
+            text-align: center;
+            margin-bottom: 50px;
+            h2{
+                font-size: 60px;
+            }
+        }
+        .whathappencontent{
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+    
+    #expectedWrapper{
+        padding: 0px 100px;
+        .expectedheading{
+            text-align: center;
+            h2{
+                font-size: 60px;
+            }
+        }
+        .expectedcontent{
+            text-align: center;
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    #posTtreatmentwrap{
+        padding: 40px 100px;
+        .posTtreatmentheading{
+            h2{
+                font-size: 60px;
+            }
+        }
+        .posTtreatmentcontent{
+            p{
+                display: flex;
+                align-items: baseline;
+                font-size: 16px;
+                i{
+                    color: #f197a5;
+                    margin-right: 8px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .disclamertreatment{
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+    #faqs-wrapper {
+        background: #fff;
+        padding: 0px 60px 0px;
+        margin-bottom: 40px;
+    }
+
+}

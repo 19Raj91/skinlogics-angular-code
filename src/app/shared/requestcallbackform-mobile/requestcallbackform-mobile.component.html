@@ -1,0 +1,89 @@
+<!-- <div id="mobilerequestform" class="dekhstop-non">
+    <button class="openformbutton" (click)="open(mymodal)">Request a Callback</button>
+       
+    <ng-template #mymodal let-modal>
+      <div class="modal-header requestheader">
+        <h4 class="modal-title" id="modal-basic-title">Request a Callback</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <form [formGroup]="requestCallBackFormMobile" (ngSubmit)="onSubmit()" >
+      <div class="modal-body requestbody">
+        <div id="mobilecommonrequestform">
+            <div class="container-fluid">
+                <div class="container-max">
+                    <div class="row">
+                        <div class="col-12">
+                          
+                                <div class="form-row manageformrow">
+                                       
+                                    <div class="commonform-group">
+                                        <div class="form-group">
+                                        <input type="text"   class="form-control" id="inlineFormInputName" placeholder="Name*" formControlName="name" placeholder="Name*" >
+                                        <small class="text-danger"  *ngIf="(requestCallBackFormMobile.get('name').errors?.['required'] && requestCallBackFormMobile.get('name').touched) || ( !requestCallBackFormMobile.get('name').touched && isSubmitted)" >Name field required</small>
+                                        <small class="text-danger" *ngIf="requestCallBackFormMobile.get('name').errors?.['pattern'] " >Only alphabets allowed</small>
+                                        
+                                        <div class="form-group">
+                                            <input type="tel"  class="form-control"  formControlName="mobile" id="mobilenumber" placeholder="Mobile*">
+                                            <small class="text-danger"  *ngIf="(requestCallBackFormMobile.get('mobile').errors?.['required'] && requestCallBackFormMobile.get('mobile').touched) || ( !requestCallBackFormMobile.get('mobile').touched && isSubmitted)" >Mobile  field required</small>
+                                            <small class="text-danger"  *ngIf="(requestCallBackFormMobile.get('mobile').errors?.['pattern'] && requestCallBackFormMobile.get('mobile').touched)" >Enter a Valid Mobile No</small>
+                                        </div>
+                                        <div class="requeatcaptcha">
+                                           <div class="form-alignment d-flex">
+                                            <div class="form-alignment d-flex">
+                                                <img src="{{captcha.img}}" alt="Red dot" />
+                                            <button (click)="reloadcaptcha()" class="btn btn-primery text-white"><span class="fa fa-refresh"></span></button>
+                                            <input type="text" class="form-control"  formControlName="captcha">
+                                            <small class="text-danger"  *ngIf="(requestCallBackFormMobile.get('captcha').errors?.['required'] && requestCallBackFormMobile.get('captcha').touched) || ( !requestCallBackFormMobile.get('captcha').touched && isSubmitted)" >Captcha required</small>
+                                            <input type="hidden" class="form-control"  formControlName="key" id="key">
+                                        
+                                            </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+      </div>
+      <div class="modal-footer requestfooter">
+        <button type="submit" class="submitrequestmobile" >{{this.submitButtonText}}</button>
+      </div>
+      </div>
+    </form>
+    </ng-template>
+    </div>
+     -->
+
+<div id="new-requestmobilefrom" class="dekhstop-non">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <form [formGroup]="requestCallBackFormMobile" (ngSubmit)="onSubmit()" >
+          <div class="new-requestmobilefromheading">Request a Callback</div>
+          <div class="form-group">
+            <input type="text"   class="form-control" id="inlineFormInputName" placeholder="Name*" formControlName="name" placeholder="Name*" >
+                                        <small class="text-danger"  *ngIf="(requestCallBackFormMobile.get('name').errors?.['required'] && requestCallBackFormMobile.get('name').touched) || ( !requestCallBackFormMobile.get('name').touched && isSubmitted)" >Name field required</small>
+                                        <small class="text-danger" *ngIf="requestCallBackFormMobile.get('name').errors?.['pattern'] " >Only alphabets allowed</small>
+          </div>
+          <div class="form-group">
+                                          <input type="tel"  class="form-control"  formControlName="mobile" id="mobilenumber" placeholder="Mobile*">
+                                            <small class="text-danger"  *ngIf="(requestCallBackFormMobile.get('mobile').errors?.['required'] && requestCallBackFormMobile.get('mobile').touched) || ( !requestCallBackFormMobile.get('mobile').touched && isSubmitted)" >Mobile  field required</small>
+                                            <small class="text-danger"  *ngIf="(requestCallBackFormMobile.get('mobile').errors?.['pattern'] && requestCallBackFormMobile.get('mobile').touched)" >Enter a Valid Mobile No</small>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email" formControlName="email">
+          </div>
+          <button type="submit" class="newreqestsubmit">Submit</button>
+          <!-- {{requestCallBackFormMobile.value | json}} -->
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
